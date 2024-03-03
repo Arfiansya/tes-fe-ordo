@@ -1,0 +1,879 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #15548D;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  z-index: 1000;
+}
+nav .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav .wrap .logo {
+  position: relative;
+  right: 100px;
+  top: 30px;
+}
+nav .wrap .logo img {
+  max-height: 50px;
+}
+nav .wrap .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 200px;
+  top: 30px;
+}
+nav .wrap .menu ul li {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 50px;
+}
+nav .wrap .menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav .wrap .menu ul li a:hover {
+  color: #000000;
+}
+nav .wrap .bt-lg {
+  position: relative;
+  background-color: #108ce4;
+  width: 221px;
+  height: 52px;
+  border-radius: 10px;
+  top: 30px;
+  left: 65px;
+  z-index: 100000;
+}
+nav .wrap .bt-lg a {
+  position: relative;
+  top: -5px;
+  left: 60px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 10px;
+}
+nav .wrap .bt-lg a:hover {
+  color: #000000;
+}
+nav .wrap .bt-lg img {
+  position: relative;
+  top: 10px;
+  right: 130px;
+  max-height: 40px;
+}
+
+#hero-section {
+  background-color: #ffffff;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+#hero-section .container-hero {
+  background-color: #15548D;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 720px;
+}
+
+.hero-img {
+  width: 610px;
+  height: 790px;
+  position: relative;
+  left: 925px;
+  z-index: 9000;
+}
+
+.kolom-deskripsi {
+  width: 900px;
+  position: relative;
+  bottom: 600px;
+  left: 150px;
+  z-index: 1;
+  color: white;
+}
+
+.hotel-op {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+.hotel-op h2 {
+  position: relative;
+  left: 20px;
+  font-size: 16px;
+}
+
+.deskripsi-hotel {
+  width: 605px;
+  height: 204px;
+}
+.deskripsi-hotel h1 {
+  font-size: 38px;
+  line-height: 59px;
+}
+.deskripsi-hotel p {
+  font-size: 22px;
+  line-height: 35.2px;
+}
+
+.bt-wrap {
+  position: relative;
+  top: 20px;
+}
+.bt-wrap .custom-button {
+  padding: 10px;
+  width: 404px;
+  height: 74px;
+  background-color: #FAC568;
+  border-radius: 1000px;
+  font-size: 26px;
+  line-height: 35.2px;
+  border: 0.97px solid #15548D;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+}
+.bt-wrap .custom-button:hover {
+  background-color: #fff0d5; /* Warna saat tombol dihover */
+}
+
+#workflow-section {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+#workflow-section .work-op {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  left: 150px;
+  width: 589px;
+}
+#workflow-section .work-op h2 {
+  position: relative;
+  left: 20px;
+  font-size: 16px;
+}
+#workflow-section .deskripsi-workflow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 40px;
+  left: 120px;
+  width: 589px;
+}
+#workflow-section .deskripsi-workflow h1 {
+  position: relative;
+  left: 20px;
+  font-size: 34px;
+}
+
+.workflow-1, .workflow-2, .workflow-3, .workflow-4 {
+  position: relative;
+  width: 261.41px;
+  height: 290.86px;
+  background-color: rgb(255, 255, 255);
+}
+.workflow-1 img, .workflow-2 img, .workflow-3 img, .workflow-4 img {
+  position: relative;
+  top: 10px;
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+.workflow-1 h2, .workflow-2 h2, .workflow-3 h2, .workflow-4 h2 {
+  font-size: 22px;
+  position: relative;
+  top: 40px;
+}
+.workflow-1 p, .workflow-2 p, .workflow-3 p, .workflow-4 p {
+  position: relative;
+  font-size: 17px;
+  top: 50px;
+}
+
+.workflow-1 {
+  position: relative;
+  top: 200px;
+  left: 150px;
+}
+
+.workflow-2 {
+  position: relative;
+  bottom: 200px;
+  left: 450px;
+}
+
+.workflow-3 {
+  position: relative;
+  bottom: 400px;
+  left: 800px;
+}
+
+.workflow-4 {
+  position: relative;
+  bottom: 850px;
+  left: 1100px;
+}
+
+#services-section {
+  background-color: #F7F8FD;
+  position: relative;
+  width: 100%;
+  height: 705px;
+}
+#services-section .services-op {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  left: 150px;
+  top: 50px;
+  width: 589px;
+}
+#services-section .services-op h2 {
+  position: relative;
+  left: 20px;
+  font-size: 16px;
+}
+#services-section .deskripsi-services {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 70px;
+  left: 120px;
+  width: 589px;
+}
+#services-section .deskripsi-services h1 {
+  position: relative;
+  left: 20px;
+  font-size: 34px;
+}
+
+.services-1, .services-2, .services-3 {
+  position: relative;
+  width: 355px;
+  height: 370px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 32px;
+  border: 0.97px solid #DDDDDD;
+}
+.services-1 img, .services-2 img, .services-3 img {
+  position: relative;
+  top: 35px;
+  left: 35px;
+  width: 138.11px;
+  height: 140px;
+}
+.services-1 h2, .services-2 h2, .services-3 h2 {
+  position: relative;
+  text-align: left;
+  top: 50px;
+  left: 35px;
+  width: 264px;
+  height: 72px;
+  size: 26px;
+  line-height: 36.4px;
+}
+.services-1 .custom-button, .services-2 .custom-button, .services-3 .custom-button {
+  position: relative;
+  top: 70px;
+  left: 35px;
+  height: 48px;
+  width: 200px;
+  border-radius: 54.38px;
+  background-color: #FAC568;
+  font-size: 17.22px;
+  font-weight: 400;
+  border: #DDDDDD;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+}
+.services-1 .custom-button:hover, .services-2 .custom-button:hover, .services-3 .custom-button:hover {
+  background-color: #fff0d5; /* Warna saat tombol dihover */
+}
+.services-1 h3, .services-2 h3, .services-3 h3 {
+  position: relative;
+  bottom: 200px;
+  left: 80PX;
+  width: 246px;
+  height: 50px;
+  text-align: right;
+  font-weight: 600;
+  color: #FAC568;
+  font-size: 31PX;
+}
+
+.services-1 {
+  position: relative;
+  top: 100px;
+  left: 150px;
+}
+
+.services-2 {
+  position: relative;
+  bottom: 270px;
+  left: 600px;
+}
+
+.services-3 {
+  position: relative;
+  bottom: 640px;
+  left: 1050px;
+}
+
+#project-section {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+#project-section .project-op {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  left: 630px;
+  top: 10px;
+  width: 589px;
+}
+#project-section .project-deskripsi {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 70px;
+  left: 570px;
+  width: 589px;
+}
+#project-section .project-deskripsi h1 {
+  position: relative;
+  left: 20px;
+  font-size: 34px;
+}
+#project-section .project-content {
+  position: relative;
+  left: 170px;
+  top: 100px;
+  height: 380px;
+}
+#project-section .project-content .container {
+  position: relative;
+}
+#project-section .project-content .container img {
+  width: 1182px;
+  height: 380px;
+  border-radius: 52px;
+}
+#project-section .project-content .deskripsi-content {
+  position: relative;
+  bottom: 280px;
+  width: 618.55px;
+  height: 169.36px;
+  left: 101px;
+}
+#project-section .project-content .deskripsi-content h4 {
+  font-size: 22px;
+  font-weight: 500px;
+}
+#project-section .project-content .deskripsi-content h5 {
+  position: relative;
+  top: 30px;
+  font-size: 53px;
+  font-weight: 600px;
+  color: #333333;
+}
+#project-section .project-content .deskripsi-content p {
+  position: relative;
+  top: 45px;
+  color: #404040;
+  font-size: 32px;
+  font-weight: 300px;
+}
+#project-section .project-content .deskripsi-content .lihat-detail {
+  position: relative;
+  left: 860px;
+  width: 148px;
+  height: 29px;
+}
+#project-section .project-content .deskripsi-content .lihat-detail button {
+  color: #F7F8FD;
+  font-size: xx-large;
+  position: relative;
+  top: 50px;
+  right: 70px;
+  background-color: #333333;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+}
+#project-section .project-content .deskripsi-content .lihat-detail button:hover {
+  background-color: #fff0d5; /* Warna saat tombol dihover */
+}
+#project-section .project-content .deskripsi-content .lihat-detail h6 {
+  position: relative;
+  text-align: right;
+  font-size: 28.71px;
+  font-weight: 400px;
+  color: #333333;
+}
+#project-section .project-content .button-img .button-kanan {
+  position: relative;
+  bottom: 400px;
+  left: 1130px;
+  background-color: #FAC568;
+  height: 96px;
+  text-align: center;
+  font-size: 70px;
+  width: 96px;
+  border-radius: 100%;
+  border: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+}
+#project-section .project-content .button-img .button-kanan:hover {
+  background-color: #fff0d5; /* Warna saat tombol dihover */
+}
+#project-section .project-content .button-img .button-kiri {
+  position: relative;
+  bottom: 400px;
+  right: 150px;
+  background-color: #FAC568;
+  height: 96px;
+  text-align: center;
+  font-size: 70px;
+  width: 96px;
+  border-radius: 100%;
+  border: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+}
+#project-section .project-content .button-img .button-kiri:hover {
+  background-color: #fff0d5; /* Warna saat tombol dihover */
+}
+
+#testimoni-section {
+  background-color: #F7F8FD;
+  position: relative;
+  width: 100%;
+  height: 690px;
+}
+#testimoni-section .testi-op {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  left: 150px;
+  top: 50px;
+  width: 589px;
+}
+#testimoni-section .testi-op h2 {
+  position: relative;
+  left: 20px;
+  font-size: 16px;
+}
+#testimoni-section .testimoni-deskripsi {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 70px;
+  left: 130px;
+  width: 589px;
+}
+#testimoni-section .testimoni-deskripsi h1 {
+  position: relative;
+  left: 20px;
+  font-size: 34px;
+}
+#testimoni-section .testi-img {
+  position: relative;
+  left: 955px;
+}
+#testimoni-section .quote-content {
+  position: relative;
+  left: 130px;
+  width: 600px;
+  height: 190px;
+  bottom: 500px;
+}
+#testimoni-section .quote-content img {
+  position: relative;
+  width: 44.64px;
+  height: 44px;
+}
+#testimoni-section .quote-content p {
+  position: relative;
+  left: 80px;
+  bottom: 40px;
+  width: 360.33px;
+  height: 193px;
+  font-size: 26px;
+}
+#testimoni-section .clien-profile {
+  position: relative;
+  left: 130px;
+  width: 385.62px;
+  height: 150.64px;
+  bottom: 450px;
+}
+#testimoni-section .clien-profile img {
+  width: 90px;
+  height: 90px;
+  border-radius: 78.26px;
+}
+#testimoni-section .clien-profile h3 {
+  position: relative;
+  left: 130px;
+  font-size: 27px;
+  bottom: 80px;
+}
+#testimoni-section .clien-profile p {
+  position: relative;
+  left: 130px;
+  font-size: 27px;
+  bottom: 70px;
+}
+
+#hubkam-section {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 740px;
+}
+#hubkam-section .des-hub {
+  position: relative;
+  top: 300px;
+  width: 460px;
+  height: 296px;
+  left: 140px;
+}
+#hubkam-section .des-hub .hubkam-op {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#hubkam-section .des-hub .hubkam-op h2 {
+  position: relative;
+  left: 20px;
+  font-size: 16px;
+}
+#hubkam-section .des-hub .deskripsi-hubkam {
+  position: relative;
+  margin-top: 40px;
+  width: 460px;
+  height: 296px;
+}
+#hubkam-section .des-hub .deskripsi-hubkam h1 {
+  width: 460px;
+  position: relative;
+  font-size: 34px;
+}
+#hubkam-section .des-hub .deskripsi-hubkam p {
+  color: #052925;
+  position: relative;
+  top: 30px;
+  width: 460px;
+  height: 108px;
+  font-size: 20px;
+}
+#hubkam-section .kolom-konsultasi {
+  position: relative;
+  bottom: 150px;
+  left: 900px;
+  background-color: #F8F8F8;
+  width: 518px;
+  height: 500px;
+  border-radius: 20px;
+}
+#hubkam-section .kolom-konsultasi .form {
+  width: 438px;
+  height: 88px;
+}
+#hubkam-section .kolom-konsultasi .form label {
+  position: relative;
+  top: 60px;
+  left: 40px;
+  font-size: 17px;
+}
+#hubkam-section .kolom-konsultasi .form input {
+  position: relative;
+  top: 60px;
+  left: 40px;
+  width: 438px;
+  height: 53px;
+  padding: 14px, 18px, 14px, 18px;
+  border-radius: 12px;
+  border: 1px solid #CCCCCC;
+}
+#hubkam-section .kolom-konsultasi .form-aksi input {
+  position: relative;
+  top: 60px;
+  left: 40px;
+  width: 438px;
+  height: 72.04px;
+  padding: 15px, 10px, 15px, 10px;
+  border-radius: 9000px;
+  gap: 10px;
+  border: #F8F8F8;
+  background-color: #FAC568;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+}
+#hubkam-section .kolom-konsultasi .form-aksi input:hover {
+  background-color: #fff0d5; /* Warna saat tombol dihover */
+}
+
+#footer {
+  background-color: #15548D;
+  width: 100%;
+  height: 740px;
+  color: #ffffff;
+}
+#footer .atas {
+  position: relative;
+  width: 1182px;
+  height: 305px;
+  left: 113px;
+  top: 100px;
+}
+#footer .atas .logo {
+  position: relative;
+}
+#footer .atas .logo img {
+  width: 192.4px;
+  height: 65px;
+  top: 71px;
+  left: 114px;
+}
+#footer .atas .navbar-mungkin {
+  position: relative;
+  top: 40px;
+  width: 295.25px;
+  height: 84px;
+}
+#footer .atas .navbar-mungkin h6 {
+  width: 295.25px;
+  height: 32px;
+  font-size: 21px;
+}
+#footer .atas .navbar-mungkin h6:hover {
+  color: #000000;
+}
+#footer .atas .navbar-mungkin p {
+  width: 195.58px;
+  height: 32px;
+  top: 52px;
+}
+#footer .atas .navbar-mungkin p:hover {
+  color: #000000;
+}
+#footer .atas .perusahaan-mungkin {
+  position: relative;
+  left: 295.25px;
+  width: 295.25px;
+  height: 125px;
+  bottom: 44px;
+}
+#footer .atas .perusahaan-mungkin h6 {
+  width: 295.25px;
+  height: 32px;
+  font-size: 21px;
+}
+#footer .atas .perusahaan-mungkin h6:hover {
+  color: #000000;
+}
+#footer .atas .perusahaan-mungkin .p1 {
+  width: 295.25px;
+  height: 32px;
+  top: 52px;
+  left: 295.25px;
+  font-size: 21px;
+}
+#footer .atas .perusahaan-mungkin .p1:hover {
+  color: #000000;
+}
+#footer .atas .perusahaan-mungkin .p2 {
+  width: 272.18px;
+  height: 32px;
+  top: 93px;
+  left: 295.25px;
+  font-size: 21px;
+}
+#footer .atas .perusahaan-mungkin .p2:hover {
+  color: #000000;
+}
+#footer .atas .temukan-mungkin {
+  position: relative;
+  left: 590.5px;
+  width: 295.25px;
+  height: 125px;
+  bottom: 169px;
+}
+#footer .atas .temukan-mungkin h6 {
+  width: 295.25px;
+  height: 32px;
+  font-size: 21px;
+}
+#footer .atas .temukan-mungkin h6:hover {
+  color: #000000;
+}
+#footer .atas .temukan-mungkin .p1 {
+  width: 295.25px;
+  height: 32px;
+  top: 52px;
+  left: 295.25px;
+  font-size: 21px;
+}
+#footer .atas .temukan-mungkin .p1:hover {
+  color: #000000;
+}
+#footer .atas .temukan-mungkin .p2 {
+  width: 272.18px;
+  height: 32px;
+  font-weight: 100;
+  top: 93px;
+  left: 295.25px;
+  font-size: 21px;
+}
+#footer .atas .temukan-mungkin .p2:hover {
+  color: #000000;
+}
+#footer .atas .sosmed-mungkin {
+  position: relative;
+  left: 885.75px;
+  bottom: 295px;
+  width: 295.25px;
+  height: 104px;
+}
+#footer .atas .sosmed-mungkin h6 {
+  width: 295.25px;
+  height: 32px;
+  font-size: 21px;
+}
+#footer .atas .sosmed-mungkin h6:hover {
+  color: #000000;
+}
+#footer .atas .sosmed-mungkin .img-1 {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  left: 10px;
+  top: 20px;
+}
+#footer .atas .sosmed-mungkin .img-2 {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  left: 70px;
+  bottom: 30px;
+}
+#footer .atas .sosmed-mungkin .img-3 {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  left: 130px;
+  bottom: 80px;
+}
+#footer .border-doang {
+  position: relative;
+  width: 1182px;
+  top: 50px;
+  left: 113px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+#footer .bawah {
+  position: relative;
+  width: 1182px;
+  height: 78px;
+  left: 113px;
+  top: 100px;
+  color: #FFFFFF;
+}
+#footer .bawah .garis-bawah {
+  text-decoration: none;
+  position: relative;
+  width: 210px;
+  height: 78px;
+  gap: 14px;
+}
+#footer .bawah .garis-bawah .p1 {
+  width: 210px;
+  height: 32px;
+  font-size: 21px;
+}
+#footer .bawah .garis-bawah .p2 {
+  width: 210px;
+  height: 32px;
+  font-size: 21px;
+}
+#footer .bawah .bahasa {
+  position: relative;
+  width: 375.03px;
+  height: 56px;
+  bottom: 40px;
+}
+#footer .bawah .bahasa img {
+  position: relative;
+  bottom: 20px;
+  width: 44.12px;
+  height: 44.12px;
+  border: 2.12px;
+  left: 800px;
+}
+#footer .bawah .bahasa .container {
+  position: relative;
+  left: 870px;
+  bottom: 75px;
+  background-color: #29679F;
+  height: 56px;
+  width: 313px;
+  border-radius: 9000px;
+}
+#footer .bawah .bahasa .container p {
+  position: relative;
+  top: 15px;
+  left: 10px;
+  text-align: center;
+  width: 160px;
+  height: 31px;
+  font-size: 20.36px;
+}
+#footer .kopi-kanan {
+  position: relative;
+  width: 534px;
+  height: 33px;
+  top: 200px;
+  left: 108px;
+}
+#footer .kopi-kanan p {
+  font-size: 22px;
+}/*# sourceMappingURL=style.css.map */

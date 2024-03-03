@@ -1,0 +1,905 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #15548D;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  z-index: 1000;
+}
+nav .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav .wrap .logo {
+  position: relative;
+  right: 100px;
+  top: 30px;
+}
+nav .wrap .logo img {
+  max-height: 50px;
+}
+nav .wrap .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 200px;
+  top: 30px;
+}
+nav .wrap .menu ul li {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 50px;
+}
+nav .wrap .menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav .wrap .menu ul li a:hover {
+  color: #000000;
+}
+nav .wrap .bt-lg {
+  position: relative;
+  background-color: #108ce4;
+  width: 221px;
+  height: 52px;
+  border-radius: 10px;
+  top: 30px;
+  left: 65px;
+  z-index: 100000;
+}
+nav .wrap .bt-lg a {
+  position: relative;
+  top: -5px;
+  left: 60px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 10px;
+}
+nav .wrap .bt-lg a:hover {
+  color: #000000;
+}
+nav .wrap .bt-lg img {
+  position: relative;
+  top: 10px;
+  right: 130px;
+  max-height: 40px;
+}
+
+#hero-section {
+  background-color: #ffffff;
+  width: 100%;
+  height: 988.09px;
+}
+#hero-section .hero-img {
+  position: relative;
+  width: 509px;
+  height: 562px;
+  top: 82px;
+  left: 900px;
+}
+#hero-section .des-hero {
+  position: relative;
+  width: 672px;
+  height: 124px;
+  left: 130px;
+  bottom: 300px;
+}
+#hero-section .des-hero h1 {
+  font-size: 39px;
+}
+#hero-section .kolom-1, #hero-section .kolom-2 {
+  position: relative;
+  background-color: #ffffff;
+  width: 451px;
+  height: 348px;
+  border-radius: 26.65px;
+  box-shadow: 0px 40px 101.266784668px 0px rgba(0, 0, 0, 0.0784313725);
+}
+#hero-section .kolom-1 h2, #hero-section .kolom-2 h2 {
+  position: relative;
+  left: 60px;
+  top: 70px;
+  color: #29679F;
+  font-size: 26px;
+}
+#hero-section .kolom-1 p, #hero-section .kolom-2 p {
+  position: relative;
+  left: 60px;
+  top: 100px;
+  width: 355px;
+  height: 180px;
+  opacity: 0.9px;
+  color: #000000;
+  font-size: 22px;
+}
+#hero-section .kolom-2 {
+  width: 565px;
+  height: 302px;
+  border-radius: 26.65px;
+}
+#hero-section .kolom-1 {
+  position: relative;
+  bottom: 170px;
+  left: 130px;
+}
+#hero-section .kolom-2 {
+  position: relative;
+  bottom: 350px;
+  left: 850px;
+}
+
+#penjelasan-section .penjelasan {
+  position: relative;
+  top: 100px;
+  background-color: #29679F;
+  width: 100%;
+  height: 473.5px;
+}
+#penjelasan-section .penjelasan .container p {
+  top: 100px;
+  position: relative;
+  left: 150px;
+  text-align: center;
+  line-height: 43.2px;
+  width: 1068px;
+  height: 172px;
+  font-size: 27px;
+  color: #FFFFFF;
+}
+#penjelasan-section .penjelasan img {
+  position: relative;
+  left: 100px;
+  bottom: 170px;
+  width: 1401px;
+  height: 473.5px;
+}
+
+#goal-section {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 760px;
+}
+#goal-section .goal-op {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  left: 670px;
+  top: 100px;
+  width: 589px;
+}
+#goal-section .goal-deskripsi {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 150px;
+  left: 490px;
+  width: 589px;
+}
+#goal-section .goal-deskripsi h1 {
+  position: relative;
+  left: 20px;
+  font-size: 34px;
+}
+#goal-section .goal-1, #goal-section .goal-2, #goal-section .goal-3 {
+  background-color: #FFFFFF;
+  width: 370px;
+  height: 420px;
+  border-radius: 36px;
+  border: 0.97px solid #DDDDDD;
+}
+#goal-section .goal-1 .container, #goal-section .goal-2 .container, #goal-section .goal-3 .container {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  background-color: #f2f2f2;
+  width: 135px;
+  height: 135px;
+  border-radius: 1000px;
+}
+#goal-section .goal-1 .container img, #goal-section .goal-2 .container img, #goal-section .goal-3 .container img {
+  position: relative;
+  top: 10px;
+  left: 20px;
+  width: 90px;
+  height: 90px;
+}
+#goal-section .goal-1 h2, #goal-section .goal-2 h2, #goal-section .goal-3 h2 {
+  position: relative;
+  left: 40px;
+  top: 80px;
+  font-size: 25px;
+  text-align: center;
+  width: 254px;
+  height: 35px;
+}
+#goal-section .goal-1 p, #goal-section .goal-2 p, #goal-section .goal-3 p {
+  position: relative;
+  left: 20px;
+  text-align: center;
+  top: 90px;
+  font-size: 20px;
+  width: 318px;
+  height: 112px;
+}
+#goal-section .goal-1 {
+  position: relative;
+  top: 40px;
+  left: 130px;
+  border: 0.97px solid #DDDDDD;
+}
+#goal-section .goal-2 {
+  position: relative;
+  bottom: 375px;
+  left: 600px;
+  border: 0.97px solid #DDDDDD;
+}
+#goal-section .goal-3 {
+  position: relative;
+  bottom: 800px;
+  left: 1050px;
+  border: 0.97px solid #DDDDDD;
+}
+
+#milestone-section {
+  background-color: #F7F8FD;
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+#milestone-section .mile-op {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  left: 650px;
+  top: 40px;
+  width: 589px;
+}
+#milestone-section .mile-deskripsi {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 90px;
+  left: 590px;
+  width: 589px;
+}
+#milestone-section .mile-deskripsi h1 {
+  position: relative;
+  left: 20px;
+  font-size: 34px;
+}
+#milestone-section .container-content {
+  position: relative;
+  width: 827.4px;
+  height: 390px;
+  top: 53px;
+  left: 336px;
+  border-radius: 90px;
+}
+#milestone-section .container-content .scroll {
+  position: relative;
+  width: 10px;
+  height: 390px;
+  left: 150px;
+  border-radius: 90px;
+}
+#milestone-section .container-content .scroll .panjang {
+  position: relative;
+  width: 390px;
+  height: 0px;
+  top: 192px;
+  right: 192px;
+  border: 2px solid #DDDDDD;
+  transform: rotate(90deg);
+}
+#milestone-section .container-content .scroll .pendek {
+  position: relative;
+  width: 10px;
+  height: 70px;
+  top: 50px;
+  border-radius: 90px;
+  background-color: #29679F;
+}
+#milestone-section .container-content .content-1, #milestone-section .container-content .content-2 {
+  width: 827.4px;
+  height: 160px;
+  color: #000000;
+}
+#milestone-section .container-content .content-1 h3, #milestone-section .container-content .content-2 h3 {
+  position: relative;
+  top: 60px;
+  width: 73px;
+  height: 45px;
+  font-size: 32px;
+}
+#milestone-section .container-content .content-1 img, #milestone-section .container-content .content-2 img {
+  position: relative;
+  left: 200px;
+  bottom: 45px;
+  width: 262.4px;
+  height: 160px;
+}
+#milestone-section .container-content .content-1 p, #milestone-section .container-content .content-2 p {
+  position: relative;
+  left: 490px;
+  bottom: 170px;
+  width: 349px;
+  height: 96px;
+  font-size: 17px;
+}
+#milestone-section .content-1 {
+  position: relative;
+  bottom: 370px;
+}
+#milestone-section .content-2 {
+  position: relative;
+  bottom: 350px;
+}
+#milestone-section .bt-wrap {
+  position: relative;
+  left: 540px;
+  top: 100px;
+}
+#milestone-section .bt-wrap .custom-button {
+  width: 351px;
+  height: 72px;
+  border-radius: 88.1px;
+  background-color: #FAC568;
+  border: #F8F8F8;
+  font-size: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+}
+#milestone-section .bt-wrap .custom-button:hover {
+  background-color: #fff1d8; /* Warna saat tombol dihover */
+}
+
+#project-section {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+#project-section .project-op {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  left: 630px;
+  top: 10px;
+  width: 589px;
+}
+#project-section .project-deskripsi {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 70px;
+  left: 570px;
+  width: 589px;
+}
+#project-section .project-deskripsi h1 {
+  position: relative;
+  left: 20px;
+  font-size: 34px;
+}
+#project-section .project-content {
+  position: relative;
+  left: 170px;
+  top: 100px;
+  height: 380px;
+}
+#project-section .project-content .container {
+  position: relative;
+}
+#project-section .project-content .container img {
+  width: 1182px;
+  height: 380px;
+  border-radius: 52px;
+}
+#project-section .project-content .deskripsi-content {
+  position: relative;
+  bottom: 280px;
+  width: 618.55px;
+  height: 169.36px;
+  left: 101px;
+}
+#project-section .project-content .deskripsi-content h4 {
+  font-size: 22px;
+  font-weight: 500px;
+}
+#project-section .project-content .deskripsi-content h5 {
+  position: relative;
+  top: 30px;
+  font-size: 53px;
+  font-weight: 600px;
+  color: #333333;
+}
+#project-section .project-content .deskripsi-content p {
+  position: relative;
+  top: 45px;
+  color: #404040;
+  font-size: 32px;
+  font-weight: 300px;
+}
+#project-section .project-content .deskripsi-content .lihat-detail {
+  position: relative;
+  left: 860px;
+  width: 148px;
+  height: 29px;
+}
+#project-section .project-content .deskripsi-content .lihat-detail button {
+  color: #F7F8FD;
+  font-size: xx-large;
+  position: relative;
+  top: 50px;
+  right: 70px;
+  background-color: #333333;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+}
+#project-section .project-content .deskripsi-content .lihat-detail button:hover {
+  background-color: #ffe7be; /* Warna saat tombol dihover */
+}
+#project-section .project-content .deskripsi-content .lihat-detail h6 {
+  position: relative;
+  text-align: right;
+  font-size: 28.71px;
+  font-weight: 400px;
+  color: #333333;
+}
+#project-section .project-content .button-img .button-kanan {
+  position: relative;
+  bottom: 400px;
+  left: 1130px;
+  background-color: #FAC568;
+  height: 96px;
+  text-align: center;
+  font-size: 70px;
+  width: 96px;
+  border-radius: 100%;
+  border: #ffffff;
+  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+}
+#project-section .project-content .button-img .button-kanan:hover {
+  background-color: #c6ab7c; /* Warna saat tombol dihover */
+}
+#project-section .project-content .button-img .button-kiri {
+  position: relative;
+  bottom: 400px;
+  right: 150px;
+  background-color: #FAC568;
+  height: 96px;
+  text-align: center;
+  font-size: 70px;
+  width: 96px;
+  border-radius: 100%;
+  border: #ffffff;
+  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+}
+#project-section .project-content .button-img .button-kanan:hover {
+  background-color: #c6ab7c; /* Warna saat tombol dihover */
+}
+
+#testimoni-section {
+  background-color: #F7F8FD;
+  position: relative;
+  width: 100%;
+  height: 690px;
+}
+#testimoni-section .testi-op {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  left: 150px;
+  top: 50px;
+  width: 589px;
+}
+#testimoni-section .testi-op h2 {
+  position: relative;
+  left: 20px;
+  font-size: 16px;
+}
+#testimoni-section .testimoni-deskripsi {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 70px;
+  left: 130px;
+  width: 589px;
+}
+#testimoni-section .testimoni-deskripsi h1 {
+  position: relative;
+  left: 20px;
+  font-size: 34px;
+}
+#testimoni-section .testi-img {
+  position: relative;
+  left: 955px;
+}
+#testimoni-section .quote-content {
+  position: relative;
+  left: 130px;
+  width: 600px;
+  height: 190px;
+  bottom: 500px;
+}
+#testimoni-section .quote-content img {
+  position: relative;
+  width: 44.64px;
+  height: 44px;
+}
+#testimoni-section .quote-content p {
+  position: relative;
+  left: 80px;
+  bottom: 40px;
+  width: 360.33px;
+  height: 193px;
+  font-size: 26px;
+}
+#testimoni-section .clien-profile {
+  position: relative;
+  left: 130px;
+  width: 385.62px;
+  height: 150.64px;
+  bottom: 450px;
+}
+#testimoni-section .clien-profile img {
+  width: 90px;
+  height: 90px;
+  border-radius: 78.26px;
+}
+#testimoni-section .clien-profile h3 {
+  position: relative;
+  left: 130px;
+  font-size: 27px;
+  bottom: 80px;
+}
+#testimoni-section .clien-profile p {
+  position: relative;
+  left: 130px;
+  font-size: 27px;
+  bottom: 70px;
+}
+
+#hubkam-section {
+  background-color: #FFFAF2;
+  position: relative;
+  width: 100%;
+  height: 740px;
+}
+#hubkam-section .des-hub {
+  position: relative;
+  top: 300px;
+  width: 460px;
+  height: 296px;
+  left: 140px;
+}
+#hubkam-section .des-hub .hubkam-op {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#hubkam-section .des-hub .hubkam-op h2 {
+  position: relative;
+  left: 20px;
+  font-size: 16px;
+}
+#hubkam-section .des-hub .deskripsi-hubkam {
+  position: relative;
+  margin-top: 40px;
+  width: 460px;
+  height: 296px;
+}
+#hubkam-section .des-hub .deskripsi-hubkam h1 {
+  width: 460px;
+  position: relative;
+  font-size: 34px;
+}
+#hubkam-section .des-hub .deskripsi-hubkam p {
+  color: #052925;
+  position: relative;
+  top: 30px;
+  width: 460px;
+  height: 108px;
+  font-size: 20px;
+}
+#hubkam-section .kolom-konsultasi {
+  position: relative;
+  bottom: 150px;
+  left: 900px;
+  background-color: #F8F8F8;
+  width: 518px;
+  height: 500px;
+  border-radius: 20px;
+}
+#hubkam-section .kolom-konsultasi .form {
+  width: 438px;
+  height: 88px;
+}
+#hubkam-section .kolom-konsultasi .form label {
+  position: relative;
+  top: 60px;
+  left: 40px;
+  font-size: 17px;
+}
+#hubkam-section .kolom-konsultasi .form input {
+  position: relative;
+  top: 60px;
+  left: 40px;
+  width: 438px;
+  height: 53px;
+  padding: 14px, 18px, 14px, 18px;
+  border-radius: 12px;
+  border: 1px solid #CCCCCC;
+}
+#hubkam-section .kolom-konsultasi .form-aksi input {
+  position: relative;
+  top: 60px;
+  left: 40px;
+  width: 438px;
+  height: 72.04px;
+  padding: 15px, 10px, 15px, 10px;
+  border-radius: 9000px;
+  gap: 10px;
+  border: #F8F8F8;
+  background-color: #FAC568;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+}
+#hubkam-section .kolom-konsultasi .form-aksi input:hover {
+  background-color: #ffe7be; /* Warna saat tombol dihover */
+}
+
+#footer {
+  background-color: #15548D;
+  width: 100%;
+  height: 740px;
+  color: #ffffff;
+}
+#footer .atas {
+  position: relative;
+  width: 1182px;
+  height: 305px;
+  left: 113px;
+  top: 100px;
+}
+#footer .atas .logo {
+  position: relative;
+}
+#footer .atas .logo img {
+  width: 192.4px;
+  height: 65px;
+  top: 71px;
+  left: 114px;
+}
+#footer .atas .navbar-mungkin {
+  position: relative;
+  top: 40px;
+  width: 295.25px;
+  height: 84px;
+}
+#footer .atas .navbar-mungkin h6 {
+  width: 295.25px;
+  height: 32px;
+  font-size: 21px;
+}
+#footer .atas .navbar-mungkin h6:hover {
+  color: #000000;
+}
+#footer .atas .navbar-mungkin p {
+  width: 195.58px;
+  height: 32px;
+  top: 52px;
+}
+#footer .atas .navbar-mungkin p:hover {
+  color: #000000;
+}
+#footer .atas .perusahaan-mungkin {
+  position: relative;
+  left: 295.25px;
+  width: 295.25px;
+  height: 125px;
+  bottom: 44px;
+}
+#footer .atas .perusahaan-mungkin h6 {
+  width: 295.25px;
+  height: 32px;
+  font-size: 21px;
+}
+#footer .atas .perusahaan-mungkin h6:hover {
+  color: #000000;
+}
+#footer .atas .perusahaan-mungkin .p1 {
+  width: 295.25px;
+  height: 32px;
+  top: 52px;
+  left: 295.25px;
+  font-size: 21px;
+}
+#footer .atas .perusahaan-mungkin .p1:hover {
+  color: #000000;
+}
+#footer .atas .perusahaan-mungkin .p2 {
+  width: 272.18px;
+  height: 32px;
+  top: 93px;
+  left: 295.25px;
+  font-size: 21px;
+}
+#footer .atas .perusahaan-mungkin .p2:hover {
+  color: #000000;
+}
+#footer .atas .temukan-mungkin {
+  position: relative;
+  left: 590.5px;
+  width: 295.25px;
+  height: 125px;
+  bottom: 169px;
+}
+#footer .atas .temukan-mungkin h6 {
+  width: 295.25px;
+  height: 32px;
+  font-size: 21px;
+}
+#footer .atas .temukan-mungkin h6:hover {
+  color: #000000;
+}
+#footer .atas .temukan-mungkin .p1 {
+  width: 295.25px;
+  height: 32px;
+  top: 52px;
+  left: 295.25px;
+  font-size: 21px;
+}
+#footer .atas .temukan-mungkin .p1:hover {
+  color: #000000;
+}
+#footer .atas .temukan-mungkin .p2 {
+  width: 272.18px;
+  height: 32px;
+  font-weight: 100;
+  top: 93px;
+  left: 295.25px;
+  font-size: 21px;
+}
+#footer .atas .temukan-mungkin .p2:hover {
+  color: #000000;
+}
+#footer .atas .sosmed-mungkin {
+  position: relative;
+  left: 885.75px;
+  bottom: 295px;
+  width: 295.25px;
+  height: 104px;
+}
+#footer .atas .sosmed-mungkin h6 {
+  width: 295.25px;
+  height: 32px;
+  font-size: 21px;
+}
+#footer .atas .sosmed-mungkin h6:hover {
+  color: #000000;
+}
+#footer .atas .sosmed-mungkin .img-1 {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  left: 10px;
+  top: 20px;
+}
+#footer .atas .sosmed-mungkin .img-2 {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  left: 70px;
+  bottom: 30px;
+}
+#footer .atas .sosmed-mungkin .img-3 {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  left: 130px;
+  bottom: 80px;
+}
+#footer .border-doang {
+  position: relative;
+  width: 1182px;
+  top: 50px;
+  left: 113px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+#footer .bawah {
+  position: relative;
+  width: 1182px;
+  height: 78px;
+  left: 113px;
+  top: 100px;
+  color: #FFFFFF;
+}
+#footer .bawah .garis-bawah {
+  text-decoration: none;
+  position: relative;
+  width: 210px;
+  height: 78px;
+  gap: 14px;
+}
+#footer .bawah .garis-bawah .p1 {
+  width: 210px;
+  height: 32px;
+  font-size: 21px;
+}
+#footer .bawah .garis-bawah .p2 {
+  width: 210px;
+  height: 32px;
+  font-size: 21px;
+}
+#footer .bawah .bahasa {
+  position: relative;
+  width: 375.03px;
+  height: 56px;
+  bottom: 40px;
+}
+#footer .bawah .bahasa img {
+  position: relative;
+  bottom: 20px;
+  width: 44.12px;
+  height: 44.12px;
+  border: 2.12px;
+  left: 800px;
+}
+#footer .bawah .bahasa .container {
+  position: relative;
+  left: 870px;
+  bottom: 75px;
+  background-color: #29679F;
+  height: 56px;
+  width: 313px;
+  border-radius: 9000px;
+}
+#footer .bawah .bahasa .container p {
+  position: relative;
+  top: 15px;
+  left: 10px;
+  text-align: center;
+  width: 160px;
+  height: 31px;
+  font-size: 20.36px;
+}
+#footer .kopi-kanan {
+  position: relative;
+  width: 534px;
+  height: 33px;
+  top: 200px;
+  left: 108px;
+}
+#footer .kopi-kanan p {
+  font-size: 22px;
+}/*# sourceMappingURL=tentang.css.map */
