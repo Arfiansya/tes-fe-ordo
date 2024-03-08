@@ -1,9 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    max-width: 1440px;
 }
-
-// ===NAVBAR===
 
 nav {
     background-color: #15548D; 
@@ -11,19 +10,20 @@ nav {
     position: fixed; 
     width: 100%; 
     height: 120px;
-    z-index: 1000; 
+    z-index: 100; 
+    top: 0;
     .wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        max-width: 1200px;
-        margin: 0 auto;
+        max-width: 100%;
         .logo {
-            position: relative;
-            right: 100px;
-            top: 30px;
+            position: absolute;
+            left: 61px;
+            top: 35px;
             img {
-                max-height: 50px; 
+                height: 50px;
+                width: 148px;
             }
         }
         .menu {
@@ -31,13 +31,15 @@ nav {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
-                position: relative;
-                right: 200px;
-                top: 30px;
+                position: absolute;
+                left: 300px;
+                top: 50px;
                 li {
                     font-size: 20px;
                     display: inline-block;
-                    margin-right: 50px; 
+                    margin-right: 50px;
+                    font-family: "Outfit", sans-serif;
+                    font-weight: 500;
                     a {
                         text-decoration: none;
                         color: #ffffff; 
@@ -49,13 +51,13 @@ nav {
             }
         }
         .bt-lg {
-            position: relative;
+            position: absolute;
             background-color: #108ce4;
             width: 221px;
             height: 52px;
             border-radius: 10px;
             top: 30px;
-            left: 65px;
+            right: 100px;
             z-index: 100000;
             a {position: relative;
                 top: -5px;
@@ -105,17 +107,19 @@ nav {
     .kolom-1,.kolom-2{
         position: relative;
         background-color: #ffffff;
-        width: 451px;
+        width: 501px;
         height: 348px;
         border-radius: 26.65px;
         box-shadow: 0px 40px 101.26678466796875px 0px #00000014;
         h2{
-
+            width: fit-content;
             position: relative;
             left: 60px;
             top: 70px;
             color: #29679F;
             font-size: 26px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 700;
         }
 
         p{
@@ -127,6 +131,8 @@ nav {
             opacity: 0.9px;
             color: #000000;
             font-size: 22px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 400;
 
         }
 
@@ -172,14 +178,15 @@ nav {
                 height: 172px;
                 font-size: 27px;
                 color: #FFFFFF;
+                font-family: "Outfit", sans-serif;
+                font-weight: 400;
             }
         }
     
         img{
-            position: relative;
-            left: 100px;
-            bottom: 170px;
-            width: 1401px;
+            position: absolute;
+            top: 0;
+            width: fit-content;
             height: 473.5px;
         }
     }
@@ -213,7 +220,9 @@ nav {
         h1{
             position: relative;
             left: 20px;
-            font-size: 34px;    
+            font-size: 34px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 600;    
         }
     }
 
@@ -249,6 +258,8 @@ nav {
             text-align: center;
             width: 254px;
             height: 35px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 500;
         }
 
         p{
@@ -259,6 +270,8 @@ nav {
             font-size: 20px;
             width: 318px;
             height: 112px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 300;
         }
     }
 
@@ -315,6 +328,8 @@ nav {
             position: relative;
             left: 20px;
             font-size: 34px;    
+            font-family: "Outfit", sans-serif;
+            font-weight: 600;
         }
     }
 
@@ -383,6 +398,8 @@ nav {
                 width: 349px;
                 height: 96px;
                 font-size: 17px;
+                font-family: "Outfit", sans-serif;
+                font-weight: 300;
 
             }
         }
@@ -403,6 +420,7 @@ nav {
 
     .bt-wrap{
         position: relative;
+        width: fit-content;
         left: 540px;
         top: 100px;
         .custom-button{
@@ -414,6 +432,8 @@ nav {
             font-size: 25px;
             font-weight: bold;
             transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+            font-family: "Outfit", sans-serif;
+            font-weight: 500;
         }
         .custom-button:hover {
             background-color: #fff1d8; /* Warna saat tombol dihover */
@@ -424,6 +444,7 @@ nav {
 
 
 //===projects===
+
 #project-section{
     background-color: #ffffff;
     position:relative;
@@ -438,6 +459,8 @@ nav {
         left: 630px;
         top: 10px;
         width: 589px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;   
     }
 
     .project-deskripsi{
@@ -451,18 +474,21 @@ nav {
         h1{
             position: relative;
             left: 20px;
-            font-size: 34px;    
+            font-size: 34px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 600; 
         }
     }
 
     .project-content{
         position: relative;
+        width: 1182px;
         left: 170px;
         top: 100px;
-        height: 380px;
+        height: 380px;  
 
         .container{
-            position: relative;
+            width: 1182px;
             img{
                 width: 1182px;
                 height: 380px;
@@ -478,15 +504,17 @@ nav {
             left: 101px;
             h4{
                 font-size: 22px;
-                font-weight: 500px;
+                font-family: "Outfit", sans-serif;
+                font-weight: 500; 
             }
 
             h5{
                 position: relative;
                 top: 30px;
                 font-size: 53px;
-                font-weight: 600px;
                 color: #333333;
+                font-family: "Outfit", sans-serif;
+                font-weight: 600; 
             }
 
             p{
@@ -495,12 +523,13 @@ nav {
                 color: #404040;
                 font-size: 32px;
                 font-weight: 300px;
+                font-family: "Outfit", sans-serif;
             }
 
             .lihat-detail{
                 position: relative;
                 left: 860px;
-                width: 148px;   
+                width: 148px;
                 height: 29px;
 
                 button{
@@ -517,9 +546,8 @@ nav {
                     cursor: pointer;
                     transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
                 }
-    
                 button:hover {
-                    background-color: #ffe7be; /* Warna saat tombol dihover */
+                    background-color: #fff0d5; /* Warna saat tombol dihover */
                 }
 
                 h6{
@@ -528,6 +556,7 @@ nav {
                     font-size: 28.71px;
                     font-weight: 400px;
                     color: #333333;
+                    font-family: "Outfit", sans-serif;
                 }
             }
         }
@@ -544,10 +573,11 @@ nav {
                 width: 96px;
                 border-radius: 100%;
                 border: #ffffff;
+                cursor: pointer;
                 transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
             }
             .button-kanan:hover {
-                background-color: #c6ab7c; /* Warna saat tombol dihover */
+                background-color: #fff0d5; /* Warna saat tombol dihover */
             }
 
 
@@ -562,12 +592,12 @@ nav {
                 width: 96px;
                 border-radius: 100%;
                 border: #ffffff;
+                cursor: pointer;
                 transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
             }
-            .button-kanan:hover {
-                background-color: #c6ab7c; /* Warna saat tombol dihover */
+            .button-kiri:hover {
+                background-color: #fff0d5; /* Warna saat tombol dihover */
             }
-
         }
     }
 }//project
@@ -590,7 +620,9 @@ nav {
         h2{
             position: relative;
             left: 20px;
-            font-size: 16px;    
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600; 
         }
     }
 
@@ -605,45 +637,44 @@ nav {
         h1{
             position: relative;
             left: 20px;
-            font-size: 34px;    
+            font-size: 34px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 600; 
         }
     }
 
     .testi-img{
-        position: relative;
-        left: 955px;
+        position: absolute;
+        right: 0;
     }
 
     .quote-content
     {
-        position: relative;
-        left: 130px;
+        position: absolute;
+        left: 176.12px;
         width: 600px;
         height: 190px;
-        bottom: 500px;
         img{
-            position: relative;
             width: 44.64px;
             height: 44px;
 
         }
 
         p{
-            position: relative;
-            left: 80px;
-            bottom: 40px;
-            width: 360.33px;
+            width: 600px;
             height: 193px;
             font-size: 26px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 300; 
         }
     }
 
     .clien-profile{
-        position: relative;
-        left: 130px;
+        position: absolute;
+        left: 176.12px;
+        top: 350px;
         width: 385.62px;
         height: 150.64px;
-        bottom: 450px;
 
         img{
             width: 90px;
@@ -652,16 +683,14 @@ nav {
         }
 
         h3{
-            position: relative;
-            left:130px;
             font-size: 27px;
-            bottom: 80px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 600; 
         }
         p{
-            position: relative;
-            left: 130px;
             font-size: 27px ;
-            bottom: 70px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 300; 
         }
     }
 }//testi
@@ -808,6 +837,8 @@ nav {
                 width: 295.25px;
                 height: 32px;
                 font-size: 21px;
+                font-family: "Outfit", sans-serif;
+                font-weight: 600;
                 &:hover {
                     color: #000000; 
                 }
@@ -817,6 +848,8 @@ nav {
                 width: 195.58px;
                 height: 32px;
                 top: 52px;
+                font-family: "Outfit", sans-serif;
+                font-weight: 300;
                 &:hover {
                     color: #000000; 
                 }
@@ -833,6 +866,8 @@ nav {
                 width: 295.25px;
                 height: 32px;
                 font-size: 21px;
+                font-family: "Outfit", sans-serif;
+                font-weight: 500;
                 &:hover {
                     color: #000000; 
                 }
@@ -843,6 +878,8 @@ nav {
                 top: 52px;
                 left: 295.25px;  
                 font-size: 21px;
+                font-family: "Outfit", sans-serif;
+                font-weight: 300;
                 &:hover {
                     color: #000000; 
                 }
@@ -853,6 +890,8 @@ nav {
                 top: 93px;
                 left: 295.25px;
                 font-size: 21px;
+                font-family: "Outfit", sans-serif;
+                font-weight: 300;
                 &:hover {
                     color: #000000; 
                 }
@@ -869,6 +908,8 @@ nav {
                 width: 295.25px;
                 height: 32px;
                 font-size: 21px;
+                font-family: "Outfit", sans-serif;
+                font-weight: 600;
                 &:hover {
                     color: #000000; 
                 }
@@ -879,6 +920,8 @@ nav {
                 top: 52px;
                 left: 295.25px;  
                 font-size: 21px;
+                font-family: "Outfit", sans-serif;
+                font-weight: 300;
                 &:hover {
                     color: #000000; 
                 }
@@ -890,6 +933,8 @@ nav {
                 top: 93px;
                 left: 295.25px;
                 font-size: 21px;
+                font-family: "Outfit", sans-serif;
+                font-weight: 300;
                 &:hover {
                     color: #000000; 
                 }
@@ -906,6 +951,8 @@ nav {
                 width: 295.25px;
                 height: 32px;
                 font-size: 21px;
+                font-family: "Outfit", sans-serif;
+                font-weight: 600;
                 &:hover {
                     color: #000000; 
                 }
@@ -953,6 +1000,8 @@ nav {
         left: 113px;
         top: 100px;
         color: #FFFFFF;
+        font-family: "Outfit", sans-serif;
+        font-weight: 500;
 
         .garis-bawah{
             text-decoration: none;

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  max-width: 1440px;
 }
 
 nav {
@@ -9,35 +10,38 @@ nav {
   position: fixed;
   width: 100%;
   height: 120px;
-  z-index: 1000;
+  z-index: 100;
+  top: 0;
 }
 nav .wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
 }
 nav .wrap .logo {
-  position: relative;
-  right: 100px;
-  top: 30px;
+  position: absolute;
+  left: 61px;
+  top: 35px;
 }
 nav .wrap .logo img {
-  max-height: 50px;
+  height: 50px;
+  width: 148px;
 }
 nav .wrap .menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  position: relative;
-  right: 200px;
-  top: 30px;
+  position: absolute;
+  left: 300px;
+  top: 50px;
 }
 nav .wrap .menu ul li {
   font-size: 20px;
   display: inline-block;
   margin-right: 50px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 nav .wrap .menu ul li a {
   text-decoration: none;
@@ -47,13 +51,13 @@ nav .wrap .menu ul li a:hover {
   color: #000000;
 }
 nav .wrap .bt-lg {
-  position: relative;
+  position: absolute;
   background-color: #108ce4;
   width: 221px;
   height: 52px;
   border-radius: 10px;
   top: 30px;
-  left: 65px;
+  right: 100px;
   z-index: 100000;
 }
 nav .wrap .bt-lg a {
@@ -93,17 +97,17 @@ nav .wrap .bt-lg img {
 .hero-img {
   width: 610px;
   height: 790px;
-  position: relative;
-  left: 925px;
-  z-index: 9000;
+  position: absolute;
+  right: 0;
+  z-index: 10;
 }
 
 .kolom-deskripsi {
   width: 900px;
-  position: relative;
-  bottom: 600px;
-  left: 150px;
-  z-index: 1;
+  position: absolute;
+  z-index: 10;
+  top: 206px;
+  left: 107px;
   color: white;
 }
 
@@ -114,6 +118,8 @@ nav .wrap .bt-lg img {
   margin-top: 50px;
 }
 .hotel-op h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
   position: relative;
   left: 20px;
   font-size: 16px;
@@ -126,15 +132,19 @@ nav .wrap .bt-lg img {
 .deskripsi-hotel h1 {
   font-size: 38px;
   line-height: 59px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 .deskripsi-hotel p {
   font-size: 22px;
   line-height: 35.2px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 
 .bt-wrap {
-  position: relative;
-  top: 20px;
+  position: absolute;
+  top: 320px;
 }
 .bt-wrap .custom-button {
   padding: 10px;
@@ -144,6 +154,8 @@ nav .wrap .bt-lg img {
   border-radius: 1000px;
   font-size: 26px;
   line-height: 35.2px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
   border: 0.97px solid #15548D;
   cursor: pointer;
   transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
@@ -171,6 +183,8 @@ nav .wrap .bt-lg img {
   position: relative;
   left: 20px;
   font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 #workflow-section .deskripsi-workflow {
   position: relative;
@@ -185,6 +199,8 @@ nav .wrap .bt-lg img {
   position: relative;
   left: 20px;
   font-size: 34px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 
 .workflow-1, .workflow-2, .workflow-3, .workflow-4 {
@@ -203,11 +219,15 @@ nav .wrap .bt-lg img {
   font-size: 22px;
   position: relative;
   top: 40px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 .workflow-1 p, .workflow-2 p, .workflow-3 p, .workflow-4 p {
   position: relative;
   font-size: 17px;
   top: 50px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 
 .workflow-1 {
@@ -254,6 +274,8 @@ nav .wrap .bt-lg img {
   position: relative;
   left: 20px;
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 #services-section .deskripsi-services {
   position: relative;
@@ -268,6 +290,8 @@ nav .wrap .bt-lg img {
   position: relative;
   left: 20px;
   font-size: 34px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 
 .services-1, .services-2, .services-3 {
@@ -294,6 +318,8 @@ nav .wrap .bt-lg img {
   height: 72px;
   size: 26px;
   line-height: 36.4px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 .services-1 .custom-button, .services-2 .custom-button, .services-3 .custom-button {
   position: relative;
@@ -306,6 +332,7 @@ nav .wrap .bt-lg img {
   font-size: 17.22px;
   font-weight: 400;
   border: #DDDDDD;
+  font-family: "Outfit", sans-serif;
   cursor: pointer;
   transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
 }
@@ -322,6 +349,7 @@ nav .wrap .bt-lg img {
   font-weight: 600;
   color: #FAC568;
   font-size: 31PX;
+  font-family: "Outfit", sans-serif;
 }
 
 .services-1 {
@@ -349,37 +377,43 @@ nav .wrap .bt-lg img {
   height: 700px;
 }
 #project-section .project-op {
-  position: relative;
+  position: absolute;
+  top: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 50px;
-  left: 630px;
-  top: 10px;
-  width: 589px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+#project-section .project-op h2 {
+  width: 100%;
+  text-align: center;
 }
 #project-section .project-deskripsi {
-  position: relative;
+  position: absolute;
+  top: 60px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 70px;
-  left: 570px;
-  width: 589px;
+  width: 100%;
 }
 #project-section .project-deskripsi h1 {
-  position: relative;
-  left: 20px;
+  width: 100%;
+  text-align: center;
   font-size: 34px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #project-section .project-content {
-  position: relative;
-  left: 170px;
-  top: 100px;
+  position: absolute;
+  width: 1182px;
+  top: 170px;
+  left: 150px;
   height: 380px;
 }
 #project-section .project-content .container {
-  position: relative;
+  width: 1182px;
 }
 #project-section .project-content .container img {
   width: 1182px;
@@ -395,14 +429,16 @@ nav .wrap .bt-lg img {
 }
 #project-section .project-content .deskripsi-content h4 {
   font-size: 22px;
-  font-weight: 500px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 #project-section .project-content .deskripsi-content h5 {
   position: relative;
   top: 30px;
   font-size: 53px;
-  font-weight: 600px;
   color: #333333;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #project-section .project-content .deskripsi-content p {
   position: relative;
@@ -410,6 +446,7 @@ nav .wrap .bt-lg img {
   color: #404040;
   font-size: 32px;
   font-weight: 300px;
+  font-family: "Outfit", sans-serif;
 }
 #project-section .project-content .deskripsi-content .lihat-detail {
   position: relative;
@@ -440,6 +477,7 @@ nav .wrap .bt-lg img {
   font-size: 28.71px;
   font-weight: 400px;
   color: #333333;
+  font-family: "Outfit", sans-serif;
 }
 #project-section .project-content .button-img .button-kanan {
   position: relative;
@@ -496,6 +534,8 @@ nav .wrap .bt-lg img {
   position: relative;
   left: 20px;
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 #testimoni-section .testimoni-deskripsi {
   position: relative;
@@ -510,37 +550,36 @@ nav .wrap .bt-lg img {
   position: relative;
   left: 20px;
   font-size: 34px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #testimoni-section .testi-img {
-  position: relative;
-  left: 955px;
+  position: absolute;
+  right: 0;
 }
 #testimoni-section .quote-content {
-  position: relative;
-  left: 130px;
+  position: absolute;
+  left: 176.12px;
   width: 600px;
   height: 190px;
-  bottom: 500px;
 }
 #testimoni-section .quote-content img {
-  position: relative;
   width: 44.64px;
   height: 44px;
 }
 #testimoni-section .quote-content p {
-  position: relative;
-  left: 80px;
-  bottom: 40px;
-  width: 360.33px;
+  width: 600px;
   height: 193px;
   font-size: 26px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #testimoni-section .clien-profile {
-  position: relative;
-  left: 130px;
+  position: absolute;
+  left: 176.12px;
+  top: 350px;
   width: 385.62px;
   height: 150.64px;
-  bottom: 450px;
 }
 #testimoni-section .clien-profile img {
   width: 90px;
@@ -548,16 +587,14 @@ nav .wrap .bt-lg img {
   border-radius: 78.26px;
 }
 #testimoni-section .clien-profile h3 {
-  position: relative;
-  left: 130px;
   font-size: 27px;
-  bottom: 80px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #testimoni-section .clien-profile p {
-  position: relative;
-  left: 130px;
   font-size: 27px;
-  bottom: 70px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 
 #hubkam-section {
@@ -583,6 +620,8 @@ nav .wrap .bt-lg img {
   position: relative;
   left: 20px;
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 #hubkam-section .des-hub .deskripsi-hubkam {
   position: relative;
@@ -594,6 +633,8 @@ nav .wrap .bt-lg img {
   width: 460px;
   position: relative;
   font-size: 34px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 #hubkam-section .des-hub .deskripsi-hubkam p {
   color: #052925;
@@ -602,6 +643,8 @@ nav .wrap .bt-lg img {
   width: 460px;
   height: 108px;
   font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 #hubkam-section .kolom-konsultasi {
   position: relative;
@@ -611,6 +654,8 @@ nav .wrap .bt-lg img {
   width: 518px;
   height: 500px;
   border-radius: 20px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 #hubkam-section .kolom-konsultasi .form {
   width: 438px;
@@ -684,6 +729,8 @@ nav .wrap .bt-lg img {
   width: 295.25px;
   height: 32px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #footer .atas .navbar-mungkin h6:hover {
   color: #000000;
@@ -692,6 +739,8 @@ nav .wrap .bt-lg img {
   width: 195.58px;
   height: 32px;
   top: 52px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #footer .atas .navbar-mungkin p:hover {
   color: #000000;
@@ -707,6 +756,8 @@ nav .wrap .bt-lg img {
   width: 295.25px;
   height: 32px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 #footer .atas .perusahaan-mungkin h6:hover {
   color: #000000;
@@ -717,6 +768,8 @@ nav .wrap .bt-lg img {
   top: 52px;
   left: 295.25px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #footer .atas .perusahaan-mungkin .p1:hover {
   color: #000000;
@@ -727,6 +780,8 @@ nav .wrap .bt-lg img {
   top: 93px;
   left: 295.25px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #footer .atas .perusahaan-mungkin .p2:hover {
   color: #000000;
@@ -742,6 +797,8 @@ nav .wrap .bt-lg img {
   width: 295.25px;
   height: 32px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #footer .atas .temukan-mungkin h6:hover {
   color: #000000;
@@ -752,6 +809,8 @@ nav .wrap .bt-lg img {
   top: 52px;
   left: 295.25px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #footer .atas .temukan-mungkin .p1:hover {
   color: #000000;
@@ -763,6 +822,8 @@ nav .wrap .bt-lg img {
   top: 93px;
   left: 295.25px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #footer .atas .temukan-mungkin .p2:hover {
   color: #000000;
@@ -778,6 +839,8 @@ nav .wrap .bt-lg img {
   width: 295.25px;
   height: 32px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #footer .atas .sosmed-mungkin h6:hover {
   color: #000000;
@@ -817,6 +880,8 @@ nav .wrap .bt-lg img {
   left: 113px;
   top: 100px;
   color: #FFFFFF;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 #footer .bawah .garis-bawah {
   text-decoration: none;

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  max-width: 1440px;
 }
 
 nav {
@@ -9,35 +10,38 @@ nav {
   position: fixed;
   width: 100%;
   height: 120px;
-  z-index: 1000;
+  z-index: 100;
+  top: 0;
 }
 nav .wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
 }
 nav .wrap .logo {
-  position: relative;
-  right: 100px;
-  top: 30px;
+  position: absolute;
+  left: 61px;
+  top: 35px;
 }
 nav .wrap .logo img {
-  max-height: 50px;
+  height: 50px;
+  width: 148px;
 }
 nav .wrap .menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  position: relative;
-  right: 200px;
-  top: 30px;
+  position: absolute;
+  left: 300px;
+  top: 50px;
 }
 nav .wrap .menu ul li {
   font-size: 20px;
   display: inline-block;
   margin-right: 50px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 nav .wrap .menu ul li a {
   text-decoration: none;
@@ -47,13 +51,13 @@ nav .wrap .menu ul li a:hover {
   color: #000000;
 }
 nav .wrap .bt-lg {
-  position: relative;
+  position: absolute;
   background-color: #108ce4;
   width: 221px;
   height: 52px;
   border-radius: 10px;
   top: 30px;
-  left: 65px;
+  right: 100px;
   z-index: 100000;
 }
 nav .wrap .bt-lg a {
@@ -100,17 +104,21 @@ nav .wrap .bt-lg img {
 #hero-section .kolom-1, #hero-section .kolom-2 {
   position: relative;
   background-color: #ffffff;
-  width: 451px;
+  width: 501px;
   height: 348px;
   border-radius: 26.65px;
   box-shadow: 0px 40px 101.266784668px 0px rgba(0, 0, 0, 0.0784313725);
 }
 #hero-section .kolom-1 h2, #hero-section .kolom-2 h2 {
+  width: -moz-fit-content;
+  width: fit-content;
   position: relative;
   left: 60px;
   top: 70px;
   color: #29679F;
   font-size: 26px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
 }
 #hero-section .kolom-1 p, #hero-section .kolom-2 p {
   position: relative;
@@ -121,6 +129,8 @@ nav .wrap .bt-lg img {
   opacity: 0.9px;
   color: #000000;
   font-size: 22px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
 }
 #hero-section .kolom-2 {
   width: 565px;
@@ -155,12 +165,14 @@ nav .wrap .bt-lg img {
   height: 172px;
   font-size: 27px;
   color: #FFFFFF;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
 }
 #penjelasan-section .penjelasan img {
-  position: relative;
-  left: 100px;
-  bottom: 170px;
-  width: 1401px;
+  position: absolute;
+  top: 0;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 473.5px;
 }
 
@@ -193,6 +205,8 @@ nav .wrap .bt-lg img {
   position: relative;
   left: 20px;
   font-size: 34px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #goal-section .goal-1, #goal-section .goal-2, #goal-section .goal-3 {
   background-color: #FFFFFF;
@@ -225,6 +239,8 @@ nav .wrap .bt-lg img {
   text-align: center;
   width: 254px;
   height: 35px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 #goal-section .goal-1 p, #goal-section .goal-2 p, #goal-section .goal-3 p {
   position: relative;
@@ -234,6 +250,8 @@ nav .wrap .bt-lg img {
   font-size: 20px;
   width: 318px;
   height: 112px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #goal-section .goal-1 {
   position: relative;
@@ -283,6 +301,8 @@ nav .wrap .bt-lg img {
   position: relative;
   left: 20px;
   font-size: 34px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #milestone-section .container-content {
   position: relative;
@@ -342,6 +362,8 @@ nav .wrap .bt-lg img {
   width: 349px;
   height: 96px;
   font-size: 17px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #milestone-section .content-1 {
   position: relative;
@@ -353,6 +375,8 @@ nav .wrap .bt-lg img {
 }
 #milestone-section .bt-wrap {
   position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
   left: 540px;
   top: 100px;
 }
@@ -365,6 +389,8 @@ nav .wrap .bt-lg img {
   font-size: 25px;
   font-weight: bold;
   transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 #milestone-section .bt-wrap .custom-button:hover {
   background-color: #fff1d8; /* Warna saat tombol dihover */
@@ -385,6 +411,8 @@ nav .wrap .bt-lg img {
   left: 630px;
   top: 10px;
   width: 589px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 #project-section .project-deskripsi {
   position: relative;
@@ -399,15 +427,18 @@ nav .wrap .bt-lg img {
   position: relative;
   left: 20px;
   font-size: 34px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #project-section .project-content {
   position: relative;
+  width: 1182px;
   left: 170px;
   top: 100px;
   height: 380px;
 }
 #project-section .project-content .container {
-  position: relative;
+  width: 1182px;
 }
 #project-section .project-content .container img {
   width: 1182px;
@@ -423,14 +454,16 @@ nav .wrap .bt-lg img {
 }
 #project-section .project-content .deskripsi-content h4 {
   font-size: 22px;
-  font-weight: 500px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 #project-section .project-content .deskripsi-content h5 {
   position: relative;
   top: 30px;
   font-size: 53px;
-  font-weight: 600px;
   color: #333333;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #project-section .project-content .deskripsi-content p {
   position: relative;
@@ -438,6 +471,7 @@ nav .wrap .bt-lg img {
   color: #404040;
   font-size: 32px;
   font-weight: 300px;
+  font-family: "Outfit", sans-serif;
 }
 #project-section .project-content .deskripsi-content .lihat-detail {
   position: relative;
@@ -460,7 +494,7 @@ nav .wrap .bt-lg img {
   transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
 }
 #project-section .project-content .deskripsi-content .lihat-detail button:hover {
-  background-color: #ffe7be; /* Warna saat tombol dihover */
+  background-color: #fff0d5; /* Warna saat tombol dihover */
 }
 #project-section .project-content .deskripsi-content .lihat-detail h6 {
   position: relative;
@@ -468,6 +502,7 @@ nav .wrap .bt-lg img {
   font-size: 28.71px;
   font-weight: 400px;
   color: #333333;
+  font-family: "Outfit", sans-serif;
 }
 #project-section .project-content .button-img .button-kanan {
   position: relative;
@@ -480,10 +515,11 @@ nav .wrap .bt-lg img {
   width: 96px;
   border-radius: 100%;
   border: #ffffff;
+  cursor: pointer;
   transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
 }
 #project-section .project-content .button-img .button-kanan:hover {
-  background-color: #c6ab7c; /* Warna saat tombol dihover */
+  background-color: #fff0d5; /* Warna saat tombol dihover */
 }
 #project-section .project-content .button-img .button-kiri {
   position: relative;
@@ -496,10 +532,11 @@ nav .wrap .bt-lg img {
   width: 96px;
   border-radius: 100%;
   border: #ffffff;
+  cursor: pointer;
   transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
 }
-#project-section .project-content .button-img .button-kanan:hover {
-  background-color: #c6ab7c; /* Warna saat tombol dihover */
+#project-section .project-content .button-img .button-kiri:hover {
+  background-color: #fff0d5; /* Warna saat tombol dihover */
 }
 
 #testimoni-section {
@@ -522,6 +559,8 @@ nav .wrap .bt-lg img {
   position: relative;
   left: 20px;
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 #testimoni-section .testimoni-deskripsi {
   position: relative;
@@ -536,37 +575,36 @@ nav .wrap .bt-lg img {
   position: relative;
   left: 20px;
   font-size: 34px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #testimoni-section .testi-img {
-  position: relative;
-  left: 955px;
+  position: absolute;
+  right: 0;
 }
 #testimoni-section .quote-content {
-  position: relative;
-  left: 130px;
+  position: absolute;
+  left: 176.12px;
   width: 600px;
   height: 190px;
-  bottom: 500px;
 }
 #testimoni-section .quote-content img {
-  position: relative;
   width: 44.64px;
   height: 44px;
 }
 #testimoni-section .quote-content p {
-  position: relative;
-  left: 80px;
-  bottom: 40px;
-  width: 360.33px;
+  width: 600px;
   height: 193px;
   font-size: 26px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #testimoni-section .clien-profile {
-  position: relative;
-  left: 130px;
+  position: absolute;
+  left: 176.12px;
+  top: 350px;
   width: 385.62px;
   height: 150.64px;
-  bottom: 450px;
 }
 #testimoni-section .clien-profile img {
   width: 90px;
@@ -574,16 +612,14 @@ nav .wrap .bt-lg img {
   border-radius: 78.26px;
 }
 #testimoni-section .clien-profile h3 {
-  position: relative;
-  left: 130px;
   font-size: 27px;
-  bottom: 80px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #testimoni-section .clien-profile p {
-  position: relative;
-  left: 130px;
   font-size: 27px;
-  bottom: 70px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 
 #hubkam-section {
@@ -710,6 +746,8 @@ nav .wrap .bt-lg img {
   width: 295.25px;
   height: 32px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #footer .atas .navbar-mungkin h6:hover {
   color: #000000;
@@ -718,6 +756,8 @@ nav .wrap .bt-lg img {
   width: 195.58px;
   height: 32px;
   top: 52px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #footer .atas .navbar-mungkin p:hover {
   color: #000000;
@@ -733,6 +773,8 @@ nav .wrap .bt-lg img {
   width: 295.25px;
   height: 32px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 #footer .atas .perusahaan-mungkin h6:hover {
   color: #000000;
@@ -743,6 +785,8 @@ nav .wrap .bt-lg img {
   top: 52px;
   left: 295.25px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #footer .atas .perusahaan-mungkin .p1:hover {
   color: #000000;
@@ -753,6 +797,8 @@ nav .wrap .bt-lg img {
   top: 93px;
   left: 295.25px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #footer .atas .perusahaan-mungkin .p2:hover {
   color: #000000;
@@ -768,6 +814,8 @@ nav .wrap .bt-lg img {
   width: 295.25px;
   height: 32px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #footer .atas .temukan-mungkin h6:hover {
   color: #000000;
@@ -778,6 +826,8 @@ nav .wrap .bt-lg img {
   top: 52px;
   left: 295.25px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #footer .atas .temukan-mungkin .p1:hover {
   color: #000000;
@@ -789,6 +839,8 @@ nav .wrap .bt-lg img {
   top: 93px;
   left: 295.25px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 #footer .atas .temukan-mungkin .p2:hover {
   color: #000000;
@@ -804,6 +856,8 @@ nav .wrap .bt-lg img {
   width: 295.25px;
   height: 32px;
   font-size: 21px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 #footer .atas .sosmed-mungkin h6:hover {
   color: #000000;
@@ -843,6 +897,8 @@ nav .wrap .bt-lg img {
   left: 113px;
   top: 100px;
   color: #FFFFFF;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 #footer .bawah .garis-bawah {
   text-decoration: none;
