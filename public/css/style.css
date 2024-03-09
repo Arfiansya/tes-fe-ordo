@@ -353,21 +353,21 @@ nav .wrap .bt-lg img {
 }
 
 .services-1 {
-  position: relative;
-  top: 100px;
-  left: 150px;
+  position: absolute;
+  margin-top: 80px;
+  left: 100px;
 }
 
 .services-2 {
-  position: relative;
-  bottom: 270px;
-  left: 600px;
+  position: absolute;
+  margin-top: 80px;
+  left: 540px;
 }
 
 .services-3 {
-  position: relative;
-  bottom: 640px;
-  left: 1050px;
+  position: absolute;
+  margin-top: 80px;
+  right: 100px;
 }
 
 #project-section {
