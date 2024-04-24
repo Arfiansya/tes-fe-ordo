@@ -106,32 +106,37 @@
             <h1>Apa Saja yang Bisa Kami Bantu ?</h1>
         </div>
 
-        <div class="services-1">
-            <img src="{{ asset('assets/icon/services-img-1.png') }}" alt="">
-            <h2>Revenue Management Service</h2>
-            <div class="ser-wrap-1">
-                <button class="custom-button">saya tertarik</button>
+        <div class="services-card">
+
+            <div class="services-1">
+                <img src="{{ asset('assets/icon/services-img-1.png') }}" alt="">
+                <h2>Revenue Management Service</h2>
+                <div class="ser-wrap-1">
+                    <button class="custom-button">saya tertarik</button>
+                </div>
+                <h3>01</h3>
             </div>
-            <h3>01</h3>
+
+            <div class="services-2">
+                <img src="{{ asset('assets/icon/services-img-2.png') }}" alt="">
+                <h2>Full Manage Service</h2>
+                <div class="ser-wrap-2">
+                    <button class="custom-button">saya tertarik</button>
+                </div>
+                <h3>02</h3>
+            </div>
+
+            <div class="services-3">
+                <img src="{{ asset('assets/icon/services-img-3.png') }}" alt="">
+                <h2>Asset Monetize Service</h2>
+                <div class="ser-wrap-3">
+                    <button class="custom-button">saya tertarik</button>
+                </div>
+                <h3>03</h3>
+            </div>
+            
         </div>
 
-        <div class="services-2">
-            <img src="{{ asset('assets/icon/services-img-2.png') }}" alt="">
-            <h2>Full Manage Service</h2>
-            <div class="ser-wrap-2">
-                <button class="custom-button">saya tertarik</button>
-            </div>
-            <h3>02</h3>
-        </div>
-
-        <div class="services-3">
-            <img src="{{ asset('assets/icon/services-img-3.png') }}" alt="">
-            <h2>Asset Monetize Service</h2>
-            <div class="ser-wrap-3">
-                <button class="custom-button">saya tertarik</button>
-            </div>
-            <h3>03</h3>
-        </div>
     </section>
 
     <!--=== projects-section ===-->

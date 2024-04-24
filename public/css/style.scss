@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    max-width: 1440px;
-
     
 }
 
@@ -373,23 +371,14 @@ nav {
 
 }
 
-.services-1{
-    position: absolute;
-    margin-top: 80px;
-    left: 100px;
+.services-card{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 7rem;
+    
 }
 
-.services-2{
-    position: absolute;
-    margin-top: 80px;
-    left: 540px;
-}
-
-.services-3{
-    position: absolute;
-    margin-top: 80px;
-    right: 100px;
-}//services
+//services
 
 
 //===projects===
@@ -431,11 +420,10 @@ nav {
     }
 
     .project-content{
-        position: absolute;
         width: 1182px;
-        top: 170px;
-        left: 150px;
-        height: 380px;  
+        height: 380px; 
+        margin: auto ;
+        padding: 10rem; 
 
         .container{
             width: 1182px;

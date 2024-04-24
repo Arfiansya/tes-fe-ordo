@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  max-width: 1440px;
 }
 
 nav {
@@ -248,23 +247,10 @@ nav .wrap .bt-lg img {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
 }
-#goal-section .goal-1 {
-  position: absolute;
-  margin-top: 50px;
-  left: 100px;
-  border: 0.97px solid #DDDDDD;
-}
-#goal-section .goal-2 {
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 540px;
-  border: 0.97px solid #DDDDDD;
-}
-#goal-section .goal-3 {
-  position: absolute;
-  margin-top: 50px;
-  right: 100px;
-  border: 0.97px solid #DDDDDD;
+#goal-section .goal-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 7rem;
 }
 
 #milestone-section {

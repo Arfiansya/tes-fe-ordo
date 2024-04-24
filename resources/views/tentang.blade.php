@@ -90,6 +90,7 @@
             <h1>Tujuan Yang Berusaha Kami Capai</h1>
         </div>
 
+        <div class="goal-card">
         <div class="goal-1">
             <div class="container">
                 <img src="{{ asset('assets/logo/goal-1.png') }}" alt="">
@@ -113,6 +114,9 @@
             <h2>Peningkatan Revenue</h2>
             <p>Yang pada akhirnya memberikan nilai positif pada pendapatan mitra melalui fase-fase peningkatan yang telah dijalankan</p>
         </div>
+
+        </div>
+
 
     </section>
 

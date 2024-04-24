@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    max-width: 1440px;
     
 }
 
@@ -272,26 +271,14 @@ nav {
     }
 
     //layout
-    .goal-1{
-        position: absolute;
-        margin-top: 50px;
-        left: 100px;
-        border: 0.97px solid #DDDDDD
+
+    .goal-card{
+        display: flex;
+        justify-content: space-between;
+        margin: 5rem 7rem;
+        
     }
 
-    .goal-2{
-        position: absolute;
-        margin-top: 50px;
-        margin-left: 540px;
-        border: 0.97px solid #DDDDDD
-    }
-
-    .goal-3{
-        position: absolute;
-        margin-top: 50px;
-        right: 100px;
-        border: 0.97px solid #DDDDDD
-    }
 }//goal
 
 
