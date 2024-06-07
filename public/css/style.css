@@ -1,930 +1,1000 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
-nav {
-  background-color: #15548D;
-  padding: 10px 0;
+.nav {
   position: fixed;
   width: 100%;
-  height: 120px;
-  z-index: 100;
   top: 0;
+  left: 0;
+  background: transparent;
+  height: 120px;
+  z-index: 1000;
+  transition: background-color 0.3s;
 }
-nav .wrap {
+.nav.scrolled {
+  background-color: #15548D;
+}
+.nav .nav-head {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  max-width: 100%;
+  align-items: center;
+  padding: 0 20px;
 }
-nav .wrap .logo {
+.nav .nav-head .nav-logo {
   position: absolute;
   left: 61px;
-  top: 35px;
-}
-nav .wrap .logo img {
-  height: 50px;
   width: 148px;
+  height: 50px;
 }
-nav .wrap .menu ul {
-  list-style-type: none;
-  margin: 0;
+.nav .nav-head .nav-logo img {
+  width: 100%;
+  height: auto;
+}
+.nav .nav-head .nav-menu {
+  position: relative;
+  left: 270px;
+}
+.nav .nav-head .nav-menu ul {
+  list-style: none;
   padding: 0;
-  position: absolute;
-  left: 300px;
-  top: 50px;
+  margin: 0;
 }
-nav .wrap .menu ul li {
-  font-size: 20px;
+.nav .nav-head .nav-menu ul li {
   display: inline-block;
-  margin-right: 50px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
+  margin-right: 40px;
 }
-nav .wrap .menu ul li a {
+.nav .nav-head .nav-menu ul li a {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.68px;
+  text-align: left;
   text-decoration: none;
   color: #ffffff;
 }
-nav .wrap .menu ul li a:hover {
-  color: #000000;
+.nav .nav-head .nav-menu ul li a:hover {
+  color: #1e1e1e;
 }
-nav .wrap .bt-lg {
-  position: absolute;
-  background-color: #108ce4;
+.nav .nav-button {
+  position: relative;
+  top: 34PX;
+  left: 600px;
   width: 221px;
   height: 52px;
+  gap: 12px;
   border-radius: 10px;
-  top: 30px;
-  right: 100px;
-  z-index: 100000;
+  display: flex;
+  align-items: center;
+  background-color: #29679F;
 }
-nav .wrap .bt-lg a {
-  position: relative;
-  top: -5px;
-  left: 60px;
-  font-size: 20px;
-  text-decoration: none;
-  color: #ffffff;
+.nav .nav-button img {
   margin-right: 10px;
+  margin-left: 10px;
 }
-nav .wrap .bt-lg a:hover {
-  color: #000000;
+.nav .nav-button select {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
-nav .wrap .bt-lg img {
-  position: relative;
-  top: 10px;
-  right: 130px;
-  max-height: 40px;
+.nav .nav-button select::-ms-expand {
+  display: none;
+}
+.nav .nav-button select::after {
+  content: "▼";
+  font-size: 12px;
+  color: white;
+  margin-left: 10px;
+}
+.nav .nav-button select option {
+  background: white;
+  color: black;
 }
 
-#hero-section {
-  background-color: #ffffff;
-  padding: 0;
-  position: relative;
+.s-hero {
   width: 100%;
-  height: 800px;
-}
-#hero-section .container-hero {
+  height: 801px;
   background-color: #15548D;
-  padding: 0;
+}
+.s-hero .s-hero-img {
+  position: absolute;
+  width: 610px;
+  height: 790px;
+  right: 0px;
+  border-radius: 0px 0px 0px 80px;
+}
+.s-hero .s-hero-content-path {
   position: relative;
+  top: 206px;
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.s-hero .s-hero-content-path img {
+  width: 30px;
+  height: 3px;
+  align-items: center;
+}
+.s-hero .s-hero-content-path h2 {
+  width: 257px;
+  color: #FFF;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 16px */
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.s-hero .s-hero-content-tittle {
+  position: relative;
+  top: 253px;
+  color: #FFFFFF;
+  width: 675px;
+  height: 204px;
+}
+.s-hero .s-hero-content-tittle h1 {
+  width: 100%;
+  height: 118px;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 58.9px;
+  font-family: "Outfit", sans-serif;
+}
+.s-hero .s-hero-content-tittle p {
+  width: 645px;
+  height: 70px;
+  position: relative;
+  top: 16px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 35.2px;
+  font-family: "Outfit", sans-serif;
+}
+.s-hero .s-hero-button {
+  width: 404.7px;
+  height: 74px;
+  position: relative;
+  top: 293px;
+}
+.s-hero .s-hero-button .s-hero-button-primary {
+  display: flex;
+  width: 404.7px;
+  height: 74px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 1000px;
+  background-color: #FAC568;
+  color: #000;
+  font-family: "Outfit", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 39px;
+}
+.s-hero .s-hero-scroll {
+  position: absolute;
+  left: 39px;
+  top: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 37px;
+  height: 102px;
+}
+.s-hero .s-hero-scroll h4 {
+  width: 54px;
+  height: 37px;
+  transform: rotate(90deg);
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 35.2px;
+}
+.s-hero .s-hero-scroll img {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-workflow {
+  background-color: #ffffff;
   width: 100%;
   height: 720px;
 }
-
-.hero-img {
-  width: 610px;
-  height: 790px;
-  position: absolute;
-  right: 0;
-  z-index: 10;
-}
-
-.kolom-deskripsi {
-  width: 900px;
-  position: absolute;
-  z-index: 10;
-  top: 206px;
-  left: 107px;
-  color: white;
-}
-
-.hotel-op {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 50px;
-}
-.hotel-op h2 {
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
+.s-workflow .s-workflow-head {
   position: relative;
-  left: 20px;
-  font-size: 16px;
-}
-
-.deskripsi-hotel {
-  width: 605px;
-  height: 204px;
-}
-.deskripsi-hotel h1 {
-  font-size: 38px;
-  line-height: 59px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 600;
-}
-.deskripsi-hotel p {
-  font-size: 22px;
-  line-height: 35.2px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 300;
-}
-
-.bt-wrap {
-  position: absolute;
-  top: 320px;
-}
-.bt-wrap .custom-button {
-  padding: 10px;
-  width: 404px;
-  height: 74px;
-  background-color: #FAC568;
-  border-radius: 1000px;
-  font-size: 26px;
-  line-height: 35.2px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
-  border: 0.97px solid #15548D;
-  cursor: pointer;
-  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
-}
-.bt-wrap .custom-button:hover {
-  background-color: #fff0d5; /* Warna saat tombol dihover */
-}
-
-#workflow-section {
-  background-color: #ffffff;
-  position: relative;
-  width: 100%;
-  height: 700px;
-}
-#workflow-section .work-op {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 50px;
-  left: 150px;
+  top: 0px;
   width: 589px;
+  height: 143px;
 }
-#workflow-section .work-op h2 {
-  position: relative;
-  left: 20px;
-  font-size: 16px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
-}
-#workflow-section .deskripsi-workflow {
-  position: relative;
+.s-workflow .s-workflow-head .s-workflow-head-path {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin-top: 40px;
-  left: 120px;
-  width: 589px;
+  gap: 14px;
+  color: #333333;
 }
-#workflow-section .deskripsi-workflow h1 {
-  position: relative;
-  left: 20px;
+.s-workflow .s-workflow-head .s-workflow-head-path h2 {
+  font-size: 17px;
+  font-family: "Outfit", sans-serif;
+  align-items: center;
+  font-weight: 500;
+}
+.s-workflow .s-workflow-head .s-workflow-head-tittle h1 {
   font-size: 34px;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
+  color: #333;
+  font-style: normal;
+  line-height: 51px;
 }
-
-.workflow-1, .workflow-2, .workflow-3, .workflow-4 {
-  position: relative;
+.s-workflow .s-workflow-item-1 {
   width: 261.41px;
   height: 290.86px;
-  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 1099.57px;
 }
-.workflow-1 img, .workflow-2 img, .workflow-3 img, .workflow-4 img {
-  position: relative;
-  top: 10px;
-  background-color: #ffffff;
-  border-radius: 100px;
+.s-workflow .s-workflow-item-1 .s-workflow-item-img-1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 868.17px;
+  box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.workflow-1 h2, .workflow-2 h2, .workflow-3 h2, .workflow-4 h2 {
-  font-size: 22px;
-  position: relative;
-  top: 40px;
+.s-workflow .s-workflow-item-1 .s-workflow-item-img-1 img {
+  width: 96.46px;
+  height: 96.46px;
+}
+.s-workflow .s-workflow-item-1 .s-workflow-item-content-1 {
+  color: #333333;
   font-family: "Outfit", sans-serif;
+  width: 261.41px;
+  height: 119.34px;
+}
+.s-workflow .s-workflow-item-1 .s-workflow-item-content-1 .s-workflow-item-content-tittle-1 {
+  position: relative;
+  top: 21.53px;
+  width: 210.29px;
+  height: 33px;
   font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
 }
-.workflow-1 p, .workflow-2 p, .workflow-3 p, .workflow-4 p {
+.s-workflow .s-workflow-item-1 .s-workflow-item-content-1 .s-workflow-item-content-deskripsi-1 {
   position: relative;
-  font-size: 17px;
-  top: 50px;
-  font-family: "Outfit", sans-serif;
+  top: 62.86px;
+  width: 261.41px;
+  height: 78px;
   font-weight: 300;
+  font-size: 17px;
+  line-height: 33px;
 }
-
-.workflow-1 {
+.s-workflow .s-workflow-item-2 {
+  width: 286.495px;
+  height: 290.865px;
+  position: absolute;
+  top: 1018.57px;
+  margin-left: 289.25px;
+}
+.s-workflow .s-workflow-item-2 .s-workflow-item-img-2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 868.17px;
+  box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-workflow .s-workflow-item-2 .s-workflow-item-img-2 img {
+  width: 96.46px;
+  height: 96.46px;
+}
+.s-workflow .s-workflow-item-2 .s-workflow-item-content-2 {
+  color: #333333;
+  font-family: "Outfit", sans-serif;
+  width: 261.41px;
+  height: 119.34px;
+}
+.s-workflow .s-workflow-item-2 .s-workflow-item-content-2 .s-workflow-item-content-tittle-2 {
   position: relative;
-  top: 200px;
-  left: 150px;
+  top: 21.53px;
+  width: 210.29px;
+  height: 33px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
 }
-
-.workflow-2 {
+.s-workflow .s-workflow-item-2 .s-workflow-item-content-2 .s-workflow-item-content-deskripsi-2 {
   position: relative;
-  bottom: 200px;
-  left: 450px;
+  top: 62.86px;
+  width: 261.41px;
+  height: 78px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 33px;
 }
-
-.workflow-3 {
+.s-workflow .s-workflow-item-3 {
+  width: 321px;
+  height: 297.806px;
+  position: absolute;
+  top: 1056.19px;
+  margin-left: 651px;
+}
+.s-workflow .s-workflow-item-3 .s-workflow-item-img-3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 868.17px;
+  box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-workflow .s-workflow-item-3 .s-workflow-item-img-3 img {
+  width: 96.46px;
+  height: 96.46px;
+}
+.s-workflow .s-workflow-item-3 .s-workflow-item-content-3 {
+  color: #333333;
+  font-family: "Outfit", sans-serif;
+  width: 261.41px;
+  height: 119.34px;
+}
+.s-workflow .s-workflow-item-3 .s-workflow-item-content-3 .s-workflow-item-content-tittle-3 {
   position: relative;
-  bottom: 400px;
-  left: 800px;
+  top: 21.53px;
+  width: 210.29px;
+  height: 33px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
 }
-
-.workflow-4 {
+.s-workflow .s-workflow-item-3 .s-workflow-item-content-3 .s-workflow-item-content-deskripsi-3 {
   position: relative;
-  bottom: 850px;
-  left: 1100px;
+  top: 62.86px;
+  width: 261.41px;
+  height: 78px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 33px;
+}
+.s-workflow .s-workflow-item-4 {
+  width: 261.41px;
+  height: 290.86px;
+  position: absolute;
+  top: 932.19px;
+  margin-left: 953.89px;
+}
+.s-workflow .s-workflow-item-4 .s-workflow-item-img-4 {
+  width: 150px;
+  height: 150px;
+  border-radius: 868.17px;
+  box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-workflow .s-workflow-item-4 .s-workflow-item-img-4 img {
+  width: 96.46px;
+  height: 96.46px;
+}
+.s-workflow .s-workflow-item-4 .s-workflow-item-content-4 {
+  color: #333333;
+  font-family: "Outfit", sans-serif;
+  width: 261.41px;
+  height: 119.34px;
+}
+.s-workflow .s-workflow-item-4 .s-workflow-item-content-4 .s-workflow-item-content-tittle-4 {
+  position: relative;
+  top: 21.53px;
+  width: 210.29px;
+  height: 33px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+}
+.s-workflow .s-workflow-item-4 .s-workflow-item-content-4 .s-workflow-item-content-deskripsi-4 {
+  position: relative;
+  top: 62.86px;
+  width: 261.41px;
+  height: 78px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 33px;
 }
 
-#services-section {
+.s-services {
   background-color: #F7F8FD;
-  position: relative;
   width: 100%;
   height: 705px;
 }
-#services-section .services-op {
+.s-services .s-services-head {
   position: relative;
+  top: 92px;
+  width: 1, 181px;
+  height: 94px;
+}
+.s-services .s-services-head .s-services-head-path {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin-top: 50px;
-  left: 150px;
-  top: 50px;
-  width: 589px;
+  gap: 14px;
+  color: #333333;
 }
-#services-section .services-op h2 {
-  position: relative;
-  left: 20px;
-  font-size: 16px;
+.s-services .s-services-head .s-services-head-path h2 {
+  margin-bottom: 0;
+  color: #000;
   font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 17px;
+  text-transform: uppercase;
 }
-#services-section .deskripsi-services {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 70px;
-  left: 120px;
-  width: 589px;
-}
-#services-section .deskripsi-services h1 {
-  position: relative;
-  left: 20px;
-  font-size: 34px;
+.s-services .s-services-head .s-services-head-tittle {
+  margin-top: 24px;
+  color: #333333;
+  color: #333;
   font-family: "Outfit", sans-serif;
+  font-size: 35px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 150%; /* 52.5px */
 }
-
-.services-1, .services-2, .services-3 {
+.s-services .s-services-content {
   position: relative;
+  top: 139px;
+  width: 1183px;
+  height: 370px;
+  justify-content: space-between;
+  gap: 59px;
+  display: flex;
+}
+.s-services .s-services-content .s-services-content-card {
   width: 355px;
   height: 370px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 32px;
+  background: #FFFFFF;
   border: 0.97px solid #DDDDDD;
+  border-radius: 32px;
 }
-.services-1 img, .services-2 img, .services-3 img {
+.s-services .s-services-content .s-services-content-card .s-services-content-card-marker {
   position: relative;
-  top: 35px;
-  left: 35px;
-  width: 138.11px;
+  margin-top: 0;
+  left: 38.3px;
+  width: 246.581px;
+  color: #FAC568;
+  text-align: right;
+  font-family: "Outfit", sans-serif;
+  font-size: 31.123px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 31.123px */
+  text-transform: uppercase;
+}
+.s-services .s-services-content .s-services-content-card .s-services-content-card-img img {
+  position: relative;
+  margin-top: 34px;
+  margin-left: 40px;
+  width: 140px;
   height: 140px;
 }
-.services-1 h2, .services-2 h2, .services-3 h2 {
-  position: relative;
-  text-align: left;
-  top: 50px;
-  left: 35px;
-  width: 264px;
-  height: 72px;
-  size: 26px;
-  line-height: 36.4px;
+.s-services .s-services-content .s-services-content-card .s-services-content-card-tittle h1 {
+  color: #000000;
   font-family: "Outfit", sans-serif;
+  width: 254px;
+  height: 72px;
+  font-size: 26px;
+  line-height: 36.4px;
   font-weight: 500;
-}
-.services-1 .custom-button, .services-2 .custom-button, .services-3 .custom-button {
   position: relative;
-  top: 70px;
-  left: 35px;
-  height: 48px;
+  margin-top: 14px;
+  margin-left: 40px;
+}
+.s-services .s-services-content .s-services-content-card .s-services-content-card-button {
+  position: relative;
+  margin-top: 23px;
+  margin-left: 36px;
   width: 200px;
-  border-radius: 54.38px;
+  height: 48px;
   background-color: #FAC568;
+  border-radius: 54.38px;
+}
+.s-services .s-services-content .s-services-content-card .s-services-content-card-button a {
+  color: #000000;
+  font-family: "Outfit", sans-serif;
+  width: 102px;
+  height: 28px;
   font-size: 17.22px;
   font-weight: 400;
-  border: #DDDDDD;
-  font-family: "Outfit", sans-serif;
-  cursor: pointer;
-  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
-}
-.services-1 .custom-button:hover, .services-2 .custom-button:hover, .services-3 .custom-button:hover {
-  background-color: #fff0d5; /* Warna saat tombol dihover */
-}
-.services-1 h3, .services-2 h3, .services-3 h3 {
+  line-height: 27.55px;
   position: relative;
-  bottom: 200px;
-  left: 80PX;
-  width: 246px;
-  height: 50px;
-  text-align: right;
-  font-weight: 600;
-  color: #FAC568;
-  font-size: 31PX;
-  font-family: "Outfit", sans-serif;
+  top: 7px;
+  left: 31px;
 }
 
-.services-card {
-  display: flex;
-  justify-content: space-between;
-  margin: 5rem 7rem;
-}
-
-#project-section {
-  background-color: #ffffff;
-  position: relative;
-  width: 100%;
-  height: 700px;
-}
-#project-section .project-op {
+.s-project .s-project-head {
   position: absolute;
-  top: 20px;
+  top: 2269px;
+  width: 1182px;
+  height: 96px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
+}
+.s-project .s-project-head .s-project-head-path {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  height: 28.4px;
   width: 100%;
+}
+.s-project .s-project-head .s-project-head-path h2 {
+  color: #000;
   font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
-#project-section .project-op h2 {
-  width: 100%;
-  text-align: center;
+.s-project .s-project-head .s-project-head-tittle {
+  position: relative;
+  top: 22px;
 }
-#project-section .project-deskripsi {
-  position: absolute;
-  top: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-}
-#project-section .project-deskripsi h1 {
-  width: 100%;
-  text-align: center;
+.s-project .s-project-head .s-project-head-tittle h1 {
   font-size: 34px;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
+  text-align: center;
 }
-#project-section .project-content {
-  width: 1182px;
-  height: 380px;
-  margin: auto;
-  padding: 10rem;
+.s-project .s-project-content {
+  width: Hug 1, 182px;
+  height: Hug 380px;
+  position: absolute;
+  top: 2433px;
 }
-#project-section .project-content .container {
-  width: 1182px;
-}
-#project-section .project-content .container img {
-  width: 1182px;
-  height: 380px;
-  border-radius: 52px;
-}
-#project-section .project-content .deskripsi-content {
-  position: relative;
-  bottom: 280px;
+.s-project .s-project-content .s-project-content-deskripsi {
+  position: absolute;
+  left: 101px;
+  top: 105.87px;
   width: 618.55px;
   height: 169.36px;
-  left: 101px;
-}
-#project-section .project-content .deskripsi-content h4 {
-  font-size: 22px;
   font-family: "Outfit", sans-serif;
+}
+.s-project .s-project-content .s-project-content-deskripsi h6 {
+  width: 618.55px;
+  height: 28.76px;
   font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 3%;
+  color: #000000;
+  margin-bottom: 26.88px;
 }
-#project-section .project-content .deskripsi-content h5 {
-  position: relative;
-  top: 30px;
-  font-size: 53px;
+.s-project .s-project-content .s-project-content-deskripsi h1 {
   color: #333333;
+  width: 618.55px;
   font-family: "Outfit", sans-serif;
+  font-size: 53px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 100%; /* 53px */
+  margin-bottom: 20.14px;
 }
-#project-section .project-content .deskripsi-content p {
-  position: relative;
-  top: 45px;
+.s-project .s-project-content .s-project-content-deskripsi p {
   color: #404040;
+  height: 32px;
+  width: 482.98px;
+  font-weight: 300;
   font-size: 32px;
-  font-weight: 300px;
-  font-family: "Outfit", sans-serif;
+  line-height: 32px;
 }
-#project-section .project-content .deskripsi-content .lihat-detail {
-  position: relative;
+.s-project .s-project-content .s-project-content-detail {
+  width: 230.72px;
+  height: 48px;
+  position: absolute;
+  top: 265px;
   left: 860px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #333333;
+}
+.s-project .s-project-content .s-project-content-detail .s-project-content-detail-button {
+  width: 59.08px;
+  height: 59.16px;
+  border-radius: 84.45px;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s-project .s-project-content .s-project-content-detail .s-project-content-detail-button img {
+  width: 33px;
+  height: 33px;
+}
+.s-project .s-project-content .s-project-content-detail h5 {
   width: 148px;
   height: 29px;
-}
-#project-section .project-content .deskripsi-content .lihat-detail button {
-  color: #F7F8FD;
-  font-size: xx-large;
-  position: relative;
-  top: 50px;
-  right: 70px;
-  background-color: #333333;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
-}
-#project-section .project-content .deskripsi-content .lihat-detail button:hover {
-  background-color: #fff0d5; /* Warna saat tombol dihover */
-}
-#project-section .project-content .deskripsi-content .lihat-detail h6 {
-  position: relative;
-  text-align: right;
-  font-size: 28.71px;
-  font-weight: 400px;
-  color: #333333;
+  text-align: left;
+  color: #333;
   font-family: "Outfit", sans-serif;
-}
-#project-section .project-content .button-img .button-kanan {
-  position: relative;
-  bottom: 400px;
-  left: 1130px;
-  background-color: #FAC568;
-  height: 96px;
-  text-align: center;
-  font-size: 70px;
-  width: 96px;
-  border-radius: 100%;
-  border: #ffffff;
-  cursor: pointer;
-  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
-}
-#project-section .project-content .button-img .button-kanan:hover {
-  background-color: #fff0d5; /* Warna saat tombol dihover */
-}
-#project-section .project-content .button-img .button-kiri {
-  position: relative;
-  bottom: 400px;
-  right: 150px;
-  background-color: #FAC568;
-  height: 96px;
-  text-align: center;
-  font-size: 70px;
-  width: 96px;
-  border-radius: 100%;
-  border: #ffffff;
-  cursor: pointer;
-  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
-}
-#project-section .project-content .button-img .button-kiri:hover {
-  background-color: #fff0d5; /* Warna saat tombol dihover */
+  font-size: 28.715px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 28.715px */
 }
 
-#testimoni-section {
+.s-testimonial {
   background-color: #F7F8FD;
-  position: relative;
   width: 100%;
   height: 690px;
+  position: absolute;
+  top: 2892px;
 }
-#testimoni-section .testi-op {
+.s-testimonial .s-testimonial-head {
   position: relative;
+  top: 92px;
+  width: 665.02px;
+  height: 97.19px;
+}
+.s-testimonial .s-testimonial-head .s-testimonial-head-path {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin-top: 50px;
-  left: 150px;
-  top: 50px;
-  width: 589px;
+  gap: 14px;
+  color: #333333;
 }
-#testimoni-section .testi-op h2 {
-  position: relative;
-  left: 20px;
-  font-size: 16px;
+.s-testimonial .s-testimonial-head .s-testimonial-head-path h2 {
+  margin-bottom: 0;
+  color: #000;
   font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 17px;
+  text-transform: uppercase;
 }
-#testimoni-section .testimoni-deskripsi {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 70px;
-  left: 130px;
-  width: 589px;
+.s-testimonial .s-testimonial-head .s-testimonial-head-tittle {
+  margin-top: 28px;
+  color: #333333;
 }
-#testimoni-section .testimoni-deskripsi h1 {
-  position: relative;
-  left: 20px;
-  font-size: 34px;
+.s-testimonial .s-testimonial-head .s-testimonial-head-tittle h1 {
   font-family: "Outfit", sans-serif;
+  font-size: 37px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 150%; /* 55.5px */
 }
-#testimoni-section .testi-img {
+.s-testimonial .s-testimonial-img {
   position: absolute;
-  right: 0;
+  top: 59px;
+  width: 580.41px;
+  height: 571.71px;
+  right: 0; /* Menempatkan elemen ke bagian paling kiri */
+  margin-right: 0px;
+  border-radius: 60px 0px 0px 60px; /* Memperbaiki sintaks penulisan untuk border-radius */
 }
-#testimoni-section .quote-content {
-  position: absolute;
-  left: 176.12px;
-  width: 600px;
-  height: 190px;
+.s-testimonial .s-testimonial-quote {
+  position: relative;
+  width: 526.38px;
+  height: 193px;
+  top: 138px;
+  left: 29.12px;
+  display: flex; /* Menjadikan elemen ini sebagai flex container */
+  justify-content: space-between; /* Menyebarkan elemen anak di sepanjang container dengan ruang di antara mereka */
 }
-#testimoni-section .quote-content img {
+.s-testimonial .s-testimonial-quote img {
   width: 44.64px;
   height: 44px;
 }
-#testimoni-section .quote-content p {
-  width: 600px;
+.s-testimonial .s-testimonial-quote p {
+  color: #000000;
+  font-family: "Outfit", sans-serif;
+  width: 458px;
   height: 193px;
   font-size: 26px;
-  font-family: "Outfit", sans-serif;
   font-weight: 300;
+  line-height: 37.7px;
+  text-align: left;
 }
-#testimoni-section .clien-profile {
-  position: absolute;
-  left: 176.12px;
-  top: 350px;
-  width: 385.62px;
-  height: 150.64px;
+.s-testimonial .s-testimonial-name {
+  position: relative;
+  width: 256.52px;
+  height: 81px;
+  top: 181px;
+  display: flex; /* Menjadikan elemen ini sebagai flex container */
+  justify-content: space-between; /* Menyebarkan elemen anak di sepanjang container dengan ruang di antara mereka */
 }
-#testimoni-section .clien-profile img {
-  width: 90px;
-  height: 90px;
-  border-radius: 78.26px;
+.s-testimonial .s-testimonial-name img {
+  width: 97.86px;
+  height: 95px;
+  margin-right: 26px;
 }
-#testimoni-section .clien-profile h3 {
-  font-size: 27px;
+.s-testimonial .s-testimonial-name .s-testimonial-name-idendtity {
+  width: 256.52px;
+  height: 81px;
+  color: #000000;
+}
+.s-testimonial .s-testimonial-name .s-testimonial-name-idendtity h4 {
+  width: 256.52px;
+  height: 39px;
   font-family: "Outfit", sans-serif;
+  font-size: 27px;
   font-weight: 600;
+  line-height: 39.15px;
+  text-align: left;
 }
-#testimoni-section .clien-profile p {
-  font-size: 27px;
+.s-testimonial .s-testimonial-name .s-testimonial-name-idendtity h5 {
+  width: 256.52px;
+  height: 39px;
   font-family: "Outfit", sans-serif;
+  font-size: 27px;
   font-weight: 300;
+  line-height: 39.15px;
+  text-align: left;
 }
 
-#hubkam-section {
-  background-color: #ffffff;
-  position: relative;
+.s-kontak {
   width: 100%;
-  height: 740px;
+  position: absolute;
+  height: 741px;
+  top: 3590px;
 }
-#hubkam-section .des-hub {
+.s-kontak .s-kontak-head {
   position: relative;
-  top: 300px;
+  top: 185px;
   width: 460px;
   height: 296px;
-  left: 140px;
+  align-items: center;
 }
-#hubkam-section .des-hub .hubkam-op {
-  position: relative;
+.s-kontak .s-kontak-head .s-kontak-head-path {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  gap: 14px;
+  color: #333333;
 }
-#hubkam-section .des-hub .hubkam-op h2 {
-  position: relative;
-  left: 20px;
-  font-size: 16px;
+.s-kontak .s-kontak-head .s-kontak-head-path h2 {
+  margin-bottom: 0;
+  color: #000;
   font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 17px;
+  text-transform: uppercase;
 }
-#hubkam-section .des-hub .deskripsi-hubkam {
-  position: relative;
-  margin-top: 40px;
-  width: 460px;
-  height: 296px;
-}
-#hubkam-section .des-hub .deskripsi-hubkam h1 {
-  width: 460px;
-  position: relative;
-  font-size: 34px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-#hubkam-section .des-hub .deskripsi-hubkam p {
+.s-kontak .s-kontak-head .s-kontak-head-tittle {
   color: #052925;
-  position: relative;
-  top: 30px;
+}
+.s-kontak .s-kontak-head .s-kontak-head-tittle h1 {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px; /* 158.824% */
+  margin-bottom: 20px;
+}
+.s-kontak .s-kontak-head .s-kontak-hr {
+  width: 141px;
+  height: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.s-kontak .s-kontak-head .s-kontak-head-deskripsi {
   width: 460px;
   height: 108px;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  color: #052925;
 }
-#hubkam-section .kolom-konsultasi {
-  position: relative;
-  bottom: 150px;
-  left: 900px;
+.s-kontak .s-kontak-head .s-kontak-head-deskripsi p {
+  text-align: left;
+  color: #052925;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px; /* 180% */
+}
+.s-kontak .s-kontak-form {
+  position: absolute;
+  top: 134px;
+  right: 166px;
   background-color: #F8F8F8;
   width: 518px;
   height: 500px;
   border-radius: 20px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
+  padding: 40px 40px 29px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-#hubkam-section .kolom-konsultasi .form {
-  width: 438px;
-  height: 88px;
-}
-#hubkam-section .kolom-konsultasi .form label {
-  position: relative;
-  top: 60px;
-  left: 40px;
-  font-size: 17px;
-}
-#hubkam-section .kolom-konsultasi .form input {
-  position: relative;
-  top: 60px;
-  left: 40px;
-  width: 438px;
-  height: 53px;
-  padding: 14px, 18px, 14px, 18px;
-  border-radius: 12px;
-  border: 1px solid #CCCCCC;
-}
-#hubkam-section .kolom-konsultasi .form-aksi input {
-  position: relative;
-  top: 60px;
-  left: 40px;
-  width: 438px;
-  height: 72.04px;
-  padding: 15px, 10px, 15px, 10px;
-  border-radius: 9000px;
-  gap: 10px;
-  border: #F8F8F8;
-  background-color: #FAC568;
-  font-size: 20px;
+.s-kontak .s-kontak-form label {
+  display: block;
+  font-size: 14px;
+  color: #333;
   font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s; /* Animasi transisi warna */ /* Mengubah mode campuran untuk mencapai efek warna */
 }
-#hubkam-section .kolom-konsultasi .form-aksi input:hover {
-  background-color: #fff0d5; /* Warna saat tombol dihover */
+.s-kontak .s-kontak-form input[type=text] {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #AFAFAF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 156.25% */
+}
+.s-kontak .s-kontak-form input[type=text]:focus {
+  outline: 2px solid #FAC568;
+}
+.s-kontak .s-kontak-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #FAC568;
+  color: #000000;
+  border: none;
+  border-radius: 100px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.s-kontak .s-kontak-form button:hover {
+  background-color: #e6a700;
 }
 
-#footer {
+.s-footer {
   background-color: #15548D;
   width: 100%;
-  height: 740px;
-  color: #ffffff;
+  height: 700px;
+  position: absolute;
+  top: 4343px;
+  color: white;
+  font-family: Arial, sans-serif;
 }
-#footer .atas {
+.s-footer .s-footer-logo {
   position: relative;
-  width: 1182px;
-  height: 305px;
-  left: 113px;
-  top: 100px;
-}
-#footer .atas .logo {
-  position: relative;
-}
-#footer .atas .logo img {
+  top: 71px;
   width: 192.4px;
   height: 65px;
-  top: 71px;
-  left: 114px;
+  margin-bottom: 50px;
 }
-#footer .atas .navbar-mungkin {
-  position: relative;
-  top: 40px;
-  width: 295.25px;
-  height: 84px;
+.s-footer .s-footer-logo img {
+  width: 100%;
+  height: auto;
 }
-#footer .atas .navbar-mungkin h6 {
-  width: 295.25px;
-  height: 32px;
-  font-size: 21px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 600;
+.s-footer .footer-sections {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 190px;
 }
-#footer .atas .navbar-mungkin h6:hover {
-  color: #000000;
+.s-footer .footer-sections .section {
+  flex: 1;
+  padding: 0 20px;
 }
-#footer .atas .navbar-mungkin p {
-  width: 195.58px;
-  height: 32px;
-  top: 52px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 300;
+.s-footer .footer-sections .section h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
 }
-#footer .atas .navbar-mungkin p:hover {
-  color: #000000;
+.s-footer .footer-sections .section ul {
+  list-style: none;
+  padding: 0;
 }
-#footer .atas .perusahaan-mungkin {
-  position: relative;
-  left: 295.25px;
-  width: 295.25px;
-  height: 125px;
-  bottom: 44px;
+.s-footer .footer-sections .section ul li {
+  margin-bottom: 10px;
 }
-#footer .atas .perusahaan-mungkin h6 {
-  width: 295.25px;
-  height: 32px;
-  font-size: 21px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
-}
-#footer .atas .perusahaan-mungkin h6:hover {
-  color: #000000;
-}
-#footer .atas .perusahaan-mungkin .p1 {
-  width: 295.25px;
-  height: 32px;
-  top: 52px;
-  left: 295.25px;
-  font-size: 21px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 300;
-}
-#footer .atas .perusahaan-mungkin .p1:hover {
-  color: #000000;
-}
-#footer .atas .perusahaan-mungkin .p2 {
-  width: 272.18px;
-  height: 32px;
-  top: 93px;
-  left: 295.25px;
-  font-size: 21px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 300;
-}
-#footer .atas .perusahaan-mungkin .p2:hover {
-  color: #000000;
-}
-#footer .atas .temukan-mungkin {
-  position: relative;
-  left: 590.5px;
-  width: 295.25px;
-  height: 125px;
-  bottom: 169px;
-}
-#footer .atas .temukan-mungkin h6 {
-  width: 295.25px;
-  height: 32px;
-  font-size: 21px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 600;
-}
-#footer .atas .temukan-mungkin h6:hover {
-  color: #000000;
-}
-#footer .atas .temukan-mungkin .p1 {
-  width: 295.25px;
-  height: 32px;
-  top: 52px;
-  left: 295.25px;
-  font-size: 21px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 300;
-}
-#footer .atas .temukan-mungkin .p1:hover {
-  color: #000000;
-}
-#footer .atas .temukan-mungkin .p2 {
-  width: 272.18px;
-  height: 32px;
-  font-weight: 100;
-  top: 93px;
-  left: 295.25px;
-  font-size: 21px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 300;
-}
-#footer .atas .temukan-mungkin .p2:hover {
-  color: #000000;
-}
-#footer .atas .sosmed-mungkin {
-  position: relative;
-  left: 885.75px;
-  bottom: 295px;
-  width: 295.25px;
-  height: 104px;
-}
-#footer .atas .sosmed-mungkin h6 {
-  width: 295.25px;
-  height: 32px;
-  font-size: 21px;
-  font-family: "Outfit", sans-serif;
-  font-weight: 600;
-}
-#footer .atas .sosmed-mungkin h6:hover {
-  color: #000000;
-}
-#footer .atas .sosmed-mungkin .img-1 {
-  position: relative;
-  width: 52px;
-  height: 52px;
-  left: 10px;
-  top: 20px;
-}
-#footer .atas .sosmed-mungkin .img-2 {
-  position: relative;
-  width: 52px;
-  height: 52px;
-  left: 70px;
-  bottom: 30px;
-}
-#footer .atas .sosmed-mungkin .img-3 {
-  position: relative;
-  width: 52px;
-  height: 52px;
-  left: 130px;
-  bottom: 80px;
-}
-#footer .border-doang {
-  position: relative;
-  width: 1182px;
-  top: 50px;
-  left: 113px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-}
-#footer .bawah {
-  position: relative;
-  width: 1182px;
-  height: 78px;
-  left: 113px;
-  top: 100px;
-  color: #FFFFFF;
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
-}
-#footer .bawah .garis-bawah {
+.s-footer .footer-sections .section ul li a {
+  color: white;
   text-decoration: none;
+  font-size: 14px;
+}
+.s-footer .footer-sections .section ul li a:hover {
+  text-decoration: underline;
+}
+.s-footer .social-media {
+  display: flex;
+  justify-content: left;
+  margin-top: 30px;
+}
+.s-footer .social-media img {
+  margin-right: 16px;
+  color: white;
+  font-size: 20px;
+}
+.s-footer .social-media img:hover {
+  color: #aaa;
+}
+.s-footer hr {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.s-footer .s-footer-bottom {
   position: relative;
+  top: 51px;
+  width: 1, 181px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.s-footer .s-footer-bottom .s-footer-bottom-inform {
   width: 210px;
   height: 78px;
   gap: 14px;
+  opacity: 0px;
+  display: block;
+  gap: 14px;
 }
-#footer .bawah .garis-bawah .p1 {
-  width: 210px;
-  height: 32px;
-  font-size: 21px;
+.s-footer .s-footer-bottom .s-footer-bottom-inform ul {
+  list-style: none;
 }
-#footer .bawah .garis-bawah .p2 {
-  width: 210px;
-  height: 32px;
-  font-size: 21px;
+.s-footer .s-footer-bottom .s-footer-bottom-inform ul a {
+  color: #FFFFFF;
+  text-decoration: underline;
 }
-#footer .bawah .bahasa {
+.s-footer .s-footer-bottom .s-footer-bottom-language-selector {
   position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
   width: 375.03px;
   height: 56px;
-  bottom: 40px;
+  gap: 16.97px;
 }
-#footer .bawah .bahasa img {
-  position: relative;
-  bottom: 20px;
+.s-footer .s-footer-bottom .s-footer-bottom-language-selector img {
   width: 44.12px;
   height: 44.12px;
-  border: 2.12px;
-  left: 800px;
 }
-#footer .bawah .bahasa .container {
-  position: relative;
-  left: 870px;
-  bottom: 75px;
-  background-color: #29679F;
+.s-footer .s-footer-bottom .s-footer-bottom-language-selector select {
+  width: 313.94px;
   height: 56px;
-  width: 313px;
-  border-radius: 9000px;
+  border-radius: 1696.97px;
+  padding: 8.48px, 25.45px, 8.48px, 25.45px;
+  justify-content: space-between;
+  background-color: #29679F;
 }
-#footer .bawah .bahasa .container p {
-  position: relative;
-  top: 15px;
-  left: 10px;
-  text-align: center;
-  width: 160px;
-  height: 31px;
+.s-footer .s-footer-bottom .s-footer-bottom-language-selector select option {
   font-size: 20.36px;
+  font-weight: 300;
+  line-height: 30.55px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Outfit", sans-serif;
 }
-#footer .kopi-kanan {
-  position: relative;
+.s-footer .s-footer-copy {
+  position: absolute;
   width: 534px;
   height: 33px;
-  top: 200px;
-  left: 108px;
+  top: 570px;
+  font-family: "Outfit", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: left;
 }
-#footer .kopi-kanan p {
-  font-size: 22px;
+.s-footer .s-footer-copy a {
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
