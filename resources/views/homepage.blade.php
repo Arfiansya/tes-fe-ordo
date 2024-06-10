@@ -104,7 +104,7 @@
                 </div>
 
                 <div class="s-workflow-head-tittle">
-                    <h1>Proses Kerja Kami dalam Meningkatkan Kualitas Properti</h1>
+                    <h1>Proses Kerja Kami dalam <br>Meningkatkan Kualitas Properti</h1>
                 </div>
 
             </div>
@@ -198,53 +198,47 @@
             <div class="s-services-content">
 
                 <div class="s-services-content-card">
-
-
-                    <div class="s-services-content-card-img"><img src="{{ asset('assets\icon\services-img-1.png') }}" alt=""></div>
-
-                    <div class="s-services-content-card-tittle"><h1>Revenue Management Service</h1></div>
-
                     <div class="s-services-content-card-marker">
                         <h2>01</h2>
                     </div>
-
-                    <div class="s-services-content-card-button">
-                        <a href="">Saya Tertarik </a>
+                    <div class="s-services-content-card-img">
+                        <img src="{{ asset('assets/icon/services-img-1.png') }}" alt="Revenue Management Icon">
+                    </div>
+                    <div class="s-services-content-card-title">
+                        <h1>Revenue Management Service</h1>
                     </div>
 
+                    <button class="s-services-content-card-button" type="submit">Saya Tertarik <img src="{{ asset('assets/icon/arrow-right.svg') }}" alt=""></button>
                 </div>
 
                 <div class="s-services-content-card">
-
                     <div class="s-services-content-card-marker">
                         <h2>02</h2>
                     </div>
-
-                    <div class="s-services-content-card-img"><img src="{{ asset('assets\icon\services-img-2.png') }}" alt=""></div>
-
-                    <div class="s-services-content-card-tittle"><h1>Full Manage Service</h1></div>
-
-                    <div class="s-services-content-card-button">
-                        <a href="">Saya Tertarik </a>
+                    <div class="s-services-content-card-img">
+                        <img src="{{ asset('assets\icon\services-img-2.png') }}" alt="">
+                    </div>
+                    <div class="s-services-content-card-title">
+                        <h1>Full Manage <br>Service</h1>
                     </div>
 
+                    <button class="s-services-content-card-button" type="submit">Saya Tertarik <img src="{{ asset('assets/icon/arrow-right.svg') }}" alt=""></button>
                 </div>
 
                 <div class="s-services-content-card">
-
                     <div class="s-services-content-card-marker">
                         <h2>03</h2>
                     </div>
-
-                    <div class="s-services-content-card-img"><img src="{{ asset('assets\icon\services-img-3.png') }}" alt=""></div>
-
-                    <div class="s-services-content-card-tittle"><h1>Asset Monetize Service</h1></div>
-
-                    <div class="s-services-content-card-button">
-                        <a href="">Saya Tertarik </a>
+                    <div class="s-services-content-card-img">
+                        <img src="{{ asset('assets\icon\services-img-3.png') }}" alt="">
+                    </div>
+                    <div class="s-services-content-card-title">
+                        <h1>Asset Monetize Service</h1>
                     </div>
 
-                </div> 
+                    <button class="s-services-content-card-button" type="submit">Saya Tertarik <img src="{{ asset('assets/icon/arrow-right.svg') }}" alt=""></button>
+                </div>
+
 
             </div>
 
@@ -372,7 +366,7 @@
                     <label class="form-label-nomor" class="form-label-nomor" for="nomor-whatsapp">Nomor Whatsapp Aktif</label>
                     <input class="form-input-nomor" type="text" id="nomor-whatsapp" placeholder="Masukkan Nomor Whatsapp">
                         
-                    <button type="submit">Jadwalkan Konsultasi</button>
+                    <button type="submit">Jadwalkan Konsultasi <img src="{{ asset('assets/icon/arrow-right.svg') }}" alt=""></button>
                 </form>
 
             </div>
@@ -381,7 +375,7 @@
 
     </section>
 
-    <!-- <footer id="footer" class="s-footer">
+    <footer id="footer" class="s-footer">
         <div class="container">
 
             <div class="s-footer-logo">
@@ -426,16 +420,23 @@
 
                 <div class="s-footer-bottom-inform">
                         <ul>
-                            <li><a href="#">Pemberitahuan Privasi</a></li>
-                            <li><a href="#">Syarat dan Ketentuan</a></li>
+                            <li class="inform-up" ><a href="#">Pemberitahuan Privasi</a></li>
+                            <li class="inform-down"><a href="#">Syarat dan Ketentuan</a></li>
                         </ul>
                 </div>
 
                 <div class="s-footer-bottom-language-selector">
                     <img src="{{ asset('assets/icon/translate.png') }}" alt="">
-                    <select>
-                        <option>Bahasa Indonesia</option>
-                    </select>
+
+
+                    <div class="s-footer-bottom-language-selector-select">
+                        <select>
+                            <option>Bahasa Indonesia</option>
+                            <option>Bahasa Inggris</option>
+                        </select>
+                    </div>
+   
+                    
                 </div>
 
             </div>
@@ -446,7 +447,7 @@
             
 
         </div>
-    </footer> -->
+    </footer>
 
 
 

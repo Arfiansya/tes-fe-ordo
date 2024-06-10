@@ -120,7 +120,7 @@
 
 .s-hero{
     width: 100%;
-    height: 801px;
+    height: 720px;
     background-color: #15548D;
     .s-hero-img{
         position: absolute;
@@ -198,6 +198,7 @@
         top: 293px;
 
         .s-hero-button-primary{
+            border: #FAC568 ;
             display: flex;
             width: 404.7px;
             height: 74px;
@@ -254,8 +255,6 @@
         }
     }
     
-    
-
 }
 
 
@@ -265,43 +264,52 @@
     width: 100%;
     height: 720px;
 
+
+
     .s-workflow-head{
         position: relative;
-        top: 0px;
+        top: 17px;
         width: 589px;
         height: 143px;
+
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
         .s-workflow-head-path{
             display: flex;
             align-items: center;
             gap: 14px;
             color: #333333;
             h2{
+                margin-bottom: 0;
+                color: #000;
+                font-family: "Montserrat", sans-serif;
                 font-size: 17px;
-                font-family: "Outfit", sans-serif;
-                align-items: center;
-                font-weight: 500;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 17px; 
+                text-transform: uppercase;
             }
         }
 
         .s-workflow-head-tittle{
+            margin-top: 24px;
+            color: #333333;     
+            font-family: "Outfit", sans-serif;
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 52.5px; /* 52.5px */
 
-            h1{
-                font-size: 34px;
-                font-family: "Outfit", sans-serif;
-                font-weight: 600;
 
-                color: #333;
-                font-style: normal;
-                line-height: 51px;
-            }
         }
     }
 
     .s-workflow-item-1{
-        width: 261.41px;
-        height: 290.86px;
+        width: 261.415px;
+        height: 290.865px;
         position: absolute;
-        top: 1099.57px;
+        top: 979+120px;
         .s-workflow-item-img-1{
             width: 150px;
             height: 150px;
@@ -325,34 +333,46 @@
             height: 119.34px;
 
             .s-workflow-item-content-tittle-1{
-                position: relative;
-                top: 21.53px;
-                width: 210.29px;
+                margin-top: 21.53px;
+                width: 210.289px;
                 height: 33px;
-                font-weight: 600;
-                font-size: 22px;
-                line-height: 33px;
+
+                h2{
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 33px;
+                }
             }
 
             .s-workflow-item-content-deskripsi-1{
-                position: relative;
-                top: 62.86px;
-                width: 261.41px;
+                margin-top: 8.34px;
+                width: 261.415px;
                 height: 78px;
                 font-weight: 300;
                 font-size: 17px;
                 line-height: 33px;
+                p{
+                    color: #333;
+                    font-family: "Outfit", sans-serif;;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 150%; /* 25.5px */
+                    margin-bottom: 0;
+                }
             }
         }
 
     }
-
+    
     .s-workflow-item-2{
         width: 286.495px;
         height: 290.865px;
+        flex-shrink: 0;
         position: absolute;
-        top: 1018.57px;
-        margin-left: 289.25px;
+        top: 898+120px;
+        margin-left: 289.35px;
         .s-workflow-item-img-2{
             width: 150px;
             height: 150px;
@@ -376,23 +396,34 @@
             height: 119.34px;
 
             .s-workflow-item-content-tittle-2{
-                position: relative;
-                top: 21.53px;
-                width: 210.29px;
+                margin-top: 21.53px;
+                width: 210.289px;
                 height: 33px;
-                font-weight: 600;
-                font-size: 22px;
-                line-height: 33px;
+
+                h2{
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 33px;
+                }
             }
 
             .s-workflow-item-content-deskripsi-2{
-                position: relative;
-                top: 62.86px;
-                width: 261.41px;
+                margin-top: 8.34px;
+                width: 285.531px;
                 height: 78px;
                 font-weight: 300;
                 font-size: 17px;
                 line-height: 33px;
+                p{
+                    color: #333;
+                    font-family: "Outfit", sans-serif;;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 150%; /* 25.5px */
+                    margin-bottom: 0;
+                }
             }
         }
 
@@ -401,9 +432,8 @@
     .s-workflow-item-3{
         width: 321px;
         height: 297.806px;
-
         position: absolute;
-        top: 1056.19px;
+        top: 936+120px;
         margin-left: 651px;
         .s-workflow-item-img-3{
             width: 150px;
@@ -428,36 +458,47 @@
             height: 119.34px;
 
             .s-workflow-item-content-tittle-3{
-                position: relative;
-                top: 21.53px;
-                width: 210.29px;
+                margin-top: 21.53px;
+                width: 210.289px;
                 height: 33px;
-                font-weight: 600;
-                font-size: 22px;
-                line-height: 33px;
+
+                h2{
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 33px;
+                }
             }
 
             .s-workflow-item-content-deskripsi-3{
-                position: relative;
-                top: 62.86px;
-                width: 261.41px;
+                margin-top: 8.34px;
+                width: 321px;
                 height: 78px;
                 font-weight: 300;
                 font-size: 17px;
                 line-height: 33px;
+                p{
+                    color: #333;
+                    font-family: "Outfit", sans-serif;;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 150%; /* 25.5px */
+                    margin-bottom: 0;
+                }
             }
         }
 
     }
 
     .s-workflow-item-4{
-            width: 261.41px;
-            height: 290.86px;
+        width: 293.226px;
+        height: 297.613px;
         position: absolute;
-        top: 932.19px;
-        margin-left: 953.89px;
+        top: 812+120px;
+        margin-left: 953px;
         .s-workflow-item-img-4{
-            width: 150px;   
+            width: 150px;
             height: 150px;
             border-radius: 868.17px;
             box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
@@ -479,23 +520,34 @@
             height: 119.34px;
 
             .s-workflow-item-content-tittle-4{
-                position: relative;
-                top: 21.53px;
-                width: 210.29px;
+                margin-top: 21.53px;
+                width: 210.289px;
                 height: 33px;
-                font-weight: 600;
-                font-size: 22px;
-                line-height: 33px;
+
+                h2{
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 33px;
+                }
             }
 
             .s-workflow-item-content-deskripsi-4{
-                position: relative;
-                top: 62.86px;
-                width: 261.41px;
+                margin-top: 8.34px;
+                width: 293.226px;
                 height: 78px;
                 font-weight: 300;
                 font-size: 17px;
                 line-height: 33px;
+                p{
+                    color: #333;
+                    font-family: "Outfit", sans-serif;;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 150%; /* 25.5px */
+                    margin-bottom: 0;
+                }
             }
         }
 
@@ -534,7 +586,6 @@
         .s-services-head-tittle{
             margin-top: 24px;
             color: #333333;
-            color: #333;
             font-family: "Outfit", sans-serif;
             font-size: 35px;
             font-style: normal;
@@ -553,19 +604,25 @@
         gap: 59px;
         display: flex;
 
-        .s-services-content-card{
+        .s-services-content-card {
             width: 355px;
             height: 370px;
-            background: #FFFFFF;
-            border: 0.97px solid #DDDDDD;
-            border-radius: 32px;
-
-            .s-services-content-card-marker{
-                position: relative;
-                margin-top: 0;
-                left: 38.3px;
-                width: 246.581px;
-                color:  #FAC568;
+            flex-shrink: 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+          
+            .s-services-content-card-marker {
+              position: absolute;
+              top: 38px;
+              right: 35px;
+              font-size: 24px;
+              color: #FBBF24; // Adjust the color as needed
+          
+              h2 {
+                color: #FAC568;
                 text-align: right;
                 font-family: "Outfit", sans-serif;
                 font-size: 31.123px;
@@ -573,54 +630,83 @@
                 font-weight: 600;
                 line-height: 100%; /* 31.123px */
                 text-transform: uppercase;
+                margin: 0;
+              }
             }
-            
-
-            .s-services-content-card-img img{
-                position: relative;
-                margin-top: 34px;
-                margin-left: 40px;
-                width: 140px;
+          
+            .s-services-content-card-img {
+              margin-top: 34px;
+              margin-left: 40.3px;
+              width: 138.108px;
+              height: 140px;
+          
+              img {
+                width: 138.108px;
                 height: 140px;
+              }
             }
-
-            .s-services-content-card-tittle h1{
-                color: #000000;
+          
+            .s-services-content-card-title {
+              width: 254px;
+              height: 72px;
+              margin-top: 14px;
+              margin-left: 40px;
+          
+              h1 {
+                color: #000;
                 font-family: "Outfit", sans-serif;
-                width: 254px;
-                height: 72px;
                 font-size: 26px;
-                line-height: 36.4px;
+                font-style: normal;
                 font-weight: 500;
-                position: relative;
-                margin-top: 14px;
-                margin-left: 40px;
+                line-height: 140%; /* 36.4px */
+                text-transform: capitalize;
+                text-align: left;
+              }
             }
-
-            .s-services-content-card-button{
-                position: relative;
+          
+            button {
                 margin-top: 23px;
                 margin-left: 36px;
+                display: flex;
                 width: 200px;
                 height: 48px;
-                background-color: #FAC568;
-                border-radius: 54.38px;
+                align-items: center;
+                gap: 14.501px;
+                padding-left: 30px;
 
-                a{
-                    color: #000000;
-                    font-family: "Outfit", sans-serif;
-                    width: 102px;
-                    height: 28px;
-                    font-size: 17.22px;
-                    font-weight: 400;
-                    line-height: 27.55px;
-                    position: relative;
-                    top: 7px;
-                    left: 31px;
+                color: #000;
+                font-size: 17.22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 27.551px */
+                text-transform: capitalize;
+                font-family: "Outfit", sans-serif;
+
+    
+    
+                background-color: #FAC568;
+                border: none;
+                border-radius: 9000px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+    
+    
+        
+                &:hover {
+                    background-color: #e6a700;
                 }
 
+                img{
+                    display: flex;
+                    width: 27.189px;
+                    height: 27.189px;
+                    justify-content: center;
+                    align-items: center;
+                    flex-shrink: 0;
+                }
             }
-        }
+          }
+          
     }
 }
 
@@ -975,15 +1061,33 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     
         label {
-            display: block;
-            font-size: 14px;
-            color: #333;
-            font-weight: bold;
+            align-self: stretch;
+            color: #052925;
+            font-family: "Outfit", sans-serif;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 25px; /* 147.059% */
+            margin-bottom: 10px;
         }
+
+        .form-label-perusahaan{
+            margin-top: 29px;
+        }
+
+        .form-label-nomor{
+            margin-top: 29px;
+        }
+
+
+
     
         input[type="text"] {
+
+
             margin-bottom: 10px;
             width: 100%;
+            height: 53px;
             padding: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -993,23 +1097,44 @@
             font-style: normal;
             font-weight: 400;
             line-height: 25px; /* 156.25% */
+            margin-bottom: 0px;
         
             &:focus {
                 outline: 2px solid #FAC568;
             }
         }
         
+        .form-input-nomor{
+            margin-bottom: 36px;
+        }
+        
     
         button {
-            width: 100%;
-            padding: 15px;
+
+            display: flex;
+            width: 438px;
+            height: 72px;
+            padding: 15px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 36px;
+
+            font-family: "Outfit", sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 25px; /* 125% */
+
+
             background-color: #FAC568;
             color: #000000;
             border: none;
-            border-radius: 100px;
-            font-size: 18px;
+            border-radius: 9000px;
             cursor: pointer;
             transition: background-color 0.3s;
+
+
     
             &:hover {
                 background-color: #e6a700;
@@ -1026,19 +1151,19 @@
     position: absolute;
     top: 4343px;
     color: white;
-    font-family: Arial, sans-serif;
 
 
     .s-footer-logo {
         position: relative;
-        top: 71px;
+        margin-top: 91px;
         width: 192.4px;
         height: 65px;
-        margin-bottom: 50px;
+        margin-bottom: 0;
 
         img {
             width: 100%;
             height: auto;
+            
         }
     }
 
@@ -1047,16 +1172,22 @@
         justify-content: space-around;
         width: 100%;
         max-width: 1200px;
-        margin-top: 190px;
+        margin-top: 63.92px;
+        margin-bottom: 61px;
 
         .section {
             flex: 1;
-            padding: 0 20px;
 
             h4 {
+
+                color: #FFF;
+                font-family: "Outfit", sans-serif;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 31.5px */
+
                 margin-bottom: 15px;
-                font-size: 16px;
-                font-weight: bold;
             }
 
             ul {
@@ -1067,9 +1198,14 @@
                     margin-bottom: 10px;
 
                     a {
-                        color: white;
                         text-decoration: none;
-                        font-size: 14px;
+
+                        color: #FFF;
+                        font-family: "Outfit", sans-serif;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 150%; /* 31.5px */
 
                         &:hover {
                             text-decoration: underline;
@@ -1101,7 +1237,6 @@
     }
 
     .s-footer-bottom{
-        position: relative;
         top: 51px;
         width: 1,181px;
         height: 78px;
@@ -1109,19 +1244,42 @@
         align-items: center;
         justify-content: space-between;
 
+        margin-top: 51px;
+
         .s-footer-bottom-inform{
             width: 210px;
             height: 78px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             gap: 14px;
-            opacity: 0px;
-            display: block;
-            gap: 14px;
+            margin-bottom: 0;
             ul{
                 list-style: none;
+                margin-bottom: 0;
+                height: 78px;
+                
+                li{
+                    list-style: none;
+                    margin-bottom: 0;
+                    height: 32px;
+                    top: 14px;
+                    
+                    a{
+                        color: #FFFFFF;
+                        text-decoration: underline;
+    
+                        font-family: "Outfit", sans-serif;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 150%; /* 31.5px */
+                    }
+                }
 
-                a{
-                    color: #FFFFFF;
-                    text-decoration: underline;
+                .inform-down{
+                    margin-top: 14px;
                 }
             }
 
@@ -1135,6 +1293,7 @@
             width: 375.03px;
             height: 56px;
             gap: 16.97px;
+
             
             img{
                 width: 44.12px;
@@ -1142,23 +1301,70 @@
 
             }
             
-            select{
+
+            .s-footer-bottom-language-selector-select{
+                position: relative;
+                display: inline-block;
+                background-color: #29679F;
                 width: 313.94px;
                 height: 56px;
                 border-radius: 1696.97px;
-                padding: 8.48px, 25.45px, 8.48px, 25.45px;
-                justify-content: space-between;
-                background-color: #29679F;
-                option{
-                    font-size: 20.36px;
-                    font-weight: 300;
-                    line-height: 30.55px;
-                    text-align: center;
-                    color: #FFFFFF;                    
+                
+            
+                select {
+
+                    display: flex;
+                    width: 313.94px;
+                    height: 56px;
+                    padding: 8.485px 25.455px;
+                    justify-content: space-between;
+                    align-items: center;
+
+
+                    border-radius: 1696.97px;
+                    -webkit-appearance: none; /* Hapus panah default di Safari dan Chrome */
+                    -moz-appearance: none; /* Hapus panah default di Firefox */
+                    appearance: none; /* Hapus panah default di browser lain */
+                    background-color: #29679F;
+                    color: rgb(255, 255, 255);
+                    cursor: pointer;
+
+
+                    color: #FFF;
                     font-family: "Outfit", sans-serif;
+                    font-size: 20.364px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 150%; /* 30.545px */
+            
+                    // Add arrow icon as background
+                    background: url('data:image/svg+xml,%3Csvg%20width%3D%2221%22%20height%3D%2222%22%20viewBox%3D%220%200%2021%2022%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22vuesax%2Flinear%2Farrow-down%22%3E%3Cg%20id%3D%22arrow-down%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M17.7687%207.29761L11.6727%2014.1001C10.9528%2014.9034%209.77473%2014.9034%209.0548%2014.1001L2.9588%207.29761%22%20stroke%3D%22white%22%20stroke-width%3D%221.69697%22%20stroke-miterlimit%3D%2210%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat right 25px center;
+                    background-size: 20px; // Adjust size if necessary
+            
+                    option {
 
+                        color: #FFF;
+                        font-family: "Outfit", sans-serif;
+                        font-size: 20.364px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 150%; /* 30.545px */
+                    }
                 }
-
+            
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 5px solid #fff;
+                    pointer-events: none;
+                    transform: translateY(-50%);
+                }
             }
 
 
@@ -1169,15 +1375,19 @@
     }
 
     .s-footer-copy{
-        position: absolute;
+        position: relative;
         width: 534px;
         height: 33px;
-        top: 570px;
+        top: 65px;
         font-family: "Outfit", sans-serif;
-        font-size: 21px;
         font-weight: 300;
         line-height: 33px;
         text-align: left;
+
+
+        font-size: 21px;
+        font-style: normal;
+        line-height: 150%; /* 33px */
         a{
             color: #FFFFFF;
         }
