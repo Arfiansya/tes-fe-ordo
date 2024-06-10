@@ -48,6 +48,7 @@
             <img src="{{ asset('assets/logo/indonesia-nav.png') }}" alt="">
             <select>
                 <option>Indonesia (ID)</option>
+                <option>Indonesia (EN)</option>
             </select>
         </div>
 
