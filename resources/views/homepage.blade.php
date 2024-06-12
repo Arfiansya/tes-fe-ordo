@@ -26,7 +26,7 @@
     <nav class="nav">
 
         <div class="nav-head">
-            
+                   
             <div class="nav-logo">
                 <img src="{{ asset('assets/logo/logo-gwk.png') }}" alt="">
             </div>
@@ -59,6 +59,7 @@
     <section id="hero" class="s-hero">
 
         <div class="container">
+            
 
             <div class="s-hero-img">
                 <img src="{{ asset('assets/img/hero-img.png') }}" alt="graha-wisata">
