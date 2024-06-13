@@ -19,6 +19,10 @@
 
     <!-- bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     
 </head>
 <body>
@@ -250,47 +254,93 @@
 
 
     <section id="project" class="s-project">
-
         <div class="container">
 
             <div class="s-project-head">
-
                 <div class="s-project-head-path">
                     <img src="{{ asset('assets/icon/logo-op.png') }}" alt="">
-                    <h2>our latest Projects</h2>
-                    <img src="{{ asset('assets/icon/logo-op.png') }}" alt="">
+                        <h2>our latest Projects</h2>
+                        <img src="{{ asset('assets/icon/logo-op.png') }}" alt="">
                 </div>
-
                 <div class="s-project-head-tittle">
                     <h1>PROJECT TERBARU KAMI</h1>
                 </div>
-
             </div>
 
-            <div class="s-project-content">
-
-
-                <div class="s-project-content-background">
-                    <img src="{{ asset('assets\img\project-house.png') }}" alt="">
+            <div class="swiper mySwiper" class="content-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="s-project-content">
+                            <div class="s-project-content-background">
+                                <img src="{{ asset('assets/img/project-house.png') }}" alt="">
+                            </div>
+                            <div class="s-project-content-deskripsi">
+                                <h6>1/4 OPERATIONAL PROJECT</h6>
+                                <h1>Townhouse Oak</h1>
+                                <p>Brand tertinggi di OYO</p>
+                            </div>
+                            <div class="s-project-content-detail">
+                                <button class="s-project-content-detail-button">
+                                    <img src="{{ asset('assets/icon/arrow-left.png') }}" alt="">
+                                </button>
+                                <h5>Lihat Detail</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="s-project-content">
+                            <div class="s-project-content-background">
+                                <img src="{{ asset('assets/img/project-house.png') }}" alt="">
+                            </div>
+                            <div class="s-project-content-deskripsi">
+                                <h6>1/4 OPERATIONAL PROJECT</h6>
+                                <h1>Townhouse Oak</h1>
+                                <p>Brand tertinggi di OYO</p>
+                            </div>
+                            <div class="s-project-content-detail">
+                                <button class="s-project-content-detail-button">
+                                    <img src="{{ asset('assets/icon/arrow-left.png') }}" alt="">
+                                </button>
+                                <h5>Lihat Detail</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="s-project-content">
+                            <div class="s-project-content-background">
+                                <img src="{{ asset('assets/img/project-house.png') }}" alt="">
+                            </div>
+                            <div class="s-project-content-deskripsi">
+                                <h6>1/4 OPERATIONAL PROJECT</h6>
+                                <h1>Townhouse Oak</h1>
+                                <p>Brand tertinggi di OYO</p>
+                            </div>
+                            <div class="s-project-content-detail">
+                                <button class="s-project-content-detail-button">
+                                    <img src="{{ asset('assets/icon/arrow-left.png') }}" alt="">
+                                </button>
+                                <h5>Lihat Detail</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-pagination"></div>
+            </div>
 
-                <div class="s-project-content-deskripsi">
-                    <h6>1/4 OPERATIONAL PROJECT</h6>
-                    <h1>Townhouse Oak</h1>
-                    <p>Brand tertinggi di OYO</p>
-                </div>
-
-                <div class="s-project-content-detail">
-                        <button class="s-project-content-detail-button" ><img src="{{ asset('assets\icon\arrow-left.svg') }}" alt=""></button>
-                    <h5>Lihat Detail</h5>
-                </div>
-
-                
-
+            <div class="swiper-button-next">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 39.84L31.04 26.8C32.58 25.26 32.58 22.74 31.04 21.2L18 8.16" stroke="#333333" stroke-width="5.33333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="swiper-button-prev">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 39.84L31.04 26.8C32.58 25.26 32.58 22.74 31.04 21.2L18 8.16" stroke="#333333" stroke-width="5.33333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
 
         </div>
     </section>
+
 
     <section id="testimonial" class="s-testimonial">
         
@@ -451,9 +501,26 @@
         </div>
     </footer>
 
+      <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
     <script>
+
+
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+    
     document.addEventListener('DOMContentLoaded', function() {
       var navbar = document.querySelector('.nav');
 

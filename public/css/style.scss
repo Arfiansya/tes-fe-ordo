@@ -732,7 +732,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
         .s-project-head-path {
             display: flex;
             justify-content: center; // Center items horizontally
@@ -740,7 +740,7 @@
             gap: 14px;
             height: 28.4px;
             width: 100%; // Use width 100% to span the container
-    
+
             h2 {
                 color: #000;
                 font-family: "Montserrat", sans-serif;
@@ -752,7 +752,7 @@
                 margin-bottom: 0;
             }
         }
-    
+
         .s-project-head-tittle {
             position: relative;
             top: 22px;
@@ -764,22 +764,20 @@
             }
         }
     }
-    
 
-    .s-project-content{
-        width: Hug (1,182px);
-        height: Hug (380px);
-        position: absolute;
-        top: 2433px;
+    .s-project-content {
+        width: 1182px;
+        height: 380px;
 
-        .s-project-content-deskripsi{
+        .s-project-content-deskripsi {
             position: absolute;
             left: 101px;
             top: 105.87px;
             width: 618.55px;
             height: 169.36px;
             font-family: "Outfit", sans-serif;
-            h6{
+            text-align: left;
+            h6 {
                 width: 618.55px;
                 height: 28.76px;
                 font-weight: 500;
@@ -789,7 +787,7 @@
                 color: #000000;
                 margin-bottom: 26.88px;
             }
-            h1{
+            h1 {
                 color: #333333;
                 width: 618.55px;
                 font-family: "Outfit", sans-serif;
@@ -798,10 +796,9 @@
                 font-weight: 600;
                 line-height: 100%; /* 53px */
                 margin-bottom: 20.14px;
-
             }
 
-            p{
+            p {
                 color: #404040;
                 height: 32px;
                 width: 482.98px;
@@ -811,7 +808,7 @@
             }
         }
 
-        .s-project-content-detail{
+        .s-project-content-detail {
             width: 230.72px;
             height: 48px;
             position: absolute;
@@ -830,14 +827,16 @@
                 display: flex; 
                 justify-content: center; 
                 align-items: center; 
-                
+
                 img {
                     width: 33px;
                     height: 33px;
+                    color: #ccc ;
+                    transform: rotate(180deg);
                 }
             }
 
-            h5{
+            h5 {
                 width: 148px;
                 height: 29px;
                 text-align: left;
@@ -848,13 +847,68 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 100%; /* 28.715px */
-
             }
-            
         }
     }
-
 }
+
+    .swiper {
+        width: 1182px;
+        height: 380px;
+        position: absolute;
+        top: 300px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        width: 96px !important;
+        height: 96px !important;
+        border-radius: 106.67px !important;
+        background-color: #FAC568 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-button-next::after, .swiper-button-prev::after {
+        display: none; /* Menghilangkan panah default Swiper */
+    }
+
+    .swiper-button-next {
+        position: relative !important;
+        top: 113px !important;
+        left: 1145px !important;
+    }
+
+    .swiper-button-prev {
+        position: relative !important;
+        top: 23px !important;
+        left: -60px !important;
+    }
+
+    .swiper-button-prev svg {
+        transform: rotate(180deg);
+    }
+    .swiper-button-next svg, .swiper-button-prev svg {
+        width: 48px !important;  /* Set width of the SVG */
+        height: 48px !important; /* Set height of the SVG */
+    }
+
 
 .s-testimonial{
     background-color: #F7F8FD;
