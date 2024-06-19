@@ -267,9 +267,9 @@
                 </div>
             </div>
 
-            <div class="swiper mySwiper" class="content-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+            <div class="swiper mySwiper project-swiper" class="content-swiper">
+                <div class="swiper-wrapper project-wrapper">
+                    <div class="swiper-slide project-slide">
                         <div class="s-project-content">
                             <div class="s-project-content-background">
                                 <img src="{{ asset('assets/img/project-house.png') }}" alt="">
@@ -287,7 +287,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide project-slide">
                         <div class="s-project-content">
                             <div class="s-project-content-background">
                                 <img src="{{ asset('assets/img/project-house.png') }}" alt="">
@@ -305,7 +305,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide project-slide">
                         <div class="s-project-content">
                             <div class="s-project-content-background">
                                 <img src="{{ asset('assets/img/project-house.png') }}" alt="">
@@ -324,21 +324,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination project-pagination"></div>
             </div>
 
-            <div class="swiper-button-next">
+            <div class="swiper-button-next project-button-next">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 39.84L31.04 26.8C32.58 25.26 32.58 22.74 31.04 21.2L18 8.16" stroke="#333333" stroke-width="5.33333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
-            <div class="swiper-button-prev">
+            <div class="swiper-button-prev project-button-prev">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 39.84L31.04 26.8C32.58 25.26 32.58 22.74 31.04 21.2L18 8.16" stroke="#333333" stroke-width="5.33333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
 
         </div>
+
+        
     </section>
 
 
@@ -358,11 +360,7 @@
                 </div>
             </div>
 
-
-            <div class="s-testimonial-img">
-                <img src="{{ asset('assets/img/testimoni-img.png') }}" alt="klien">
-            </div>
-
+   
             <div class="s-testimonial-quote">
                 <img src="{{ asset('assets/icon/testimoni-quote.png') }}" alt="">
                 <p>GWA Group membantu hotel <br> saya untuk menjangkau lebih banyak client dan memberikan saran monetisasi yang tidak pernah saya bayangkan sebelumnya</p>
@@ -374,6 +372,52 @@
                 <div class="s-testimonial-name-idendtity">
                     <h4>CHAIM DESMOND</h4>
                     <h5>CEO of Yellow Hotel</h5>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper testimonial-swiper" class="content-swiper">
+                <div class="swiper-wrapper testimonial-wrapper">
+
+                    <div class="swiper-slide testimonial-slide">
+
+                        <div class="s-testimonial-img">
+                            <img src="{{ asset('assets/img/testimoni-img.png') }}" alt="klien">
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide testimonial-slide">
+
+                        <div class="s-testimonial-img">
+                            <img src="{{ asset('assets/img/testimoni-img.png') }}" alt="klien">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination testimonial-pagination"></div>
+            </div>
+
+            <div class="s-testimonial-swiper-button">
+                <div class="swiper-button-next testimonial-button-next">
+                    <svg width="49" height="50" viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="vuesax/linear/arrow-left">
+                        <g id="arrow-left">
+                        <path id="Vector" d="M18.329 41.1333L31.6105 27.8518C33.179 26.2833 33.179 23.7166 31.6105 22.1481L18.329 8.86664" stroke="white" stroke-width="3.55556" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        </g>
+                    </svg>
+
+                </div>
+                <div class="swiper-button-prev testimonial-button-prev">
+                    <svg width="49" height="50" viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="vuesax/linear/arrow-left">
+                        <g id="arrow-left">
+                        <path id="Vector" d="M18.329 41.1333L31.6105 27.8518C33.179 26.2833 33.179 23.7166 31.6105 22.1481L18.329 8.86664" stroke="white" stroke-width="3.55556" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        </g>
+                    </svg>
+
                 </div>
             </div>
 
@@ -506,19 +550,32 @@
 
 
     <script>
+    // Testimonial Swiper
+    var testimonialSwiper = new Swiper('.testimonial-swiper', {
+        cssMode: true,
+        navigation: {
+            nextEl: '.testimonial-button-next',
+            prevEl: '.testimonial-button-prev',
+        },
+        pagination: {
+            el: '.testimonial-pagination',
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
 
-
-    var swiper = new Swiper(".mySwiper", {
-      cssMode: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      mousewheel: true,
-      keyboard: true,
+    // Project Swiper
+    var projectSwiper = new Swiper('.project-swiper', {
+        cssMode: true,
+        navigation: {
+            nextEl: '.project-button-next',
+            prevEl: '.project-button-prev',
+        },
+        pagination: {
+            el: '.project-pagination',
+        },
+        mousewheel: true,
+        keyboard: true,
     });
     
     document.addEventListener('DOMContentLoaded', function() {

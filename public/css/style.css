@@ -731,14 +731,14 @@
   line-height: 100%; /* 28.715px */
 }
 
-.swiper {
+.project-swiper {
   width: 1182px;
   height: 380px;
   position: absolute;
   top: 300px;
 }
 
-.swiper-slide {
+.project-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -747,7 +747,7 @@
   align-items: center;
 }
 
-.swiper-slide img {
+.project-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -755,7 +755,7 @@
      object-fit: cover;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.project-button-next, .project-button-prev {
   width: 96px !important;
   height: 96px !important;
   border-radius: 106.67px !important;
@@ -765,27 +765,27 @@
   justify-content: center;
 }
 
-.swiper-button-next::after, .swiper-button-prev::after {
+.project-button-next::after, .project-button-prev::after {
   display: none; /* Menghilangkan panah default Swiper */
 }
 
-.swiper-button-next {
+.project-button-next {
   position: relative !important;
   top: 113px !important;
   left: 1145px !important;
 }
 
-.swiper-button-prev {
+.project-button-prev {
   position: relative !important;
   top: 23px !important;
   left: -60px !important;
 }
 
-.swiper-button-prev svg {
+.project-button-prev svg {
   transform: rotate(180deg);
 }
 
-.swiper-button-next svg, .swiper-button-prev svg {
+.project-button-next svg, .project-button-prev svg {
   width: 48px !important; /* Set width of the SVG */
   height: 48px !important; /* Set height of the SVG */
 }
@@ -897,6 +897,66 @@
   font-weight: 300;
   line-height: 39.15px;
   text-align: left;
+}
+
+.testimonial-swiper {
+  top: 59px !important;
+  border-radius: 60px 0 0 60px !important;
+  position: absolute !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 580.41px !important;
+  height: 571.71px !important;
+  right: 0 !important;
+}
+
+.testimonial-slide {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.s-testimonial-swiper-button {
+  z-index: 100;
+  position: absolute;
+  top: 132px;
+  right: 500px;
+  display: flex;
+  width: 160.114px;
+  height: 78px;
+  padding: 8.889px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 13.824px;
+  flex-shrink: 0;
+  border-radius: 88.889px;
+  background-color: #29679F;
+}
+
+.testimonial-button-next, .testimonial-button-prev {
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 48.889px !important;
+  height: 48.889px !important;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: #FFF;
+}
+
+.testimonial-button-next::after, .testimonial-button-prev::after {
+  display: none;
+}
+
+.testimonial-button-prev svg {
+  transform: rotate(180deg);
 }
 
 .s-kontak {
