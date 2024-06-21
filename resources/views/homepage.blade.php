@@ -28,37 +28,29 @@
 <body>
 
     <nav class="nav">
-
-        <div class="nav-head">
-                   
-            <div class="nav-logo">
-                <img src="{{ asset('assets/logo/logo-gwk.png') }}" alt="">
-            </div>
-
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="{{ route('homepage') }}">Homepage</a></li>
-                    <li><a href="{{ route('tentang') }}">Tentang</a></li>
-                    <li><a href="#">Daftar Hotel</a></li>
-                    <li><a href="#">Bantuan</a></li>
-                </ul>   
+        <div class="container">
+            <div class="nav-head">
+                <div class="nav-logo">
+                    <img src="{{ asset('assets/logo/logo-gwk.png') }}" alt="">
                 </div>
-
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="{{ route('homepage') }}">Homepage</a></li>
+                        <li><a href="{{ route('tentang') }}">Tentang</a></li>
+                        <li><a href="#">Daftar Hotel</a></li>
+                        <li><a href="#">Bantuan</a></li>
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <img src="{{ asset('assets/logo/indonesia-nav.png') }}" alt="">
+                    <select>
+                        <option>Indonesia (ID)</option>
+                     </select>
+                </div>
             </div>
-
         </div>
-
-        <div class="nav-button">
-            <img src="{{ asset('assets/logo/indonesia-nav.png') }}" alt="">
-            <select>
-                <option>Indonesia (ID)</option>
-                <option>Indonesia (EN)</option>
-            </select>
-        </div>
-
-
-
     </nav>
+
 
     <section id="hero" class="s-hero">
 
@@ -115,66 +107,68 @@
 
             </div>
 
-            <div class="s-workflow-item-1">
-                <div class="s-workflow-item-img-1">
-                    <img src="{{ asset('assets\logo\tantangan-workflow.png') }}" alt="">
-                </div>
-
-                <div class="s-workflow-item-content-1">
-                    <div class="s-workflow-item-content-tittle-1">
-                        <h2>Tantangan</h2>
+            <div class="s-workflow-card">
+                <div class="s-workflow-item-1">
+                    <div class="s-workflow-item-img-1">
+                        <img src="{{ asset('assets\logo\tantangan-workflow.png') }}" alt="">
                     </div>
 
-                    <div class="s-workflow-item-content-deskripsi-1">
-                        <p>Setiap property memiliki tantangan tersendiri dan GWA sangat memahami hal tersebut.</p>
+                    <div class="s-workflow-item-content-1">
+                        <div class="s-workflow-item-content-tittle-1">
+                            <h2>Tantangan</h2>
+                        </div>
+
+                        <div class="s-workflow-item-content-deskripsi-1">
+                            <p>Setiap property memiliki tantangan tersendiri dan GWA sangat memahami hal tersebut.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="s-workflow-item-2">
-                <div class="s-workflow-item-img-2">
-                    <img src="{{ asset('assets\logo\rumusan-workflow.png') }}" alt="">
-                </div>
-
-                <div class="s-workflow-item-content-2">
-                    <div class="s-workflow-item-content-tittle-2">
-                        <h2>Rumusan</h2>
+                <div class="s-workflow-item-2">
+                    <div class="s-workflow-item-img-2">
+                        <img src="{{ asset('assets\logo\rumusan-workflow.png') }}" alt="">
                     </div>
 
-                    <div class="s-workflow-item-content-deskripsi-2">
-                        <p>Setiap tantangan akan dirumuskan menjadi sebuah hal yang harus dicari jalan keluarnya oleh kami</p>
+                    <div class="s-workflow-item-content-2">
+                        <div class="s-workflow-item-content-tittle-2">
+                            <h2>Rumusan</h2>
+                        </div>
+
+                        <div class="s-workflow-item-content-deskripsi-2">
+                            <p>Setiap tantangan akan dirumuskan menjadi sebuah hal yang harus dicari jalan keluarnya oleh kami</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="s-workflow-item-3">
-                <div class="s-workflow-item-img-3">
-                    <img src="{{ asset('assets\logo\goals-workflow.png') }}" alt="">
-                </div>
-
-                <div class="s-workflow-item-content-3">
-                    <div class="s-workflow-item-content-tittle-3">
-                        <h2>Goals</h2>
+                <div class="s-workflow-item-3">
+                    <div class="s-workflow-item-img-3">
+                        <img src="{{ asset('assets\logo\goals-workflow.png') }}" alt="">
                     </div>
 
-                    <div class="s-workflow-item-content-deskripsi-3">
-                        <p>Dari rumusan masalah, kami memberikan respon cepat dan jalan keluar jangka pendek - menengah - panjang.</p>
+                    <div class="s-workflow-item-content-3">
+                        <div class="s-workflow-item-content-tittle-3">
+                            <h2>Goals</h2>
+                        </div>
+
+                        <div class="s-workflow-item-content-deskripsi-3">
+                            <p>Dari rumusan masalah, kami memberikan respon cepat dan jalan keluar jangka pendek - menengah - panjang.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="s-workflow-item-4">
-                <div class="s-workflow-item-img-4">
-                    <img src="{{ asset('assets\logo\idea-workflow.png') }}" alt="">
-                </div>
-
-                <div class="s-workflow-item-content-4">
-                    <div class="s-workflow-item-content-tittle-4">
-                        <h2>Ideas</h2>
+                <div class="s-workflow-item-4">
+                    <div class="s-workflow-item-img-4">
+                        <img src="{{ asset('assets\logo\idea-workflow.png') }}" alt="">
                     </div>
 
-                    <div class="s-workflow-item-content-deskripsi-4">
-                        <p>Setiap rumusan menjadikan ide-ide kreatif bagi kami untuk meningkatkan kualitas property mitra.</p>
+                    <div class="s-workflow-item-content-4">
+                        <div class="s-workflow-item-content-tittle-4">
+                            <h2>Ideas</h2>
+                        </div>
+
+                        <div class="s-workflow-item-content-deskripsi-4">
+                            <p>Setiap rumusan menjadikan ide-ide kreatif bagi kami untuk meningkatkan kualitas property mitra.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -209,7 +203,7 @@
                     </div>
                     <div class="s-services-content-card-img">
                         <img src="{{ asset('assets/icon/services-img-1.png') }}" alt="Revenue Management Icon">
-                    </div>
+                    </div>  
                     <div class="s-services-content-card-title">
                         <h1>Revenue Management Service</h1>
                     </div>
@@ -271,9 +265,6 @@
                 <div class="swiper-wrapper project-wrapper">
                     <div class="swiper-slide project-slide">
                         <div class="s-project-content">
-                            <div class="s-project-content-background">
-                                <img src="{{ asset('assets/img/project-house.png') }}" alt="">
-                            </div>
                             <div class="s-project-content-deskripsi">
                                 <h6>1/4 OPERATIONAL PROJECT</h6>
                                 <h1>Townhouse Oak</h1>
@@ -284,14 +275,14 @@
                                     <img src="{{ asset('assets/icon/arrow-left.png') }}" alt="">
                                 </button>
                                 <h5>Lihat Detail</h5>
+                            </div>
+                            <div class="s-project-content-background">
+                                <img src="{{ asset('assets/img/project-house.png') }}" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide project-slide">
                         <div class="s-project-content">
-                            <div class="s-project-content-background">
-                                <img src="{{ asset('assets/img/project-house.png') }}" alt="">
-                            </div>
                             <div class="s-project-content-deskripsi">
                                 <h6>1/4 OPERATIONAL PROJECT</h6>
                                 <h1>Townhouse Oak</h1>
@@ -302,14 +293,14 @@
                                     <img src="{{ asset('assets/icon/arrow-left.png') }}" alt="">
                                 </button>
                                 <h5>Lihat Detail</h5>
+                            </div>
+                            <div class="s-project-content-background">
+                                <img src="{{ asset('assets/img/project-house.png') }}" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide project-slide">
                         <div class="s-project-content">
-                            <div class="s-project-content-background">
-                                <img src="{{ asset('assets/img/project-house.png') }}" alt="">
-                            </div>
                             <div class="s-project-content-deskripsi">
                                 <h6>1/4 OPERATIONAL PROJECT</h6>
                                 <h1>Townhouse Oak</h1>
@@ -320,13 +311,14 @@
                                     <img src="{{ asset('assets/icon/arrow-left.png') }}" alt="">
                                 </button>
                                 <h5>Lihat Detail</h5>
+                            </div>
+                            <div class="s-project-content-background">
+                                <img src="{{ asset('assets/img/project-house.png') }}" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination project-pagination"></div>
             </div>
-
             <div class="swiper-button-next project-button-next">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 39.84L31.04 26.8C32.58 25.26 32.58 22.74 31.04 21.2L18 8.16" stroke="#333333" stroke-width="5.33333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -336,9 +328,9 @@
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 39.84L31.04 26.8C32.58 25.26 32.58 22.74 31.04 21.2L18 8.16" stroke="#333333" stroke-width="5.33333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-            </div>
-
+            </div> 
         </div>
+
 
         
     </section>
@@ -395,7 +387,6 @@
 
                 </div>
 
-                <div class="swiper-pagination testimonial-pagination"></div>
             </div>
 
             <div class="s-testimonial-swiper-button">
@@ -545,7 +536,7 @@
         </div>
     </footer>
 
-      <!-- Swiper JS -->
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 

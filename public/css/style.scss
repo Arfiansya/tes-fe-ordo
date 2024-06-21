@@ -7,46 +7,49 @@
 .nav {
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
     background: transparent;
     height: 120px;
     z-index: 1000;
     transition: background-color 0.3s;
-    
+    align-items: center;
+  
     &.scrolled {
       background-color: #29679F;
     }
+  
+
   
     .nav-head {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0px;
+      width: 100%;
   
       .nav-logo {
-        position: relative;
-        left: 130px;
-        width: 148px;
+        width: 248px;
         height: 50px;
+        margin-right: 60px;
+
   
         img {
           width: 100%;
           height: auto;
+          align-items: center;
         }
       }
   
       .nav-menu {
-        position: relative;
-        left: 210px;
+        display: flex;
+        align-items: center;
+        width: 100%;
   
         ul {
           list-style: none;
           padding: 0;
           margin: 0;
+          display: flex;
   
           li {
-            display: inline-block;
             margin-right: 40px;
   
             a {
@@ -54,9 +57,9 @@
               font-size: 18px;
               font-weight: 500;
               line-height: 22.68px;
-              text-align: left;
               text-decoration: none;
               color: #ffffff;
+              transition: color 0.3s;
   
               &:hover {
                 color: #1e1e1e;
@@ -66,66 +69,52 @@
         }
       }
     }
-
+  
     .nav-button {
-        position: relative;
-        top: 33PX;
-        left: 600px;
+      display: flex;
+      align-items: center;
+      background-color: #15548D;
+      width: 330px;
+      height: 52px;
+      border-radius: 10px;
+      padding: 0 12px;
 
-        background: url('data:image/svg+xml,%3Csvg%20width%3D%2221%22%20height%3D%2222%22%20viewBox%3D%220%200%2021%2022%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22vuesax%2Flinear%2Farrow-down%22%3E%3Cg%20id%3D%22arrow-down%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M17.7687%207.29761L11.6727%2014.1001C10.9528%2014.9034%209.77473%2014.9034%209.0548%2014.1001L2.9588%207.29761%22%20stroke%3D%22white%22%20stroke-width%3D%221.69697%22%20stroke-miterlimit%3D%2210%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat right 25px center;
-        background-size: 20px; // Adjust size if necessary
-
-        width: 221px;
-        height: 52px;
-        gap: 12px;
-        border-radius: 10px;
-
-        display: flex;
-        align-items: center;
-        background-color: #15548D;
-
-      
-        img {
-        margin-top: 7px;
-          margin-right: 10px;
-          margin-left: 10px;
-        }
-      
-        select {
-            position: relative;
-            right: 12px;
-          background: transparent;
-          border: none;
-          cursor: pointer;
-          appearance: none;
-
-          color: #FFF;
-          font-family: "Outfit", sans-serif;
-          font-size: 17px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-      
-
-          &::-ms-expand {
-            display: none; 
-          }
-      
-          &::after {
-            content: '▼';
-            font-size: 12px;
-            color: white;
-            margin-left: 10px;
-          }
-      
-          option {
-            background: white;
-            color: black;
-          }
-        }
+  
+      img {
+        margin: 0 10px;
       }
+  
+      select {
+        width: fit-content;
+        background-color: #15548D;
+        border: none;
+        color: #FFF;
+        font-family: "Outfit", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        cursor: pointer;
+        appearance: none;
+        outline: none;
+        width: calc(100% - 40px); // Adjust width to leave space for the arrow
+  
+        &::-ms-expand {
+          display: none; 
+        }
+
+      }
+  
       
+      &::after {
+        background: url('data:image/svg+xml,%3Csvg%20width%3D%2221%22%20height%3D%2222%22%20viewBox%3D%220%200%2021%2022%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22vuesax%2Flinear%2Farrow-down%22%3E%3Cg%20id%3D%22arrow-down%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M17.7687%207.29761L11.6727%2014.1001C10.9528%2014.9034%209.77473%2014.9034%209.0548%2014.1001L2.9588%207.29761%22%20stroke%3D%22white%22%20stroke-width%3D%221.69697%22%20stroke-miterlimit%3D%2210%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat right 10px center;
+        width: 20px;
+        height: 20px;
+        pointer-events: none;
+        transform: translateY(-50%);
+        
+      }
+    }
   }
+  
   
 
 .s-hero{
@@ -142,8 +131,7 @@
     }
 
     .s-hero-content-path{
-        position: relative;
-        top: 206px;
+        margin-top: 206px;
         color: #FFFFFF;
         display: inline-flex;
         align-items: center;
@@ -169,8 +157,7 @@
     }
 
     .s-hero-content-tittle{
-        position: relative;
-        top: 253px;
+        margin-top: 31px;
         color: #FFFFFF;
         width: 675px;
         height: 204px;
@@ -206,8 +193,7 @@
         width: 404.7px;
         height: 74px;
 
-        position: relative;
-        top: 293px;
+        margin-top: 36px;
 
         .s-hero-button-primary{
             border: #FAC568 ;
@@ -234,7 +220,7 @@
     .s-hero-scroll {
         position: absolute;
         left: 39px;
-        top: 620px;
+        bottom: 51px;
         display: flex;
         flex-direction: column; 
         align-items: center ; 
@@ -274,13 +260,13 @@
 .s-workflow{
     background-color: #ffffff;
     width: 100%;
-    height: 720px;
+    height: 800px;
 
 
 
     .s-workflow-head{
         position: relative;
-        top: 17px;
+        margin-top: 98px;
         width: 589px;
         height: 143px;
 
@@ -317,11 +303,13 @@
         }
     }
 
+    .s-workflow-card{
+        display: flex;
+        width: 100%;
+
+    }
     .s-workflow-item-1{
-        width: 261.415px;
-        height: 290.865px;
-        position: absolute;
-        top: 979+120px;
+        margin-top: 138px;
         .s-workflow-item-img-1{
             width: 150px;
             height: 150px;
@@ -379,12 +367,8 @@
     }
     
     .s-workflow-item-2{
-        width: 286.495px;
-        height: 290.865px;
-        flex-shrink: 0;
-        position: absolute;
-        top: 898+120px;
-        margin-left: 289.35px;
+        margin-top: 57px;
+        margin-left: -30px;
         .s-workflow-item-img-2{
             width: 150px;
             height: 150px;
@@ -442,11 +426,8 @@
     }
 
     .s-workflow-item-3{
-        width: 321px;
-        height: 297.806px;
-        position: absolute;
-        top: 936+120px;
-        margin-left: 651px;
+        margin-top: 95px;
+        margin-left: 30px;
         .s-workflow-item-img-3{
             width: 150px;
             height: 150px;
@@ -504,11 +485,7 @@
     }
 
     .s-workflow-item-4{
-        width: 293.226px;
-        height: 297.613px;
-        position: absolute;
-        top: 812+120px;
-        margin-left: 953px;
+        margin-left: 30px;
         .s-workflow-item-img-4{
             width: 150px;
             height: 150px;
@@ -565,9 +542,20 @@
 
     }
 
-    
+        &::before {
+        content: ''; // Harus diisi agar pseudo-elemen muncul
+        position: absolute; // Posisikan secara absolut
+        top: 790px;
+        left: auto;
+        width: 1379px;
+        height: 406.573px;
+        background: url('../assets/icon/workflow-bg.png') no-repeat center center; 
+        background-size: cover; // Untuk meng-cover seluruh area
+        z-index: 10; // Pastikan pseudo-elemen berada di belakang konten utama
+    }
 }
 
+    
 
 .s-services{
     background-color: #F7F8FD;
@@ -575,9 +563,13 @@
     height: 705px;
     .s-services-head{
         position: relative;
-        top: 92px;
-        width: 1,181px;
+        margin-top: 92px;
+        width: 100%;
         height: 94px;
+
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
         .s-services-head-path{
             display: flex;
             align-items: center;
@@ -609,20 +601,19 @@
 
     .s-services-content{
         position: relative;
-        top: 139px;
-        width: 1183px;
+        margin-top: 50px;
+        width: 100%;
         height: 370px;
         justify-content: space-between;
         gap: 59px;
         display: flex;
 
         .s-services-content-card {
-            width: 355px;
+            width: 100%;
             height: 370px;
-            flex-shrink: 0;
             background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 32px;
+            border: 0.973px solid #DDD;
             text-align: center;
             position: relative;
           
@@ -717,16 +708,18 @@
                     flex-shrink: 0;
                 }
             }
-          }
+        }
           
     }
 }
 
 .s-project {
+    width: 100%;
+    height: 700px;
     .s-project-head {
-        position: absolute;
-        top: 2269px;
-        width: 1182px;
+        position: relative;
+        margin-top: 80px;
+        width: 100%;
         height: 96px;
         display: flex;
         flex-direction: column;
@@ -755,7 +748,7 @@
 
         .s-project-head-tittle {
             position: relative;
-            top: 22px;
+            margin-top: 22px;
             h1 {
                 font-size: 34px;
                 font-family: "Outfit", sans-serif;
@@ -766,13 +759,13 @@
     }
 
     .s-project-content {
-        width: 1182px;
+        width: 100%;
         height: 380px;
 
         .s-project-content-deskripsi {
             position: absolute;
-            left: 101px;
-            top: 105.87px;
+            margin-left: 101px;
+            margin-top: 105.87px;
             width: 618.55px;
             height: 169.36px;
             font-family: "Outfit", sans-serif;
@@ -812,8 +805,8 @@
             width: 230.72px;
             height: 48px;
             position: absolute;
-            top: 265px;
-            left: 860px;
+            bottom: 76px;
+            right: 91px;
             display: flex;
             align-items: center;
             gap: 14px;
@@ -853,10 +846,10 @@
 }
 
     .project-swiper {
-        width: 1182px;
+        width: 100%;
         height: 380px;
-        position: absolute;
-        top: 300px;
+        position: relative;
+        margin-top: 68px;
     }
 
     .project-slide {
@@ -890,15 +883,16 @@
     }
 
     .project-button-next {
-        position: relative !important;
-        top: 113px !important;
-        left: 1145px !important;
+        position: relative!important;
+        bottom: 220px!important;
+        left: 1075px!important;
     }
 
     .project-button-prev {
-        position: relative !important;
-        top: 23px !important;
-        left: -60px !important;
+        position: relative!important;
+        bottom: 300px!important;
+        left: -60px!important;
+
     }
 
     .project-button-prev svg {
@@ -914,14 +908,17 @@
     background-color: #F7F8FD;
     width: 100%;
     height: 690px;
-    position: absolute;
-    top: 2892px;
+
 
     .s-testimonial-head{
-        position: relative;
-        top: 92px;
-        width: 665.02px;
+        width: 100%;
         height: 97.19px;
+        position: relative;
+        margin-top: 92px;
+
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
         .s-testimonial-head-path{
             display: flex;
             align-items: center;
@@ -955,22 +952,14 @@
     }
 
 
-    .s-testimonial-img {
-        position: absolute;
-        top: 59px;
-        width: 580.41px;
-        height: 571.71px;
-        right: 0; /* Menempatkan elemen ke bagian paling kiri */
-        margin-right: 0px;
-        border-radius: 60px 0px 0px 60px; /* Memperbaiki sintaks penulisan untuk border-radius */
-    }
+
 
     .s-testimonial-quote{
         position: relative;
         width: 526.38px;
         height: 193px;
-        top: 138px;
-        left: 29.12px;
+        margin-top: 38px;
+        margin-left: 29.12px;
         display: flex; /* Menjadikan elemen ini sebagai flex container */
         justify-content: space-between; /* Menyebarkan elemen anak di sepanjang container dengan ruang di antara mereka */
 
@@ -989,6 +978,7 @@
             font-weight: 300;
             line-height: 37.7px;
             text-align: left;
+            margin-bottom: 0;
 
 
         }
@@ -999,7 +989,7 @@
         position: relative;
         width: 256.52px;
         height: 81px;        
-        top: 181px;
+        margin-top: 60px;
         display: flex; /* Menjadikan elemen ini sebagai flex container */
         justify-content: space-between; /* Menyebarkan elemen anak di sepanjang container dengan ruang di antara mereka */
         img{
@@ -1044,7 +1034,7 @@
     
 }
     .testimonial-swiper {
-        top: 59px !important;
+        top: 3070px !important;
         border-radius: 60px 0 0 60px !important;
         position: absolute !important;
         margin-left: 0 !important; 
@@ -1070,7 +1060,7 @@
     .s-testimonial-swiper-button{
         z-index: 100;
         position: absolute;
-        top: 132px;
+        top: 3070px+87px !important;
         right: 500px;
         display: flex;
         width: 160.114px;
@@ -1084,7 +1074,7 @@
         background-color: #29679F;
 
     }
-
+  
     .testimonial-button-next, .testimonial-button-prev {
 
         left: 0;
@@ -1112,16 +1102,18 @@
 
 .s-kontak {
     width: 100%;
-    position: absolute;
-    height: 741px;
-    top: 3590px;
+    height: 700px;
     
     .s-kontak-head{
-        position: relative;
-        top: 185px;
         width: 460px;
         height: 296px;
-        align-items: center;
+
+        position: relative;
+        margin-top: 185px;
+
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
         
         .s-kontak-head-path{
             display: flex;
@@ -1155,8 +1147,7 @@
         
         .s-kontak-hr{
             width: 141px;
-            height: 0px;
-            margin-top: 20px;
+            height: 0;
             margin-bottom: 20px;
         }
 
@@ -1168,7 +1159,6 @@
             p{
 
                 text-align: left;
-
                 color: #052925;
                 font-family: "Montserrat", sans-serif;
                 font-size: 20px;
@@ -1183,8 +1173,8 @@
 
     .s-kontak-form {
         position: absolute;
-        top: 134px;
-        right: 166px;
+        top: 3800px;
+        right: 180px;
         background-color: #F8F8F8;
         width: 518px;
         height: 500px;
@@ -1280,9 +1270,10 @@
     background-color: #15548D;
     width: 100%;
     height: 700px;
-    position: absolute;
-    top: 4343px;
-    color: white;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
 
 
     .s-footer-logo {
@@ -1291,6 +1282,7 @@
         width: 192.4px;
         height: 65px;
         margin-bottom: 0;
+        
 
         img {
             width: 100%;
@@ -1425,6 +1417,7 @@
             width: 375.03px;
             height: 56px;
             gap: 16.97px;
+            z-index: 10;
 
             
             img{
@@ -1475,7 +1468,7 @@
             
                     option {
 
-                        color: #FFF;
+                        background-color: #29679F;
                         font-family: "Outfit", sans-serif;
                         font-size: 20.364px;
                         font-style: normal;
@@ -1485,6 +1478,7 @@
                 }
             
                 &::before {
+                    
                     content: '';
                     position: absolute;
                     top: 50%;
@@ -1510,7 +1504,7 @@
         position: relative;
         width: 534px;
         height: 33px;
-        top: 65px;
+        margin-top: 65px;
         font-family: "Outfit", sans-serif;
         font-weight: 300;
         line-height: 33px;
@@ -1525,4 +1519,17 @@
         }
     }
 
+    &::before {
+        content: ''; // Harus diisi agar pseudo-elemen muncul
+        position: absolute; // Posisikan secara absolut
+        top: 4631px;
+        left: 100px;
+        width: 100%;
+        height: 459.107px;
+        left: auto;
+        background: url('data:image/svg+xml;utf8,<svg width="1400" height="402" viewBox="0 0 1400 402" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-1 69C-1 69 345.069 440.135 992 457" stroke="white" stroke-opacity="0.3"/><path d="M-1 185C-1 185 222.009 411.897 588.236 223.279C845.184 90.9427 1113.85 509.238 1397 455.141" stroke="white" stroke-opacity="0.3"/><path d="M32 403C257.835 231.015 595.32 401.085 859.64 167.026C1123.96 -67.0327 1399 167.026 1399 167.026" stroke="white" stroke-opacity="0.3"/><path d="M675 451.855C675 451.855 939.5 402.614 1021.5 153.663C1103.5 -95.2869 1397 34.933 1397 34.933" stroke="white" stroke-opacity="0.3"/></svg>') no-repeat center center; // Ganti dengan URL gambar Anda
+        background-size: cover; // Untuk meng-cover seluruh area
+        opacity: 0.5; // Sesuaikan dengan kebutuhan untuk efek transparansi
+        z-index: 10; // Pastikan pseudo-elemen berada di belakang konten utama
+    }
 }
