@@ -65,6 +65,7 @@
   height: 52px;
   border-radius: 10px;
   padding: 0 12px;
+  position: relative; /* Ensure the parent is positioned relatively */
 }
 .nav .nav-button img {
   margin: 0 10px;
@@ -83,15 +84,19 @@
      -moz-appearance: none;
           appearance: none;
   outline: none;
-  width: calc(100% - 40px);
+  padding-right: 30px; /* Ensure space for the arrow */
 }
 .nav .nav-button select::-ms-expand {
   display: none;
 }
-.nav .nav-button::after {
-  background: url("data:image/svg+xml,%3Csvg%20width%3D%2221%22%20height%3D%2222%22%20viewBox%3D%220%200%2021%2022%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22vuesax%2Flinear%2Farrow-down%22%3E%3Cg%20id%3D%22arrow-down%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M17.7687%207.29761L11.6727%2014.1001C10.9528%2014.9034%209.77473%2014.9034%209.0548%2014.1001L2.9588%207.29761%22%20stroke%3D%22white%22%20stroke-width%3D%221.69697%22%20stroke-miterlimit%3D%2210%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat right 10px center;
+.nav .nav-button::before {
+  content: ""; /* Add content property */
+  background: url("data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22vuesax%2Flinear%2Farrow-down%22%3E%3Cg%20id%3D%22arrow-down%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M17.2727%206.36353L11.2856%2013.0445C10.5785%2013.8335%209.42151%2013.8335%208.71444%2013.0445L2.72729%206.36353%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat center;
   width: 20px;
   height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
   pointer-events: none;
   transform: translateY(-50%);
 }
@@ -161,6 +166,7 @@
   width: 404.7px;
   height: 74px;
   margin-top: 36px;
+  z-index: 2;
 }
 .s-hero .s-hero-button .s-hero-button-primary {
   border: #FAC568;
@@ -190,6 +196,7 @@
   gap: 15px;
   width: 37px;
   height: 102px;
+  z-index: 2;
 }
 .s-hero .s-hero-scroll h4 {
   width: 54px;
@@ -210,6 +217,18 @@
   justify-content: center;
   align-items: center;
 }
+.s-hero::before {
+  content: "";
+  position: absolute;
+  top: 85px;
+  left: 0px;
+  width: 1100px;
+  height: 785px;
+  background: url("data:image/svg+xml,%3Csvg%20width%3D%22865%22%20height%3D%22787%22%20viewBox%3D%220%200%20865%20787%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M813.5%201C802.902%2056.6169%20638.067%20209.954%20454%20143C269.933%2076.0459%2075.597%20181.655%20-1%20143%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20289.686C0%20289.686%20116.015%20394.801%20339%20281.686C490.769%20204.698%20647.351%20421.613%20811.5%20377.186%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20492C168.986%20336.609%20337.275%20532.8%20501.109%20316.246C664.944%2099.6923%20864%20316.246%20864%20316.246%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-1.5%20697C-1.5%20697%2041.4996%20787.664%20261.5%20609C481.5%20430.336%20741%20712%20809.5%20546.5%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-2%20423.851C164.173%20388.065%20200.787%20699.399%20572%20786%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3C/svg%3E") no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: auto;
+}
 
 .s-workflow {
   background-color: #ffffff;
@@ -224,6 +243,7 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
+  z-index: 20; /* Tambahkan z-index lebih tinggi */
 }
 .s-workflow .s-workflow-head .s-workflow-head-path {
   display: flex;
@@ -248,14 +268,17 @@
   font-size: 34px;
   font-style: normal;
   font-weight: 600;
-  line-height: 52.5px; /* 52.5px */
+  line-height: 52.5px;
 }
 .s-workflow .s-workflow-card {
   display: flex;
   width: 100%;
+  z-index: 20;
 }
 .s-workflow .s-workflow-item-1 {
   margin-top: 138px;
+  position: relative; /* Tambahkan position */
+  z-index: 20; /* Tambahkan z-index lebih tinggi */
 }
 .s-workflow .s-workflow-item-1 .s-workflow-item-img-1 {
   width: 150px;
@@ -307,6 +330,8 @@
 .s-workflow .s-workflow-item-2 {
   margin-top: 57px;
   margin-left: -30px;
+  position: relative; /* Tambahkan position */
+  z-index: 20; /* Tambahkan z-index lebih tinggi */
 }
 .s-workflow .s-workflow-item-2 .s-workflow-item-img-2 {
   width: 150px;
@@ -358,6 +383,8 @@
 .s-workflow .s-workflow-item-3 {
   margin-top: 95px;
   margin-left: 30px;
+  position: relative; /* Tambahkan position */
+  z-index: 20; /* Tambahkan z-index lebih tinggi */
 }
 .s-workflow .s-workflow-item-3 .s-workflow-item-img-3 {
   width: 150px;
@@ -408,6 +435,8 @@
 }
 .s-workflow .s-workflow-item-4 {
   margin-left: 30px;
+  position: relative; /* Tambahkan position */
+  z-index: 20; /* Tambahkan z-index lebih tinggi */
 }
 .s-workflow .s-workflow-item-4 .s-workflow-item-img-4 {
   width: 150px;
@@ -465,7 +494,7 @@
   height: 406.573px;
   background: url("../assets/icon/workflow-bg.png") no-repeat center center;
   background-size: cover;
-  z-index: 10;
+  z-index: 5;
 }
 
 .s-services {
@@ -1245,19 +1274,6 @@
   font-style: normal;
   font-weight: 300;
   line-height: 150%; /* 30.545px */
-}
-.s-footer .s-footer-bottom .s-footer-bottom-language-selector .s-footer-bottom-language-selector-select::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #fff;
-  pointer-events: none;
-  transform: translateY(-50%);
 }
 .s-footer .s-footer-copy {
   position: relative;

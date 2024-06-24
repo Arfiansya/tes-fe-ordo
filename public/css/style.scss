@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    
 }
 
 .nav {
@@ -17,8 +16,6 @@
       background-color: #29679F;
     }
   
-
-  
     .nav-head {
       display: flex;
       justify-content: space-between;
@@ -30,7 +27,6 @@
         height: 50px;
         margin-right: 60px;
 
-  
         img {
           width: 100%;
           height: auto;
@@ -71,51 +67,50 @@
     }
   
     .nav-button {
-      display: flex;
-      align-items: center;
-      background-color: #15548D;
-      width: 330px;
-      height: 52px;
-      border-radius: 10px;
-      padding: 0 12px;
-
-  
-      img {
-        margin: 0 10px;
-      }
-  
-      select {
-        width: fit-content;
+        display: flex;
+        align-items: center;
         background-color: #15548D;
-        border: none;
-        color: #FFF;
-        font-family: "Outfit", sans-serif;
-        font-size: 17px;
-        font-weight: 400;
-        cursor: pointer;
-        appearance: none;
-        outline: none;
-        width: calc(100% - 40px); // Adjust width to leave space for the arrow
-  
-        &::-ms-expand {
-          display: none; 
-        }
-
-      }
-  
+        width: 330px;
+        height: 52px;
+        border-radius: 10px;
+        padding: 0 12px;
+        position: relative; /* Ensure the parent is positioned relatively */
       
-      &::after {
-        background: url('data:image/svg+xml,%3Csvg%20width%3D%2221%22%20height%3D%2222%22%20viewBox%3D%220%200%2021%2022%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22vuesax%2Flinear%2Farrow-down%22%3E%3Cg%20id%3D%22arrow-down%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M17.7687%207.29761L11.6727%2014.1001C10.9528%2014.9034%209.77473%2014.9034%209.0548%2014.1001L2.9588%207.29761%22%20stroke%3D%22white%22%20stroke-width%3D%221.69697%22%20stroke-miterlimit%3D%2210%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat right 10px center;
-        width: 20px;
-        height: 20px;
-        pointer-events: none;
-        transform: translateY(-50%);
-        
-      }
-    }
+        img {
+          margin: 0 10px;
+        }
+      
+        select {
+          width: fit-content;
+          background-color: #15548D;
+          border: none;
+          color: #FFF;
+          font-family: "Outfit", sans-serif;
+          font-size: 17px;
+          font-weight: 400;
+          cursor: pointer;
+          appearance: none;
+          outline: none;
+          padding-right: 30px; /* Ensure space for the arrow */
+          
+          &::-ms-expand {
+            display: none; 
+          }
+        }
+      
+        &::before {
+          content: ''; /* Add content property */
+          background: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22vuesax%2Flinear%2Farrow-down%22%3E%3Cg%20id%3D%22arrow-down%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M17.2727%206.36353L11.2856%2013.0445C10.5785%2013.8335%209.42151%2013.8335%208.71444%2013.0445L2.72729%206.36353%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          pointer-events: none;
+          transform: translateY(-50%);
+        }
+      }      
   }
-  
-  
 
 .s-hero{
     width: 100%;
@@ -194,6 +189,7 @@
         height: 74px;
 
         margin-top: 36px;
+        z-index: 2;
 
         .s-hero-button-primary{
             border: #FAC568 ;
@@ -228,6 +224,7 @@
 
         width: 37px;
         height: 102px;
+        z-index: 2;
     
         h4 {
 
@@ -252,19 +249,28 @@
             align-items: center;
         }
     }
+
+    &::before {
+        content: ''; 
+        position: absolute; 
+        top: 85px;
+        left: 0px;
+        width: 1100px;
+        height: 785px;
+        background: url('data:image/svg+xml,%3Csvg%20width%3D%22865%22%20height%3D%22787%22%20viewBox%3D%220%200%20865%20787%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M813.5%201C802.902%2056.6169%20638.067%20209.954%20454%20143C269.933%2076.0459%2075.597%20181.655%20-1%20143%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20289.686C0%20289.686%20116.015%20394.801%20339%20281.686C490.769%20204.698%20647.351%20421.613%20811.5%20377.186%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20492C168.986%20336.609%20337.275%20532.8%20501.109%20316.246C664.944%2099.6923%20864%20316.246%20864%20316.246%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-1.5%20697C-1.5%20697%2041.4996%20787.664%20261.5%20609C481.5%20430.336%20741%20712%20809.5%20546.5%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-2%20423.851C164.173%20388.065%20200.787%20699.399%20572%20786%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3C/svg%3E') no-repeat center center; // Ganti dengan URL gambar Anda
+        background-size: cover;
+        opacity: 0.5;
+        z-index: auto;
+    }
     
 }
 
-
-
-.s-workflow{
+.s-workflow {
     background-color: #ffffff;
     width: 100%;
     height: 800px;
 
-
-
-    .s-workflow-head{
+    .s-workflow-head {
         position: relative;
         margin-top: 98px;
         width: 589px;
@@ -273,71 +279,72 @@
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
-        .s-workflow-head-path{
+        z-index: 20; /* Tambahkan z-index lebih tinggi */
+        .s-workflow-head-path {
             display: flex;
             align-items: center;
             gap: 14px;
             color: #333333;
-            h2{
+            h2 {
                 margin-bottom: 0;
                 color: #000;
                 font-family: "Montserrat", sans-serif;
                 font-size: 17px;
                 font-style: normal;
                 font-weight: 600;
-                line-height: 17px; 
+                line-height: 17px;
                 text-transform: uppercase;
             }
         }
 
-        .s-workflow-head-tittle{
+        .s-workflow-head-tittle {
             margin-top: 24px;
-            color: #333333;     
+            color: #333333;
             font-family: "Outfit", sans-serif;
             font-size: 34px;
             font-style: normal;
             font-weight: 600;
-            line-height: 52.5px; /* 52.5px */
-
-
+            line-height: 52.5px;
         }
     }
 
-    .s-workflow-card{
+    .s-workflow-card {
         display: flex;
         width: 100%;
-
+        z-index: 20;
     }
-    .s-workflow-item-1{
+
+    .s-workflow-item-1 {
         margin-top: 138px;
-        .s-workflow-item-img-1{
+        position: relative; /* Tambahkan position */
+        z-index: 20; /* Tambahkan z-index lebih tinggi */
+        .s-workflow-item-img-1 {
             width: 150px;
             height: 150px;
             border-radius: 868.17px;
             box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
-        
             display: flex;
             align-items: center;
             justify-content: center;
-        
+
             img {
                 width: 96.46px;
                 height: 96.46px;
             }
         }
-        
-        .s-workflow-item-content-1{
+
+        .s-workflow-item-content-1 {
             color: #333333;
             font-family: "Outfit", sans-serif;
             width: 261.41px;
             height: 119.34px;
 
-            .s-workflow-item-content-tittle-1{
+            .s-workflow-item-content-tittle-1 {
                 margin-top: 21.53px;
                 width: 210.289px;
                 height: 33px;
 
-                h2{
+                h2 {
                     margin-bottom: 0;
                     font-weight: 600;
                     font-size: 22px;
@@ -345,16 +352,16 @@
                 }
             }
 
-            .s-workflow-item-content-deskripsi-1{
+            .s-workflow-item-content-deskripsi-1 {
                 margin-top: 8.34px;
                 width: 261.415px;
                 height: 78px;
                 font-weight: 300;
                 font-size: 17px;
                 line-height: 33px;
-                p{
+                p {
                     color: #333;
-                    font-family: "Outfit", sans-serif;;
+                    font-family: "Outfit", sans-serif;
                     font-size: 17px;
                     font-style: normal;
                     font-weight: 300;
@@ -363,40 +370,41 @@
                 }
             }
         }
-
     }
-    
-    .s-workflow-item-2{
+
+    .s-workflow-item-2 {
         margin-top: 57px;
         margin-left: -30px;
-        .s-workflow-item-img-2{
+        position: relative; /* Tambahkan position */
+        z-index: 20; /* Tambahkan z-index lebih tinggi */
+        .s-workflow-item-img-2 {
             width: 150px;
             height: 150px;
             border-radius: 868.17px;
             box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
-        
+
             display: flex;
             align-items: center;
             justify-content: center;
-        
+
             img {
                 width: 96.46px;
                 height: 96.46px;
             }
         }
-        
-        .s-workflow-item-content-2{
+
+        .s-workflow-item-content-2 {
             color: #333333;
             font-family: "Outfit", sans-serif;
             width: 261.41px;
             height: 119.34px;
 
-            .s-workflow-item-content-tittle-2{
+            .s-workflow-item-content-tittle-2 {
                 margin-top: 21.53px;
                 width: 210.289px;
                 height: 33px;
 
-                h2{
+                h2 {
                     margin-bottom: 0;
                     font-weight: 600;
                     font-size: 22px;
@@ -404,16 +412,16 @@
                 }
             }
 
-            .s-workflow-item-content-deskripsi-2{
+            .s-workflow-item-content-deskripsi-2 {
                 margin-top: 8.34px;
                 width: 285.531px;
                 height: 78px;
                 font-weight: 300;
                 font-size: 17px;
                 line-height: 33px;
-                p{
+                p {
                     color: #333;
-                    font-family: "Outfit", sans-serif;;
+                    font-family: "Outfit", sans-serif;
                     font-size: 17px;
                     font-style: normal;
                     font-weight: 300;
@@ -422,40 +430,41 @@
                 }
             }
         }
-
     }
 
-    .s-workflow-item-3{
+    .s-workflow-item-3 {
         margin-top: 95px;
         margin-left: 30px;
-        .s-workflow-item-img-3{
+        position: relative; /* Tambahkan position */
+        z-index: 20; /* Tambahkan z-index lebih tinggi */
+        .s-workflow-item-img-3 {
             width: 150px;
             height: 150px;
             border-radius: 868.17px;
             box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
-        
+
             display: flex;
             align-items: center;
             justify-content: center;
-        
+
             img {
                 width: 96.46px;
                 height: 96.46px;
             }
         }
-        
-        .s-workflow-item-content-3{
+
+        .s-workflow-item-content-3 {
             color: #333333;
             font-family: "Outfit", sans-serif;
             width: 261.41px;
             height: 119.34px;
 
-            .s-workflow-item-content-tittle-3{
+            .s-workflow-item-content-tittle-3 {
                 margin-top: 21.53px;
                 width: 210.289px;
                 height: 33px;
 
-                h2{
+                h2 {
                     margin-bottom: 0;
                     font-weight: 600;
                     font-size: 22px;
@@ -463,16 +472,16 @@
                 }
             }
 
-            .s-workflow-item-content-deskripsi-3{
+            .s-workflow-item-content-deskripsi-3 {
                 margin-top: 8.34px;
                 width: 321px;
                 height: 78px;
                 font-weight: 300;
                 font-size: 17px;
                 line-height: 33px;
-                p{
+                p {
                     color: #333;
-                    font-family: "Outfit", sans-serif;;
+                    font-family: "Outfit", sans-serif;
                     font-size: 17px;
                     font-style: normal;
                     font-weight: 300;
@@ -481,39 +490,40 @@
                 }
             }
         }
-
     }
 
-    .s-workflow-item-4{
+    .s-workflow-item-4 {
         margin-left: 30px;
-        .s-workflow-item-img-4{
+        position: relative; /* Tambahkan position */
+        z-index: 20; /* Tambahkan z-index lebih tinggi */
+        .s-workflow-item-img-4 {
             width: 150px;
             height: 150px;
             border-radius: 868.17px;
             box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
-        
+
             display: flex;
             align-items: center;
             justify-content: center;
-        
+
             img {
                 width: 96.46px;
                 height: 96.46px;
             }
         }
-        
-        .s-workflow-item-content-4{
+
+        .s-workflow-item-content-4 {
             color: #333333;
             font-family: "Outfit", sans-serif;
             width: 261.41px;
             height: 119.34px;
 
-            .s-workflow-item-content-tittle-4{
+            .s-workflow-item-content-tittle-4 {
                 margin-top: 21.53px;
                 width: 210.289px;
                 height: 33px;
 
-                h2{
+                h2 {
                     margin-bottom: 0;
                     font-weight: 600;
                     font-size: 22px;
@@ -521,16 +531,16 @@
                 }
             }
 
-            .s-workflow-item-content-deskripsi-4{
+            .s-workflow-item-content-deskripsi-4 {
                 margin-top: 8.34px;
                 width: 293.226px;
                 height: 78px;
                 font-weight: 300;
                 font-size: 17px;
                 line-height: 33px;
-                p{
+                p {
                     color: #333;
-                    font-family: "Outfit", sans-serif;;
+                    font-family: "Outfit", sans-serif;
                     font-size: 17px;
                     font-style: normal;
                     font-weight: 300;
@@ -539,23 +549,21 @@
                 }
             }
         }
-
     }
 
-        &::before {
+    &::before {
         content: ''; // Harus diisi agar pseudo-elemen muncul
         position: absolute; // Posisikan secara absolut
         top: 790px;
         left: auto;
         width: 1379px;
         height: 406.573px;
-        background: url('../assets/icon/workflow-bg.png') no-repeat center center; 
+        background: url('../assets/icon/workflow-bg.png') no-repeat center center;
         background-size: cover; // Untuk meng-cover seluruh area
-        z-index: 10; // Pastikan pseudo-elemen berada di belakang konten utama
+        z-index: 5; // Turunkan z-index untuk memastikan pseudo-elemen berada di belakang konten utama
     }
 }
 
-    
 
 .s-services{
     background-color: #F7F8FD;
@@ -903,7 +911,6 @@
         height: 48px !important; /* Set height of the SVG */
     }
 
-
 .s-testimonial{
     background-color: #F7F8FD;
     width: 100%;
@@ -1097,7 +1104,6 @@
     .testimonial-button-prev svg {
         transform: rotate(180deg);
     }
-
 
 
 .s-kontak {
@@ -1406,7 +1412,6 @@
                     margin-top: 14px;
                 }
             }
-
         }
 
         .s-footer-bottom-language-selector{
@@ -1418,14 +1423,12 @@
             height: 56px;
             gap: 16.97px;
             z-index: 10;
-
             
             img{
                 width: 44.12px;
                 height: 44.12px;
 
             }
-            
 
             .s-footer-bottom-language-selector-select{
                 position: relative;
@@ -1445,7 +1448,6 @@
                     justify-content: space-between;
                     align-items: center;
 
-
                     border-radius: 1696.97px;
                     -webkit-appearance: none; /* Hapus panah default di Safari dan Chrome */
                     -moz-appearance: none; /* Hapus panah default di Firefox */
@@ -1453,7 +1455,6 @@
                     background-color: #29679F;
                     color: rgb(255, 255, 255);
                     cursor: pointer;
-
 
                     color: #FFF;
                     font-family: "Outfit", sans-serif;
@@ -1477,27 +1478,8 @@
                     }
                 }
             
-                &::before {
-                    
-                    content: '';
-                    position: absolute;
-                    top: 50%;
-                    right: 10px;
-                    width: 0;
-                    height: 0;
-                    border-left: 5px solid transparent;
-                    border-right: 5px solid transparent;
-                    border-top: 5px solid #fff;
-                    pointer-events: none;
-                    transform: translateY(-50%);
-                }
             }
-
-
-        }
-        
-
-        
+        }        
     }
 
     .s-footer-copy{
@@ -1520,16 +1502,16 @@
     }
 
     &::before {
-        content: ''; // Harus diisi agar pseudo-elemen muncul
-        position: absolute; // Posisikan secara absolut
+        content: ''; 
+        position: absolute; 
         top: 4631px;
         left: 100px;
         width: 100%;
         height: 459.107px;
         left: auto;
         background: url('data:image/svg+xml;utf8,<svg width="1400" height="402" viewBox="0 0 1400 402" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-1 69C-1 69 345.069 440.135 992 457" stroke="white" stroke-opacity="0.3"/><path d="M-1 185C-1 185 222.009 411.897 588.236 223.279C845.184 90.9427 1113.85 509.238 1397 455.141" stroke="white" stroke-opacity="0.3"/><path d="M32 403C257.835 231.015 595.32 401.085 859.64 167.026C1123.96 -67.0327 1399 167.026 1399 167.026" stroke="white" stroke-opacity="0.3"/><path d="M675 451.855C675 451.855 939.5 402.614 1021.5 153.663C1103.5 -95.2869 1397 34.933 1397 34.933" stroke="white" stroke-opacity="0.3"/></svg>') no-repeat center center; // Ganti dengan URL gambar Anda
-        background-size: cover; // Untuk meng-cover seluruh area
-        opacity: 0.5; // Sesuaikan dengan kebutuhan untuk efek transparansi
-        z-index: 10; // Pastikan pseudo-elemen berada di belakang konten utama
+        background-size: cover;
+        opacity: 0.5;
+        z-index: 10;
     }
 }

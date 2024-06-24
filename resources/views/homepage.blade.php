@@ -542,7 +542,7 @@
 
     <script>
     // Testimonial Swiper
-    var testimonialSwiper = new Swiper('.testimonial-swiper', {
+    var testimonialSwiper = new Swiper('.testimonial-swiper',{
         cssMode: true,
         navigation: {
             nextEl: '.testimonial-button-next',
