@@ -646,6 +646,14 @@
             border: 0.973px solid #DDD;
             text-align: center;
             position: relative;
+            
+            transition: transform 0.3s ease;
+            z-index: 1; // Z-index default
+
+            &:hover {
+                transform: scale(1.05); // Memperbesar saat di-hover
+                z-index: 10; // Tetapkan z-index lebih tinggi saat di-hover
+            }
           
             .s-services-content-card-marker {
               position: absolute;

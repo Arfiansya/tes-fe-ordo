@@ -559,6 +559,12 @@
   border: 0.973px solid #DDD;
   text-align: center;
   position: relative;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+.s-services .s-services-content .s-services-content-card:hover {
+  transform: scale(1.05);
+  z-index: 10;
 }
 .s-services .s-services-content .s-services-content-card .s-services-content-card-marker {
   position: absolute;
