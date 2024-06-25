@@ -92,6 +92,10 @@
 
     <section id="workflow" class="s-workflow">
 
+        <div class="s-workflow-line">
+            <img src="{{ asset('assets/icon/garis-workflow.png') }}" alt="">
+        </div>
+
         <div class="container">
 
             <div class="s-workflow-head">
@@ -419,6 +423,7 @@
     <section id="kontak" class="s-kontak">
 
         <div class="container">
+            
 
             <div class="s-kontak-head">
 
@@ -436,8 +441,6 @@
                 <div class="s-kontak-head-deskripsi">
                     <p>Ada kepentingan bisnismu yang ingin <br>didikusikan dengan kami, yuk segera isi form disamping, konsultasinya gratis kok !</p>
                 </div>
-
-
 
             </div>
 

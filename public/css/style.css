@@ -197,6 +197,7 @@
   width: 37px;
   height: 102px;
   z-index: 2;
+  animation: jump 1s infinite;
 }
 .s-hero .s-hero-scroll h4 {
   width: 54px;
@@ -217,6 +218,14 @@
   justify-content: center;
   align-items: center;
 }
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
 .s-hero::before {
   content: "";
   position: absolute;
@@ -234,6 +243,13 @@
   background-color: #ffffff;
   width: 100%;
   height: 800px;
+  cursor: url("../assets/icon/cursor.svg"), auto;
+}
+.s-workflow .s-workflow-line {
+  width: 100%;
+  position: absolute;
+  top: 790px;
+  z-index: 2;
 }
 .s-workflow .s-workflow-head {
   position: relative;
@@ -485,17 +501,6 @@
   line-height: 150%; /* 25.5px */
   margin-bottom: 0;
 }
-.s-workflow::before {
-  content: "";
-  position: absolute;
-  top: 790px;
-  left: auto;
-  width: 1379px;
-  height: 406.573px;
-  background: url("../assets/icon/workflow-bg.png") no-repeat center center;
-  background-size: cover;
-  z-index: 5;
-}
 
 .s-services {
   background-color: #F7F8FD;
@@ -544,6 +549,7 @@
   justify-content: space-between;
   gap: 59px;
   display: flex;
+  z-index: 2;
 }
 .s-services .s-services-content .s-services-content-card {
   width: 100%;
@@ -630,6 +636,19 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+.s-services::after {
+  content: "";
+  position: absolute;
+  background: url("../assets/icon/services-bg.png");
+  width: 784.398px;
+  height: 560px;
+  right: 0;
+  top: 1583px;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 
 .s-project {

@@ -225,6 +225,8 @@
         width: 37px;
         height: 102px;
         z-index: 2;
+
+        animation: jump 1s infinite;
     
         h4 {
 
@@ -248,6 +250,17 @@
             justify-content: center;
             align-items: center;
         }
+
+        
+    }
+
+    @keyframes jump {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30px);
+        }
     }
 
     &::before {
@@ -269,6 +282,14 @@
     background-color: #ffffff;
     width: 100%;
     height: 800px;
+    cursor: url('../assets/icon/cursor.svg'), auto;
+
+    .s-workflow-line{
+        width: 100%;
+        position: absolute;
+        top: 790px;
+        z-index: 2;
+    }
 
     .s-workflow-head {
         position: relative;
@@ -551,17 +572,17 @@
         }
     }
 
-    &::before {
-        content: ''; // Harus diisi agar pseudo-elemen muncul
-        position: absolute; // Posisikan secara absolut
-        top: 790px;
-        left: auto;
-        width: 1379px;
-        height: 406.573px;
-        background: url('../assets/icon/workflow-bg.png') no-repeat center center;
-        background-size: cover; // Untuk meng-cover seluruh area
-        z-index: 5; // Turunkan z-index untuk memastikan pseudo-elemen berada di belakang konten utama
-    }
+    // &::before {
+    //     content: ''; // Harus diisi agar pseudo-elemen muncul
+    //     position: absolute; // Posisikan secara absolut
+    //     top: 790px;
+    //     left: auto;
+    //     width: 1379px;
+    //     height: 406.573px;
+    //     background: url('../assets/icon/workflow-bg.png') no-repeat center center;
+    //     background-size: cover; // Untuk meng-cover seluruh area
+    //     z-index: 5; // Turunkan z-index untuk memastikan pseudo-elemen berada di belakang konten utama
+    // }
 }
 
 
@@ -615,6 +636,7 @@
         justify-content: space-between;
         gap: 59px;
         display: flex;
+        z-index: 2;
 
         .s-services-content-card {
             width: 100%;
@@ -718,6 +740,20 @@
             }
         }
           
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url('../assets/icon/services-bg.png');
+        width: 784.398px;
+        height: 560px;
+        right: 0;
+        top: 1583px;
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        z-index: 0;
     }
 }
 
