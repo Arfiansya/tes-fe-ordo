@@ -197,7 +197,7 @@
   width: 37px;
   height: 102px;
   z-index: 2;
-  animation: jump 1s infinite;
+  animation: jump 0.8s infinite;
 }
 .s-hero .s-hero-scroll h4 {
   width: 54px;
