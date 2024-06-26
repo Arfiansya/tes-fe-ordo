@@ -123,7 +123,9 @@
         height: 790px;
         right: 0px;
         border-radius: 0px 0px 0px 80px;
+        z-index: 3;
     }
+
 
     .s-hero-content-path{
         margin-top: 206px;
@@ -132,10 +134,12 @@
         align-items: center;
         gap: 14px;
 
+
         img{
             width: 30px;
             height: 3px;
             align-items: center;
+            z-index: 10;
         }
 
         h2{
@@ -148,6 +152,7 @@
             line-height: 16px; /* 16px */
             text-transform: uppercase;
             margin-bottom: 0;
+            z-index: 10;
         }
     }
 
@@ -156,9 +161,9 @@
         color: #FFFFFF;
         width: 675px;
         height: 204px;
+        
 
         h1{
-
             width: 100%;
             height: 118px;
 
@@ -167,6 +172,7 @@
             font-weight: 600;
             line-height: 58.9px;
             font-family: "Outfit", sans-serif;
+            z-index: 10;
         }
 
         p{ 
@@ -180,6 +186,7 @@
             font-weight: 300;
             line-height: 35.2px;
             font-family: "Outfit", sans-serif;
+            z-index: 10;
         }
 
     }
@@ -189,9 +196,9 @@
         height: 74px;
 
         margin-top: 36px;
-        z-index: 2;
 
         .s-hero-button-primary{
+
             border: #FAC568 ;
             display: flex;
             width: 404.7px;
@@ -209,6 +216,7 @@
             font-style: normal;
             font-weight: 500;
             line-height: 39px;
+
 
         }
     }
@@ -263,17 +271,17 @@
         }
     }
 
-    &::before {
+    &::after {
         content: ''; 
         position: absolute; 
-        top: 85px;
+        top: 0px;
         left: 0px;
-        width: 1100px;
-        height: 785px;
-        background: url('data:image/svg+xml,%3Csvg%20width%3D%22865%22%20height%3D%22787%22%20viewBox%3D%220%200%20865%20787%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M813.5%201C802.902%2056.6169%20638.067%20209.954%20454%20143C269.933%2076.0459%2075.597%20181.655%20-1%20143%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20289.686C0%20289.686%20116.015%20394.801%20339%20281.686C490.769%20204.698%20647.351%20421.613%20811.5%20377.186%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20492C168.986%20336.609%20337.275%20532.8%20501.109%20316.246C664.944%2099.6923%20864%20316.246%20864%20316.246%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-1.5%20697C-1.5%20697%2041.4996%20787.664%20261.5%20609C481.5%20430.336%20741%20712%20809.5%20546.5%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-2%20423.851C164.173%20388.065%20200.787%20699.399%20572%20786%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3C/svg%3E') no-repeat center center; // Ganti dengan URL gambar Anda
+        width: 100%;
+        height: 720px;
+        background: url('data:image/svg+xml,%3Csvg%20width%3D%22865%22%20height%3D%22787%22%20viewBox%3D%220%200%20865%20787%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M813.5%201C802.902%2056.6169%20638.067%20209.954%20454%20143C269.933%2076.0459%2075.597%20181.655%20-1%20143%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20289.686C0%20289.686%20116.015%20394.801%20339%20281.686C490.769%20204.698%20647.351%20421.613%20811.5%20377.186%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20492C168.986%20336.609%20337.275%20532.8%20501.109%20316.246C664.944%2099.6923%20864%20316.246%20864%20316.246%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-1.5%20697C-1.5%20697%2041.4996%20787.664%20261.5%20609C481.5%20430.336%20741%20712%20809.5%20546.5%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-2%20423.851C164.173%20388.065%20200.787%20699.399%20572%20786%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3C/svg%3E') no-repeat center; // Ganti dengan URL gambar Anda
         background-size: cover;
-        opacity: 0.5;
-        z-index: auto;
+
+        z-index: 1;
     }
     
 }
@@ -904,6 +912,10 @@
         margin-top: 68px;
     }
 
+    .project-wrapper{
+        gap: 300px;
+    }
+
     .project-slide {
         text-align: center;
         font-size: 18px;
@@ -1348,9 +1360,11 @@
         max-width: 1200px;
         margin-top: 63.92px;
         margin-bottom: 61px;
+        z-index: 10;
 
         .section {
             flex: 1;
+            z-index: 10;    
 
             h4 {
 
@@ -1419,7 +1433,8 @@
         justify-content: space-between;
 
         margin-top: 51px;
-
+        
+        z-index: 10;
         .s-footer-bottom-inform{
             width: 210px;
             height: 78px;
@@ -1429,6 +1444,7 @@
             align-items: flex-start;
             gap: 14px;
             margin-bottom: 0;
+            z-index: 10;
             ul{
                 list-style: none;
                 margin-bottom: 0;
@@ -1535,6 +1551,7 @@
         font-weight: 300;
         line-height: 33px;
         text-align: left;
+        z-index: 10;
 
 
         font-size: 21px;
