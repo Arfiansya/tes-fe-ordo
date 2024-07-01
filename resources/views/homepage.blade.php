@@ -27,7 +27,7 @@
 </head>
 <body>
 
-    <nav class="nav">
+    <!-- <nav class="nav">
         <div class="container">
             <div class="nav-head">
                 <div class="nav-logo">
@@ -49,7 +49,7 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
 
     <section id="hero" class="s-hero">
@@ -61,22 +61,26 @@
                 <img src="{{ asset('assets/img/hero-img.png') }}" alt="graha-wisata">
             </div>
 
-            <div class="s-hero-content-path ">
-                <img src="{{ asset('assets/icon/logo-op.png') }}" alt="">
-                <h2>HOTEL OPERATOR</h2>
-            </div>
+            <div class="s-hero-inner">
+                <div class="s-hero-content-path">
+                    <img src="{{ asset('assets/icon/logo-op.png') }}" alt="">
+                    <h2>HOTEL OPERATOR</h2>
+                </div>
 
-            <div class="s-hero-content-tittle">
-                <h1>Membantu Menjalankan <br> Operasi Bisnis Pariwisata Anda</h1>
-                <p>GWA membantu mengoperasikan keseluruhan layanan hotel, menajadikan mitra lebih percaya diri dalam menjalankan bisnis.</p>
-            </div>
+                <div class="s-hero-content-tittle">
+                    <h1>Membantu Menjalankan <br> Operasi Bisnis Pariwisata Anda</h1>
+                </div>
+
+                <div class="s-hero-content-teks">
+                    <p>GWA membantu mengoperasikan keseluruhan layanan hotel, menajadikan mitra lebih percaya diri dalam menjalankan bisnis.</p>
+                </div>
 
 
-            <div class="s-hero-button">
-            <button type="button" class="s-hero-button-primary">
-                Konsultasikan Bisnis Saya
-            </button>
-
+                <div class="s-hero-button">
+                <button type="button" class="s-hero-button-primary">
+                    Konsultasikan Bisnis Saya
+                </button>
+                </div>
             </div>
             
         
@@ -91,10 +95,6 @@
     </section>
 
     <section id="workflow" class="s-workflow">
-
-        <div class="s-workflow-line">
-            <img src="{{ asset('assets/icon/garis-workflow.png') }}" alt="">
-        </div>
 
         <div class="container">
 
@@ -111,7 +111,13 @@
 
             </div>
 
-            <div class="s-workflow-card">
+        </div>
+        
+        <div class="s-workflow-card">
+                <div class="s-workflow-line">
+                    <img src="{{ asset('assets/icon/garis-workflow.png') }}" alt="">
+                </div>
+                
                 <div class="s-workflow-item-1">
                     <div class="s-workflow-item-img-1">
                         <img src="{{ asset('assets\logo\tantangan-workflow.png') }}" alt="">
@@ -144,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="s-workflow-item-3">
+                <!-- <div class="s-workflow-item-3">
                     <div class="s-workflow-item-img-3">
                         <img src="{{ asset('assets\logo\goals-workflow.png') }}" alt="">
                     </div>
@@ -174,15 +180,13 @@
                             <p>Setiap rumusan menjadikan ide-ide kreatif bagi kami untuk meningkatkan kualitas property mitra.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
-
-
         </div>
 
     </section>
 
-    <section id="services" class="s-services">
+    <!-- <section id="services" class="s-services">
 
         <div class="container">
 
@@ -537,7 +541,7 @@
             
 
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
