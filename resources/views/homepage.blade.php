@@ -27,7 +27,7 @@
 </head>
 <body>
 
-    <!-- <nav class="nav">
+    <nav class="nav">
         <div class="container">
             <div class="nav-head">
                 <div class="nav-logo">
@@ -49,7 +49,7 @@
                 </div>
             </div>
         </div>
-    </nav> -->
+    </nav>
 
 
     <section id="hero" class="s-hero">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
 
-                <!-- <div class="s-workflow-item-3">
+                <div class="s-workflow-item-3">
                     <div class="s-workflow-item-img-3">
                         <img src="{{ asset('assets\logo\goals-workflow.png') }}" alt="">
                     </div>
@@ -180,13 +180,13 @@
                             <p>Setiap rumusan menjadikan ide-ide kreatif bagi kami untuk meningkatkan kualitas property mitra.</p>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
 
     </section>
 
-    <!-- <section id="services" class="s-services">
+    <section id="services" class="s-services">
 
         <div class="container">
 
@@ -213,7 +213,7 @@
                         <img src="{{ asset('assets/icon/services-img-1.png') }}" alt="Revenue Management Icon">
                     </div>  
                     <div class="s-services-content-card-title">
-                        <h1>Revenue Management Service</h1>
+                        <h1>Revenue <br>Management Service</h1>
                     </div>
 
                     <button class="s-services-content-card-button" type="submit">Saya Tertarik <img src="{{ asset('assets/icon/arrow-right.svg') }}" alt=""></button>
@@ -541,7 +541,7 @@
             
 
         </div>
-    </footer> -->
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
