@@ -1652,7 +1652,7 @@
   }
   .s-workflow .s-workflow-card .s-workflow-item-1 {
     top: 68px;
-    left: 10vw;
+    left: 7vw;
     position: absolute; /* Tambahkan position */
     z-index: 20; /* Tambahkan z-index lebih tinggi */
     width: 176px;
@@ -1696,7 +1696,7 @@
   }
   .s-workflow .s-workflow-card .s-workflow-item-1 .s-workflow-item-content-1 .s-workflow-item-content-deskripsi-1 p {
     font-weight: 300;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 150%;
     color: #333;
   }
@@ -1746,7 +1746,7 @@
   }
   .s-workflow .s-workflow-card .s-workflow-item-2 .s-workflow-item-content-2 .s-workflow-item-content-deskripsi-2 p {
     font-weight: 300;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 150%;
     color: #333;
   }
@@ -1791,12 +1791,12 @@
     margin-bottom: 5px;
   }
   .s-workflow .s-workflow-card .s-workflow-item-3 .s-workflow-item-content-3 .s-workflow-item-content-deskripsi-3 {
-    width: 236px;
+    width: 210px;
     height: 72px;
   }
   .s-workflow .s-workflow-card .s-workflow-item-3 .s-workflow-item-content-3 .s-workflow-item-content-deskripsi-3 p {
     font-weight: 300;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 150%;
     color: #333;
   }
@@ -1825,7 +1825,7 @@
   .s-workflow .s-workflow-card .s-workflow-item-4 .s-workflow-item-content-4 {
     color: #333333;
     font-family: "Outfit", sans-serif;
-    width: 210px;
+    width: 200px;
     height: 79px;
   }
   .s-workflow .s-workflow-card .s-workflow-item-4 .s-workflow-item-content-4 .s-workflow-item-content-tittle-4 {
@@ -1841,7 +1841,7 @@
     margin-bottom: 5px;
   }
   .s-workflow .s-workflow-card .s-workflow-item-4 .s-workflow-item-content-4 .s-workflow-item-content-deskripsi-4 {
-    width: 216px;
+    width: 200px;
     height: 72px;
   }
   .s-workflow .s-workflow-card .s-workflow-item-4 .s-workflow-item-content-4 .s-workflow-item-content-deskripsi-4 p {
