@@ -2636,22 +2636,36 @@
 @media (max-width: 767px) {
   .s-hero {
     width: 100%;
-    height: 720px;
-    background-color: #15548D;
+    height: 460px;
+    background-color: #000000;
   }
   .s-hero .s-hero-img {
     position: absolute;
-    width: 610px;
-    height: 790px;
-    right: 0px;
-    border-radius: 0px 0px 0px 80px;
+    width: 100%;
+    height: 460px;
     z-index: 3;
   }
+  .s-hero .s-hero-img img {
+    width: 100%;
+    height: 460px;
+  }
+  .s-hero .s-hero-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+  }
   .s-hero .s-hero-inner {
-    width: 675px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
   }
   .s-hero .s-hero-inner .s-hero-content-path {
-    margin-top: 206px;
+    margin-top: 120px;
     color: #FFFFFF;
     display: inline-flex;
     align-items: center;
@@ -2664,10 +2678,10 @@
     z-index: 10;
   }
   .s-hero .s-hero-inner .s-hero-content-path h2 {
-    width: 257px;
+    width: 100%;
     color: #FFF;
     font-family: "Outfit", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 16px; /* 16px */
@@ -2676,49 +2690,49 @@
     z-index: 10;
   }
   .s-hero .s-hero-inner .s-hero-content-tittle {
-    margin-top: 31px;
+    margin-top: 14px;
     color: #FFFFFF;
-    width: 675px;
-    height: 118px;
+    width: 100%;
+    height: 80px;
   }
   .s-hero .s-hero-inner .s-hero-content-tittle h1 {
     margin-bottom: 0;
     width: 100%;
-    height: 118px;
-    font-size: 38px;
+    height: 80px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 58.9px;
+    line-height: 150%;
     font-family: "Outfit", sans-serif;
     z-index: 10;
   }
   .s-hero .s-hero-inner .s-hero-content-teks {
-    margin-top: 31px;
+    margin-top: 13px;
     color: #FFFFFF;
-    width: 675px;
+    width: 100%;
     height: 70px;
   }
   .s-hero .s-hero-inner .s-hero-content-teks p {
     margin-bottom: 0;
-    width: 645px;
+    width: 100%;
     height: 70px;
-    font-size: 22px;
     font-style: normal;
     font-weight: 300;
-    line-height: 35.2px;
+    font-size: 16px;
+    line-height: 140%;
     font-family: "Outfit", sans-serif;
     z-index: 10;
   }
   .s-hero .s-hero-inner .s-hero-button {
-    width: 404.7px;
-    height: 74px;
-    margin-top: 36px;
+    width: 244px;
+    height: 46px;
+    margin-top: 26px;
   }
   .s-hero .s-hero-inner .s-hero-button .s-hero-button-primary {
     border: #FAC568;
     display: flex;
-    width: 404.7px;
-    height: 74px;
+    width: 244px;
+    height: 46px;
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -2727,60 +2741,286 @@
     background-color: #FAC568;
     color: #000;
     font-family: "Outfit", sans-serif;
-    font-size: 26px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 39px;
   }
   .s-hero .s-hero-scroll {
-    position: absolute;
-    left: 39px;
-    bottom: 51px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    width: 37px;
-    height: 102px;
-    z-index: 2;
-    animation: jump 0.8s infinite;
+    display: none;
   }
-  .s-hero .s-hero-scroll h4 {
-    width: 54px;
-    height: 37px;
-    transform: rotate(90deg);
-    font-family: "Outfit", sans-serif;
-    font-weight: 300;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 22px;
-    font-style: normal;
-    line-height: 35.2px;
-  }
-  .s-hero .s-hero-scroll img {
-    display: flex;
-    width: 26px;
-    height: 26px;
-    justify-content: center;
-    align-items: center;
-  }
-  @keyframes jump {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-30px);
-    }
-  }
-  .s-hero::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  .s-workflow {
+    background-color: #ffffff;
     width: 100%;
-    height: 720px;
-    background: url("data:image/svg+xml,%3Csvg%20width%3D%22865%22%20height%3D%22787%22%20viewBox%3D%220%200%20865%20787%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M813.5%201C802.902%2056.6169%20638.067%20209.954%20454%20143C269.933%2076.0459%2075.597%20181.655%20-1%20143%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20289.686C0%20289.686%20116.015%20394.801%20339%20281.686C490.769%20204.698%20647.351%20421.613%20811.5%20377.186%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20492C168.986%20336.609%20337.275%20532.8%20501.109%20316.246C664.944%2099.6923%20864%20316.246%20864%20316.246%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-1.5%20697C-1.5%20697%2041.4996%20787.664%20261.5%20609C481.5%20430.336%20741%20712%20809.5%20546.5%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-2%20423.851C164.173%20388.065%20200.787%20699.399%20572%20786%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3C/svg%3E") no-repeat center;
-    background-size: cover;
-    z-index: 1;
+    height: 812px;
+    padding-top: 60px;
+    cursor: url("../assets/icon/cursor.svg"), auto;
+  }
+  .s-workflow .s-workflow-head {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    height: 96px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 20; /* Tambahkan z-index lebih tinggi */
+  }
+  .s-workflow .s-workflow-head .s-workflow-head-path {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #333333;
+  }
+  .s-workflow .s-workflow-head .s-workflow-head-path h2 {
+    margin-bottom: 0;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .s-workflow .s-workflow-head .s-workflow-head-tittle {
+    margin-top: 20px;
+  }
+  .s-workflow .s-workflow-head .s-workflow-head-tittle h1 {
+    font-family: "Outfit", sans-serif;
+    color: #333;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+  }
+  .s-workflow .s-workflow-card {
+    position: relative;
+    display: flex;
+    z-index: 20;
+    height: 543.787px;
+    margin-bottom: 0px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-line {
+    display: none;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    top: 42px;
+    left: 5vw;
+    position: absolute; /* Tambahkan position */
+    z-index: 20; /* Tambahkan z-index lebih tinggi */
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-1 .s-workflow-item-img-1 {
+    width: 90px;
+    height: 90px;
+    background-color: #FFF;
+    border-radius: 868.17px;
+    box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-1 .s-workflow-item-img-1 img {
+    width: 54px;
+    height: 54px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-1 .s-workflow-item-content-1 {
+    color: #333333;
+    width: 188px;
+    height: 75px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-1 .s-workflow-item-content-1 .s-workflow-item-content-tittle-1 {
+    margin-top: 0;
+    width: 100%;
+    height: 18px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-1 .s-workflow-item-content-1 .s-workflow-item-content-tittle-1 h2 {
+    color: #333;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 21px */
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-1 .s-workflow-item-content-1 .s-workflow-item-content-deskripsi-1 {
+    width: 188px;
+    height: 34px;
+    margin-top: 5px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-1 .s-workflow-item-content-1 .s-workflow-item-content-deskripsi-1 p {
+    color: #333;
+    font-family: "Outfit", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 16.5px */
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    top: 167px;
+    left: 10vw;
+    position: absolute; /* Tambahkan position */
+    z-index: 20; /* Tambahkan z-index lebih tinggi */
+    flex-direction: row-reverse; /* Tambahkan ini untuk memindahkan gambar ke kanan */
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-2 .s-workflow-item-img-2 {
+    width: 90px;
+    height: 90px;
+    background-color: #FFF;
+    border-radius: 868.17px;
+    box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-2 .s-workflow-item-img-2 img {
+    width: 54px;
+    height: 54px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-2 .s-workflow-item-content-2 {
+    color: #333333;
+    font-family: "Outfit", sans-serif;
+    width: 188px;
+    height: 75px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-2 .s-workflow-item-content-2 .s-workflow-item-content-tittle-2 {
+    margin-top: 0px;
+    width: 100%;
+    height: 18px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-2 .s-workflow-item-content-2 .s-workflow-item-content-tittle-2 h2 {
+    color: #333;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-2 .s-workflow-item-content-2 .s-workflow-item-content-deskripsi-2 {
+    width: 200px;
+    height: 49px;
+    margin-top: 5px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-2 .s-workflow-item-content-2 .s-workflow-item-content-deskripsi-2 p {
+    color: #333;
+    font-family: "Outfit", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-3 {
+    top: 305px;
+    left: 10vw;
+    position: absolute; /* Tambahkan position */
+    z-index: 20; /* Tambahkan z-index lebih tinggi */
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-3 .s-workflow-item-img-3 {
+    width: 90px;
+    height: 90px;
+    background-color: #FFF;
+    border-radius: 868.17px;
+    box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-3 .s-workflow-item-img-3 img {
+    width: 54px;
+    height: 54px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-3 .s-workflow-item-content-3 {
+    color: #333333;
+    font-family: "Outfit", sans-serif;
+    width: 210px;
+    height: 75px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-3 .s-workflow-item-content-3 .s-workflow-item-content-tittle-3 {
+    margin-top: 0px;
+    width: 100%;
+    height: 18px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-3 .s-workflow-item-content-3 .s-workflow-item-content-tittle-3 h2 {
+    color: #333;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-3 .s-workflow-item-content-3 .s-workflow-item-content-deskripsi-3 {
+    width: 208px;
+    height: 49px;
+    margin-top: 5px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-3 .s-workflow-item-content-3 .s-workflow-item-content-deskripsi-3 p {
+    color: #333;
+    font-family: "Outfit", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-4 {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    top: 432px;
+    left: 10vw;
+    position: absolute; /* Tambahkan position */
+    z-index: 20;
+    flex-direction: row-reverse;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-4 .s-workflow-item-img-4 {
+    width: 90px;
+    height: 90px;
+    background-color: #FFF;
+    border-radius: 868.17px;
+    box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-4 .s-workflow-item-img-4 img {
+    width: 54px;
+    height: 54px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-4 .s-workflow-item-content-4 {
+    color: #333333;
+    font-family: "Outfit", sans-serif;
+    width: 200px;
+    height: 79px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-4 .s-workflow-item-content-4 .s-workflow-item-content-tittle-4 {
+    margin-top: 0px;
+    width: 100%;
+    height: 18px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-4 .s-workflow-item-content-4 .s-workflow-item-content-tittle-4 h2 {
+    color: #333;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-4 .s-workflow-item-content-4 .s-workflow-item-content-deskripsi-4 {
+    width: 200px;
+    height: 49px;
+  }
+  .s-workflow .s-workflow-card .s-workflow-item-4 .s-workflow-item-content-4 .s-workflow-item-content-deskripsi-4 p {
+    color: #333;
+    font-family: "Outfit", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
   }
 }/*# sourceMappingURL=style.css.map */
