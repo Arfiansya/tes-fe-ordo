@@ -27,7 +27,7 @@
 </head>
 <body>
 
-    <nav class="nav">
+    <!-- <nav class="nav">
         <div class="container">
             <div class="nav-head">
                 <div class="nav-logo">
@@ -49,8 +49,7 @@
                 </div>
             </div>
         </div>
-    </nav>
-
+    </nav> -->
 
     <section id="hero" class="s-hero">
 
@@ -113,73 +112,75 @@
 
         </div>
         
-        <div class="s-workflow-card">
-                <div class="s-workflow-line">
-                    <img src="{{ asset('assets/icon/garis-workflow.png') }}" alt="">
-                </div>
-                
-                <div class="s-workflow-item-1">
-                    <div class="s-workflow-item-img-1">
-                        <img src="{{ asset('assets\logo\tantangan-workflow.png') }}" alt="">
+        <div class="container">
+            <div class="s-workflow-card">
+                    <div class="s-workflow-line">
+                        <img src="{{ asset('assets/icon/garis-workflow.png') }}" alt="">
                     </div>
-
-                    <div class="s-workflow-item-content-1">
-                        <div class="s-workflow-item-content-tittle-1">
-                            <h2>Tantangan</h2>
-                        </div>
-
-                        <div class="s-workflow-item-content-deskripsi-1">
-                            <p>Setiap property memiliki tantangan tersendiri dan GWA sangat memahami hal tersebut.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="s-workflow-item-2">
-                    <div class="s-workflow-item-img-2">
-                        <img src="{{ asset('assets\logo\rumusan-workflow.png') }}" alt="">
-                    </div>
-
-                    <div class="s-workflow-item-content-2">
-                        <div class="s-workflow-item-content-tittle-2">
-                            <h2>Rumusan</h2>
-                        </div>
-
-                        <div class="s-workflow-item-content-deskripsi-2">
-                            <p>Setiap tantangan akan dirumuskan menjadi sebuah hal yang harus dicari jalan keluarnya oleh kami</p>
-                        </div>
-                    </div>
-
                     
-                </div>
-
-                <div class="s-workflow-item-3">
-                    <div class="s-workflow-item-img-3">
-                        <img src="{{ asset('assets\logo\goals-workflow.png') }}" alt="">
-                    </div>
-
-                    <div class="s-workflow-item-content-3">
-                        <div class="s-workflow-item-content-tittle-3">
-                            <h2>Goals</h2>
+                    <div class="s-workflow-card-item s-workflow-card-item-1">
+                        <div class="s-workflow-card-item-img">
+                            <img src="{{ asset('assets\logo\tantangan-workflow.png') }}" alt="">
                         </div>
 
-                        <div class="s-workflow-item-content-deskripsi-3">
-                            <p>Dari rumusan masalah, kami memberikan respon cepat dan jalan keluar jangka pendek - menengah - panjang.</p>
+                        <div class="s-workflow-card-item-content s-workflow-card-item-content-1">
+                            <div class="s-workflow-card-item-content-tittle s-workflow-card-item-content-tittle-1">
+                                <h2>Tantangan</h2>
+                            </div>
+
+                            <div class="s-workflow-card-item-content-deskripsi s-workflow-card-item-content-deskripsi-1">
+                                <p>Setiap property memiliki tantangan tersendiri dan GWA sangat memahami hal tersebut.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="s-workflow-item-4">
-                    <div class="s-workflow-item-img-4">
-                        <img src="{{ asset('assets\logo\idea-workflow.png') }}" alt="">
-                    </div>
-
-                    <div class="s-workflow-item-content-4">
-                        <div class="s-workflow-item-content-tittle-4">
-                            <h2>Ideas</h2>
+                    <div class="s-workflow-card-item s-workflow-card-item-2">
+                        <div class="s-workflow-card-item-img">
+                            <img src="{{ asset('assets\logo\rumusan-workflow.png') }}" alt="">
                         </div>
 
-                        <div class="s-workflow-item-content-deskripsi-4">
-                            <p>Setiap rumusan menjadikan ide-ide kreatif bagi kami untuk meningkatkan kualitas property mitra.</p>
+                        <div class="s-workflow-card-item-content s-workflow-card-item-content-2">
+                            <div class="s-workflow-card-item-content-tittle s-workflow-card-item-content-tittle-2">
+                                <h2>Rumusan</h2>
+                            </div>
+
+                            <div class="s-workflow-card-item-content-deskripsi s-workflow-card-item-content-deskripsi-2">
+                                <p>Setiap tantangan akan dirumuskan menjadi sebuah hal yang harus dicari jalan keluarnya oleh kami</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="s-workflow-card-item s-workflow-card-item-3">
+                        <div class="s-workflow-card-item-img">
+                            <img src="{{ asset('assets\logo\goals-workflow.png') }}" alt="">
+                        </div>
+
+                        <div class="s-workflow-card-item-content s-workflow-card-item-content-3">
+                            <div class="s-workflow-card-item-content-tittle s-workflow-card-item-content-tittle-3">
+                                <h2>Goals</h2>
+                            </div>
+
+                            <div class="s-workflow-card-item-content-deskripsi s-workflow-card-item-content-deskripsi-3">
+                                <p>Dari rumusan masalah, kami memberikan respon cepat dan jalan keluar jangka pendek - menengah - panjang.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s-workflow-card-item s-workflow-card-item-4">
+                        <div class="s-workflow-card-item-img">
+                            <img src="{{ asset('assets\logo\idea-workflow.png') }}" alt="">
+                        </div>
+
+                        <div class="s-workflow-card-item-content s-workflow-card-item-content-4">
+                            <div class="s-workflow-card-item-content-tittle s-workflow-card-item-content-tittle-4">
+                                <h2>Ideas</h2>
+                            </div>
+
+                            <div class="s-workflow-card-item-content-deskripsi s-workflow-card-item-content-deskripsi-4">
+                                <p>Setiap rumusan menjadikan ide-ide kreatif bagi kami untuk meningkatkan kualitas property mitra.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -257,7 +258,7 @@
     </section>
 
 
-    <section id="project" class="s-project">
+    <!-- <section id="project" class="s-project">
         <div class="container">
 
             <div class="s-project-head">
@@ -543,7 +544,7 @@
             
 
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -1709,8 +1709,6 @@
           }   
     }
     
-    
-
     .s-hero{
         width: 100%;
         background-color: #15548d;
@@ -2472,9 +2470,9 @@
         }
     
         .project-button-next {
-            position: absolute;
+            position: relative;
             top: -140px!important;
-            left: 82vw!important;
+            left: 92%!important;
         }
     
         .project-button-prev {
@@ -3118,6 +3116,118 @@
 
 @media (max-width: 767px) {
 
+    nav {
+        position: fixed;
+        width: 100%;
+        background: transparent;
+        height: 62px !important; /* Mengurangi tinggi nav untuk tablet */
+        z-index: 1000;
+        transition: background-color 0.3s;
+        align-items: center;
+    
+        &.scrolled {
+            background-color: #29679F;
+        }
+    
+        .nav-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+    
+            .nav-logo {
+                width: 102px !important; /* Menyesuaikan lebar logo untuk tablet */
+                height: 34px; /* Menyesuaikan tinggi logo untuk tablet */
+                margin-right: 30px !important; /* Mengurangi margin untuk tablet */
+                margin-top: 15px;
+    
+                img {
+                    width: 100%;
+                    height: auto;
+                    align-items: center;
+                }
+            }
+    
+            .nav-menu {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start; /* Justifikasi menu ke kanan untuk tablet */
+                width: 60%; /* Menyesuaikan lebar menu untuk tablet */
+    
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 20px; /* Menyesuaikan margin ul untuk tablet */
+                    display: flex;
+    
+                    li {
+                        margin-right: 20px !important;
+    
+                        a {
+                            margin: 0;
+                            font-family: "Outfit", sans-serif;
+                            font-size: 14px !important; /* Menyesuaikan ukuran font untuk tablet */
+                            font-weight: 500;
+                            text-decoration: none;
+                            color: #ffffff;
+                            transition: color 0.3s;
+    
+                            &:hover {
+                                color: #1e1e1e;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .nav-button {
+            display: flex;
+            align-items: center;
+            background-color: #15548D;
+            width: 330px;
+            height: 42px !important;
+            border-radius: 10px;
+            padding: 0 12px;
+            position: relative; /* Ensure the parent is positioned relatively */
+          
+            img {
+                width: 28px;
+                height: 28px;
+              margin: 0 10px;
+            }
+          
+            select {
+              width: fit-content;
+              background-color: #15548D;
+              border: none;
+              color: #FFF;
+              font-family: "Outfit", sans-serif;
+              font-size: 14px !important;
+              font-weight: 400;
+              cursor: pointer;
+              appearance: none;
+              outline: none;
+              padding-right: 30px; /* Ensure space for the arrow */
+              
+              &::-ms-expand {
+                display: none; 
+              }
+            }
+          
+            &::before {
+              content: ''; /* Add content property */
+              background: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22vuesax%2Flinear%2Farrow-down%22%3E%3Cg%20id%3D%22arrow-down%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M17.2727%206.36353L11.2856%2013.0445C10.5785%2013.8335%209.42151%2013.8335%208.71444%2013.0445L2.72729%206.36353%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center;
+              width: 15px;
+              height: 15px;
+              position: absolute;
+              right: 10px;
+              top: 50%;
+              pointer-events: none;
+              transform: translateY(-50%);
+            }
+          }   
+    }
 
     .s-hero{
         width: 100%;
@@ -3256,29 +3366,29 @@
         
     }
 
-    .s-workflow{
+    .s-workflow {
         background-color: #ffffff;
         width: 100%;
         height: 812px;
         padding-top: 60px;
         cursor: url('../assets/icon/cursor.svg'), auto;
-
+    
         .s-workflow-head {
             position: relative;
             margin-top: 0px;
             width: 100%;
             height: 96px;
-
             display: inline-flex;
             flex-direction: column;
             align-items: flex-start;
-            z-index: 20; /* Tambahkan z-index lebih tinggi */
+            z-index: 20;
+        
             .s-workflow-head-path {
-                width: 100%;
                 display: flex;
                 align-items: center;
                 gap: 14px;
                 color: #333333;
+        
                 h2 {
                     margin-bottom: 0;
                     color: #000;
@@ -3287,14 +3397,13 @@
                     font-style: normal;
                     font-weight: 600;
                     text-transform: uppercase;
-                    
                 }
             }
-
-            .s-workflow-head-tittle {
+        
+            &-tittle {
                 margin-top: 20px;
-                h1{
-
+        
+                h1 {
                     font-family: "Outfit", sans-serif;
                     color: #333;
                     font-size: 20px;
@@ -3304,53 +3413,44 @@
                 }
             }
         }
-
+        
+    
         .s-workflow-card {
             position: relative;
-            display: flex;
+            display: block;
             z-index: 20;
             height: 543.787px;
             margin-bottom: 0px;
-
-            .s-workflow-line{
+    
+            .s-workflow-line {
                 display: none;
             }
-
-            .s-workflow-item-1 {
+    
+            .s-workflow-card-item {
                 display: inline-flex;
                 align-items: center;
                 gap: 18px;
-
-                top: 42px;
-                left: 5vw;
-                position: absolute; /* Tambahkan position */
-                z-index: 20; /* Tambahkan z-index lebih tinggi */
-                .s-workflow-item-img-1 {
+    
+                &-img {
+                    display: flex;
                     width: 90px;
                     height: 90px;
-                    background-color: #FFF;
-                    border-radius: 868.17px;
-                    box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
-                    display: flex;
-                    align-items: center;
+                    flex-direction: column;
                     justify-content: center;
-        
+                    align-items: center;
+
+                    border-radius: 62.354px;
+                    background: #FFF;
+                    box-shadow: 0px 0px 16px 0px #FFF6EC;
+    
                     img {
                         width: 54px;
                         height: 54px;
                     }
                 }
-        
-                .s-workflow-item-content-1 {
-                    color: #333333;
-                    width: 188px;
-                    height: 75px;
-        
-                    .s-workflow-item-content-tittle-1 {
-                        margin-top: 0;
-                        width: 100%;
-                        height: 18px;
-        
+    
+                &-content {
+                    &-tittle {
                         h2 {
                             color: #333;
                             font-family: "Outfit", sans-serif;
@@ -3358,14 +3458,11 @@
                             font-style: normal;
                             font-weight: 600;
                             line-height: 150%; /* 21px */
+                            margin: 0;
                         }
-                        
                     }
-        
-                    .s-workflow-item-content-deskripsi-1 {
-                        width: 188px;
-                        height: 34px;
-                        margin-top: 5px;
+    
+                    &-deskripsi {
                         p {
                             color: #333;
                             font-family: "Outfit", sans-serif;
@@ -3373,200 +3470,61 @@
                             font-style: normal;
                             font-weight: 300;
                             line-height: 150%; /* 16.5px */
+                            margin: 0;
                         }
                     }
                 }
-            }
 
-            .s-workflow-item-2 {
-                display: inline-flex;
-                align-items: center;
-                gap: 18px;
-                top: 167px;
-                left: 10vw;
-                position: absolute; /* Tambahkan position */
-                z-index: 20; /* Tambahkan z-index lebih tinggi */
-                flex-direction: row-reverse; /* Tambahkan ini untuk memindahkan gambar ke kanan */
-            
-                .s-workflow-item-img-2 {
-                    width: 90px;
+                &-1{
+                    position: relative;
+                    margin-top: 42px;
+                    width: 296px;
                     height: 90px;
-                    background-color: #FFF;
-                    border-radius: 868.17px;
-                    box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-            
-                    img {
-                        width: 54px;
-                        height: 54px;
+                    .s-workflow-card-item-content-1{
+                        width: 188px;
                     }
+                    
                 }
-            
-                .s-workflow-item-content-2 {
-                    color: #333333;
-                    font-family: "Outfit", sans-serif;
-                    width: 188px;
-                    height: 75px;
-            
-                    .s-workflow-item-content-tittle-2 {
-                        margin-top: 0px;
-                        width: 100%;
-                        height: 18px;
-            
-                        h2 {
-                            color: #333;
-                            font-family: "Outfit", sans-serif;
-                            font-size: 14px;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: 150%;
-                        }
-                    }
-            
-                    .s-workflow-item-content-deskripsi-2 {
-                        width: 200px;
-                        height: 49px;
-                        margin-top: 5px;
-            
-                        p {
-                            color: #333;
-                            font-family: "Outfit", sans-serif;
-                            font-size: 11px;
-                            font-style: normal;
-                            font-weight: 300;
-                            line-height: 150%;
-                        }
-                    }
-                }
-            }
 
-            .s-workflow-item-3 {
-                top: 305px;
-                left: 10vw;
-                position: absolute; /* Tambahkan position */
-                z-index: 20; /* Tambahkan z-index lebih tinggi */
-                display: inline-flex;
-                align-items: center;
-                gap: 18px;
-                .s-workflow-item-img-3 {
-                    width: 90px;
+                &-2{
+                    position: relative; 
+                    margin-top: 37px;
+                    width: 296px;
                     height: 90px;
-                    background-color: #FFF;
-                    border-radius: 868.17px;
-                    box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-        
-                    img {
-                        width: 54px;
-                        height: 54px;
+                    flex-direction: row-reverse; /* Tambahkan ini untuk memindahkan gambar ke kanan */
+                    .s-workflow-card-item-content-2{
+                        width: 188px;
                     }
+                    
                 }
-        
-                .s-workflow-item-content-3 {
-                    color: #333333;
-                    font-family: "Outfit", sans-serif;
-                    width: 210px;
-                    height: 75px;
-        
-                    .s-workflow-item-content-tittle-3 {
-                        margin-top: 0px;
-                        width: 100%;
-                        height: 18px;
-        
-                        h2 {
-                            color: #333;
-                            font-family: "Outfit", sans-serif;
-                            font-size: 14px;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: 150%;
-                        }
-                        
-                    }
-        
-                    .s-workflow-item-content-deskripsi-3 {
+
+                
+                &-3{
+                    position: relative; 
+                    margin-top: 37px;
+                    width: 316px;
+                    height: 90px;
+                    .s-workflow-card-item-content-3{
                         width: 208px;
-                        height: 49px;
-                        margin-top: 5px;
-                        p {
-                            color: #333;
-                            font-family: "Outfit", sans-serif;
-                            font-size: 11px;
-                            font-style: normal;
-                            font-weight: 300;
-                            line-height: 150%;
-                        }
                     }
+                    
                 }
-            }
 
-            .s-workflow-item-4 {
-                display: inline-flex;
-                align-items: center;
-                gap: 18px;
-
-                top: 432px;
-                left: 10vw;
-                position: absolute; /* Tambahkan position */
-                z-index: 20;
-                flex-direction: row-reverse;
-                .s-workflow-item-img-4 {
-                    width: 90px;
+                &-4{
+                    position: relative; 
+                    margin-top: 37px;
+                    width: 296px;
                     height: 90px;
-                    background-color: #FFF;
-                    border-radius: 868.17px;
-                    box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-        
-                    img {
-                        width: 54px;
-                        height: 54px;
+                    flex-direction: row-reverse; /* Tambahkan ini untuk memindahkan gambar ke kanan */
+                    .s-workflow-card-item-content-4{
+                        width: 188px;
                     }
-                }
-        
-                .s-workflow-item-content-4 {
-                    color: #333333;
-                    font-family: "Outfit", sans-serif;
-                    width: 200px;
-                    height: 79px;
-        
-                    .s-workflow-item-content-tittle-4 {
-                        margin-top: 0px;
-                        width: 100%;
-                        height: 18px;
-        
-                        h2 {
-                            color: #333;
-                            font-family: "Outfit", sans-serif;
-                            font-size: 14px;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: 150%;
-                        }
-                        
-                    }
-        
-                    .s-workflow-item-content-deskripsi-4 {
-                        width: 200px;
-                        height: 49px;
-                        p {
-                            color: #333;
-                            font-family: "Outfit", sans-serif;
-                            font-size: 11px;
-                            font-style: normal;
-                            font-weight: 300;
-                            line-height: 150%;
-                        }
-                    }
+                    
                 }
             }
-         }
-    
+
+        }
     }
-  }
+    
+    
+}
