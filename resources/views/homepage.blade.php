@@ -258,15 +258,16 @@
     </section>
 
 
-    <!-- <section id="project" class="s-project">
-        <div class="container">
+    <section id="project" class="s-project">
 
+        <div class="container">
             <div class="s-project-head">
                 <div class="s-project-head-path">
                     <img src="{{ asset('assets/icon/logo-op.png') }}" alt="">
                         <h2>our latest Projects</h2>
-                        <img src="{{ asset('assets/icon/logo-op.png') }}" alt="">
+                    <img src="{{ asset('assets/icon/logo-op.png') }}" alt="">
                 </div>
+
                 <div class="s-project-head-tittle">
                     <h1>PROJECT TERBARU KAMI</h1>
                 </div>
@@ -329,17 +330,19 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-button-next project-button-next">
+
+                <div class="swiper-button-next project-button-next">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 39.84L31.04 26.8C32.58 25.26 32.58 22.74 31.04 21.2L18 8.16" stroke="#333333" stroke-width="5.33333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
+                </div>
+
+                <div class="swiper-button-prev project-button-prev">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 39.84L31.04 26.8C32.58 25.26 32.58 22.74 31.04 21.2L18 8.16" stroke="#333333" stroke-width="5.33333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div> 
             </div>
-            <div class="swiper-button-prev project-button-prev">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 39.84L31.04 26.8C32.58 25.26 32.58 22.74 31.04 21.2L18 8.16" stroke="#333333" stroke-width="5.33333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div> 
         </div>
 
 
@@ -347,91 +350,88 @@
     </section>
 
 
-    <section id="testimonial" class="s-testimonial">
-        
+    <!-- <section id="testimonial" class="s-testimonial">
         <div class="container">
-            
             <div class="s-testimonial-head">
-
                 <div class="s-testimonial-head-path">
                     <img src="{{ asset('assets/icon/logo-op.png') }}" alt="">
-                    <h2>our testimonial</h2>
+                    <h2>Our Testimonial</h2>
                 </div>
-
-                <div class="s-testimonial-head-tittle">
+                <div class="s-testimonial-head-title">
                     <h1>Yang Klien Kami Katakan</h1>
                 </div>
             </div>
 
-   
-            <div class="s-testimonial-quote">
-                <img src="{{ asset('assets/icon/testimoni-quote.png') }}" alt="">
-                <p>GWA Group membantu hotel <br> saya untuk menjangkau lebih banyak client dan memberikan saran monetisasi yang tidak pernah saya bayangkan sebelumnya</p>
-            </div>
-
-            <div class="s-testimonial-name">
-                <img src="{{ asset('assets\icon\ceo.png') }}" alt="">
-
-                <div class="s-testimonial-name-idendtity">
-                    <h4>CHAIM DESMOND</h4>
-                    <h5>CEO of Yellow Hotel</h5>
+            <div class="swiper mySwiper swiperTestimonialText" id="swiperTestimoniText">
+                <div class="swiper-wrapper testimonial-teks-wrapper">
+                    <div class="swiper-slide testimonial-teks-slide">
+                        <div class="s-testimonial-quote">
+                            <img src="{{ asset('assets/icon/testimoni-quote.png') }}" alt="">
+                            <p>GWA Group membantu hotel <br> saya untuk menjangkau lebih banyak client dan memberikan saran monetisasi yang tidak pernah saya bayangkan sebelumnya</p>
+                        </div>
+                        <div class="s-testimonial-name">
+                            <img src="{{ asset('assets/icon/ceo.png') }}" alt="">
+                            <div class="s-testimonial-name-identity">
+                                <h4>CHAIM DESMOND</h4>
+                                <h5>CEO of RED Hotel</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-teks-slide">
+                        <div class="s-testimonial-quote">
+                            <img src="{{ asset('assets/icon/testimoni-quote.png') }}" alt="">
+                            <p>GWA Group membantu hotel <br> saya untuk menjangkau lebih banyak client dan memberikan saran monetisasi yang tidak pernah saya bayangkan sebelumnya</p>
+                        </div>
+                        <div class="s-testimonial-name">
+                            <img src="{{ asset('assets/icon/ceo.png') }}" alt="">
+                            <div class="s-testimonial-name-identity">
+                                <h4>CHAIM DIMONT</h4>
+                                <h5>CEO of Yellow Hotel</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="swiper mySwiper testimonial-swiper" class="content-swiper">
-                <div class="swiper-wrapper testimonial-wrapper">
-
-                    <div class="swiper-slide testimonial-slide">
-
+            <div class="swiper mySwiper swiperTestimonialImage content-swiper" id="swiperTestimoniImage">
+                <div class="swiper-wrapper testimonial-image-wrapper">
+                    <div class="swiper-slide testimonial-image-slide">
                         <div class="s-testimonial-img">
                             <img src="{{ asset('assets/img/testimoni-img.png') }}" alt="klien">
                         </div>
-
                     </div>
                     <div class="swiper-slide testimonial-slide">
-
                         <div class="s-testimonial-img">
                             <img src="{{ asset('assets/img/testimoni-img.png') }}" alt="klien">
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
 
             <div class="s-testimonial-swiper-button">
                 <div class="swiper-button-next testimonial-button-next">
                     <svg width="49" height="50" viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="vuesax/linear/arrow-left">
-                        <g id="arrow-left">
-                        <path id="Vector" d="M18.329 41.1333L31.6105 27.8518C33.179 26.2833 33.179 23.7166 31.6105 22.1481L18.329 8.86664" stroke="white" stroke-width="3.55556" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
+                        <g id="vuesax/linear/arrow-right">
+                            <path id="Vector" d="M18.329 41.1333L31.6105 27.8518C33.179 26.2833 33.179 23.7166 31.6105 22.1481L18.329 8.86664" stroke="white" stroke-width="3.55556" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         </g>
                     </svg>
-
                 </div>
                 <div class="swiper-button-prev testimonial-button-prev">
                     <svg width="49" height="50" viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="vuesax/linear/arrow-left">
-                        <g id="arrow-left">
-                        <path id="Vector" d="M18.329 41.1333L31.6105 27.8518C33.179 26.2833 33.179 23.7166 31.6105 22.1481L18.329 8.86664" stroke="white" stroke-width="3.55556" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
+                            <path id="Vector" d="M18.329 41.1333L31.6105 27.8518C33.179 26.2833 33.179 23.7166 31.6105 22.1481L18.329 8.86664" stroke="white" stroke-width="3.55556" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         </g>
                     </svg>
-
                 </div>
             </div>
-
         </div>
+    </section> -->
 
-    </section>
+
 
     <section id="kontak" class="s-kontak">
 
         <div class="container">
-            
-
             <div class="s-kontak-head">
 
                 <div class="s-kontak-head-path">
@@ -440,7 +440,7 @@
                 </div>
 
                 <div class="s-kontak-head-tittle">
-                    <h1>Ingin Mendiskusikan Bisnis Pariwisata Anda ?</h1>
+                    <h1>Ingin Mendiskusikan <br> Bisnis Pariwisata Anda ?</h1>
                 </div>
 
                 <hr class="s-kontak-hr">
@@ -454,14 +454,20 @@
             <div class="s-kontak-form">
 
                 <form>
-                    <label class="form-label-nama" for="nama-lengkap">Nama Lengkap</label>
-                    <input class="form-input-nama" type="text" id="nama-lengkap" placeholder="Masukkan Nama Lengkap">
-                        
-                    <label class="form-label-perusahaan" for="nama-perusahaan">Nama Perusahaan</label>
-                    <input class="form-input-perusahaan" type="text" id="nama-perusahaan" placeholder="Masukkan Nama Perusahaan">
-                        
-                    <label class="form-label-nomor" class="form-label-nomor" for="nomor-whatsapp">Nomor Whatsapp Aktif</label>
-                    <input class="form-input-nomor" type="text" id="nomor-whatsapp" placeholder="Masukkan Nomor Whatsapp">
+                    <div class="form-grup">
+                        <label class="form-label form-label-nama" for="nama-lengkap">Nama Lengkap</label>
+                        <input class="form-input form-input-nama" type="text" id="nama-lengkap" placeholder="Masukkan Nama Lengkap">
+                    </div>
+                    
+                    <div class="form-grup">
+                        <label class="form-label form-label-perusahaan" for="nama-perusahaan">Nama Perusahaan</label>
+                        <input class="form-input form-input-perusahaan" type="text" id="nama-perusahaan" placeholder="Masukkan Nama Perusahaan">
+                    </div>
+
+                    <div class="form-grup">
+                    <label class="form-label form-label-nomor" class="form-label-nomor" for="nomor-whatsapp">Nomor Whatsapp Aktif</label>
+                    <input class="form-input form-input-nomor" type="text" id="nomor-whatsapp" placeholder="Masukkan Nomor Whatsapp">
+                    </div>
                         
                     <button type="submit">Jadwalkan Konsultasi <img src="{{ asset('assets/icon/arrow-right.svg') }}" alt=""></button>
                 </form>
@@ -472,7 +478,7 @@
 
     </section>
 
-    <footer id="footer" class="s-footer">
+    <!-- <footer id="footer" class="s-footer">
         <div class="container">
 
             <div class="s-footer-logo">
@@ -551,19 +557,6 @@
 
 
     <script>
-    // Testimonial Swiper
-    var testimonialSwiper = new Swiper('.testimonial-swiper',{
-        cssMode: true,
-        navigation: {
-            nextEl: '.testimonial-button-next',
-            prevEl: '.testimonial-button-prev',
-        },
-        pagination: {
-            el: '.testimonial-pagination',
-        },
-        mousewheel: true,
-        keyboard: true,
-    });
 
     // Project Swiper
     var projectSwiper = new Swiper('.project-swiper', {
@@ -577,6 +570,36 @@
         },
         mousewheel: true,
         keyboard: true,
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const swiperTestimoniImage = new Swiper('#swiperTestimoniImage', {
+        navigation: {
+            nextEl: '.testimonial-button-next',
+            prevEl: '.testimonial-button-prev',
+        },
+        effect: 'slide',
+        loop: true,
+        breakpoints: {
+            0: {},
+            768: {
+                navigation: {
+                    nextEl: '.testimonial-button-next',
+                    prevEl: '.testimonial-button-prev',
+                },
+            },
+        },
+    });
+
+    const swiperTestimoniText = new Swiper('#swiperTestimoniText', {
+        allowTouchMove: false,
+        loop: true,
+        effect: 'fade',
+    });
+
+    swiperTestimoniImage.controller.control = swiperTestimoniText;
+    swiperTestimoniText.controller.control = swiperTestimoniImage;
+
     });
     
     document.addEventListener('DOMContentLoaded', function() {
