@@ -478,37 +478,37 @@
 
     </section>
 
-    <!-- <footer id="footer" class="s-footer">
+    <footer id="footer" class="s-footer">
         <div class="container">
 
             <div class="s-footer-logo">
                 <img src="{{ asset('assets/logo/logo-gwk.png') }}" alt="Graha Wisata Kita">
             </div>
 
-            <div class="footer-sections">
-                <div class="section">
+            <div class="s-footer-inform">
+                <div class="s-footer-inform-section">
                     <h4>Halaman Utama</h4>
                     <ul>
                         <li><a href="#">Homepage</a></li>
                     </ul>
                 </div>
-                <div class="section">
+                <div class="s-footer-inform-section">
                     <h4>Perusahaan</h4>
                     <ul>
                         <li><a href="#">Tentang Kami</a></li>
                         <li><a href="#">Daftar Hotel</a></li>
                     </ul>
                 </div>
-                <div class="section">
+                <div class="s-footer-inform-section">
                     <h4>Temukan Kami</h4>
                     <ul>
                         <li><a href="#">Bantuan</a></li>
                         <li><a href="#">Hubungi Kami</a></li>
                     </ul>
                 </div>
-                <div class="section">
+                <div class="s-footer-inform-section">
                     <h4>Social Media</h4>
-                    <div class="social-media">
+                    <div class="s-footer-inform-section-social-media">
                         <img src="{{ asset('assets/icon/facebook.png') }}" alt="">
                         <img src="{{ asset('assets/icon/youtube.png') }}" alt="">
                         <img src="{{ asset('assets/icon/facebook.png') }}" alt="">
@@ -519,26 +519,17 @@
 
             <hr>
 
-            <div class="s-footer-bottom">
+            <div class="s-footer-action">
 
-                <div class="s-footer-bottom-inform">
+                <div class="s-footer-action-teks">
                         <ul>
-                            <li class="inform-up" ><a href="#">Pemberitahuan Privasi</a></li>
-                            <li class="inform-down"><a href="#">Syarat dan Ketentuan</a></li>
+                            <li><a href="#">Pemberitahuan Privasi</a></li>
+                            <li><a href="#">Syarat dan Ketentuan</a></li>
                         </ul>
                 </div>
 
                 <div class="s-footer-bottom-language-selector">
                     <img src="{{ asset('assets/icon/translate.png') }}" alt="">
-
-
-                    <div class="s-footer-bottom-language-selector-select">
-                        <select>
-                            <option>Bahasa Indonesia</option>
-                            <option>Bahasa Inggris</option>
-                        </select>
-                    </div>
-   
                     
                 </div>
 
@@ -550,7 +541,7 @@
             
 
         </div>
-    </footer> -->
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
