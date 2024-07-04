@@ -3,114 +3,114 @@
     padding: 0;
 }
 
-.nav {
-    position: fixed;
-    width: 100%;
-    background: transparent;
-    height: 120px;
-    z-index: 1000;
-    transition: background-color 0.3s;
-    align-items: center;
+// .nav {
+//     position: fixed;
+//     width: 100%;
+//     background: transparent;
+//     height: 120px;
+//     z-index: 1000;
+//     transition: background-color 0.3s;
+//     align-items: center;
   
-    &.scrolled {
-      background-color: #29679F;
-    }
+//     &.scrolled {
+//       background-color: #29679F;
+//     }
   
-    .nav-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
+//     .nav-head {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       width: 100%;
   
-      .nav-logo {
-        width: 248px;
-        height: 50px;
-        margin-right: 60px;
+//       .nav-logo {
+//         width: 248px;
+//         height: 50px;
+//         margin-right: 60px;
 
-        img {
-          width: 100%;
-          height: auto;
-          align-items: center;
-        }
-      }
+//         img {
+//           width: 100%;
+//           height: auto;
+//           align-items: center;
+//         }
+//       }
   
-      .nav-menu {
-        display: flex;
-        align-items: center;
-        width: 100%;
+//       .nav-menu {
+//         display: flex;
+//         align-items: center;
+//         width: 100%;
   
-        ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          display: flex;
+//         ul {
+//           list-style: none;
+//           padding: 0;
+//           margin: 0;
+//           display: flex;
   
-          li {
-            margin-right: 40px;
+//           li {
+//             margin-right: 40px;
   
-            a {
-              font-family: "Outfit", sans-serif;
-              font-size: 18px;
-              font-weight: 500;
-              line-height: 22.68px;
-              text-decoration: none;
-              color: #ffffff;
-              transition: color 0.3s;
+//             a {
+//               font-family: "Outfit", sans-serif;
+//               font-size: 18px;
+//               font-weight: 500;
+//               line-height: 22.68px;
+//               text-decoration: none;
+//               color: #ffffff;
+//               transition: color 0.3s;
   
-              &:hover {
-                color: #1e1e1e;
-              }
-            }
-          }
-        }
-      }
-    }
+//               &:hover {
+//                 color: #1e1e1e;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
   
-    .nav-button {
-        display: flex;
-        align-items: center;
-        background-color: #15548D;
-        width: 330px;
-        height: 52px;
-        border-radius: 10px;
-        padding: 0 12px;
-        position: relative; /* Ensure the parent is positioned relatively */
+//     .nav-button {
+//         display: flex;
+//         align-items: center;
+//         background-color: #15548D;
+//         width: 330px;
+//         height: 52px;
+//         border-radius: 10px;
+//         padding: 0 12px;
+//         position: relative; /* Ensure the parent is positioned relatively */
       
-        img {
-          margin: 0 10px;
-        }
+//         img {
+//           margin: 0 10px;
+//         }
       
-        select {
-          width: fit-content;
-          background-color: #15548D;
-          border: none;
-          color: #FFF;
-          font-family: "Outfit", sans-serif;
-          font-size: 17px;
-          font-weight: 400;
-          cursor: pointer;
-          appearance: none;
-          outline: none;
-          padding-right: 30px; /* Ensure space for the arrow */
+//         select {
+//           width: fit-content;
+//           background-color: #15548D;
+//           border: none;
+//           color: #FFF;
+//           font-family: "Outfit", sans-serif;
+//           font-size: 17px;
+//           font-weight: 400;
+//           cursor: pointer;
+//           appearance: none;
+//           outline: none;
+//           padding-right: 30px; /* Ensure space for the arrow */
           
-          &::-ms-expand {
-            display: none; 
-          }
-        }
+//           &::-ms-expand {
+//             display: none; 
+//           }
+//         }
       
-        &::before {
-          content: ''; /* Add content property */
-          background: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22vuesax%2Flinear%2Farrow-down%22%3E%3Cg%20id%3D%22arrow-down%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M17.2727%206.36353L11.2856%2013.0445C10.5785%2013.8335%209.42151%2013.8335%208.71444%2013.0445L2.72729%206.36353%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center;
-          width: 20px;
-          height: 20px;
-          position: absolute;
-          right: 10px;
-          top: 50%;
-          pointer-events: none;
-          transform: translateY(-50%);
-        }
-      }      
-  }
+//         &::before {
+//           content: ''; /* Add content property */
+//           background: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22vuesax%2Flinear%2Farrow-down%22%3E%3Cg%20id%3D%22arrow-down%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M17.2727%206.36353L11.2856%2013.0445C10.5785%2013.8335%209.42151%2013.8335%208.71444%2013.0445L2.72729%206.36353%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center;
+//           width: 20px;
+//           height: 20px;
+//           position: absolute;
+//           right: 10px;
+//           top: 50%;
+//           pointer-events: none;
+//           transform: translateY(-50%);
+//         }
+//       }      
+//   }
 
 .s-hero{
     width: 100%;
@@ -3114,119 +3114,6 @@
 
 @media (max-width: 767px) {
 
-    nav {
-        position: fixed;
-        width: 100%;
-        background: transparent;
-        height: 62px !important; /* Mengurangi tinggi nav untuk tablet */
-        z-index: 1000;
-        transition: background-color 0.3s;
-        align-items: center;
-    
-        &.scrolled {
-            background-color: #29679F;
-        }
-    
-        .nav-head {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-    
-            .nav-logo {
-                width: 102px !important; /* Menyesuaikan lebar logo untuk tablet */
-                height: 34px; /* Menyesuaikan tinggi logo untuk tablet */
-                margin-right: 30px !important; /* Mengurangi margin untuk tablet */
-                margin-top: 15px;
-    
-                img {
-                    width: 100%;
-                    height: auto;
-                    align-items: center;
-                }
-            }
-    
-            .nav-menu {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start; /* Justifikasi menu ke kanan untuk tablet */
-                width: 60%; /* Menyesuaikan lebar menu untuk tablet */
-    
-                ul {
-                    list-style: none;
-                    padding: 0;
-                    margin: 20px; /* Menyesuaikan margin ul untuk tablet */
-                    display: flex;
-    
-                    li {
-                        margin-right: 20px !important;
-    
-                        a {
-                            margin: 0;
-                            font-family: "Outfit", sans-serif;
-                            font-size: 14px !important; /* Menyesuaikan ukuran font untuk tablet */
-                            font-weight: 500;
-                            text-decoration: none;
-                            color: #ffffff;
-                            transition: color 0.3s;
-    
-                            &:hover {
-                                color: #1e1e1e;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    
-        .nav-button {
-            display: flex;
-            align-items: center;
-            background-color: #15548D;
-            width: 330px;
-            height: 42px !important;
-            border-radius: 10px;
-            padding: 0 12px;
-            position: relative; /* Ensure the parent is positioned relatively */
-          
-            img {
-                width: 28px;
-                height: 28px;
-              margin: 0 10px;
-            }
-          
-            select {
-              width: fit-content;
-              background-color: #15548D;
-              border: none;
-              color: #FFF;
-              font-family: "Outfit", sans-serif;
-              font-size: 14px !important;
-              font-weight: 400;
-              cursor: pointer;
-              appearance: none;
-              outline: none;
-              padding-right: 30px; /* Ensure space for the arrow */
-              
-              &::-ms-expand {
-                display: none; 
-              }
-            }
-          
-            &::before {
-              content: ''; /* Add content property */
-              background: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22vuesax%2Flinear%2Farrow-down%22%3E%3Cg%20id%3D%22arrow-down%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M17.2727%206.36353L11.2856%2013.0445C10.5785%2013.8335%209.42151%2013.8335%208.71444%2013.0445L2.72729%206.36353%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center;
-              width: 15px;
-              height: 15px;
-              position: absolute;
-              right: 10px;
-              top: 50%;
-              pointer-events: none;
-              transform: translateY(-50%);
-            }
-          }   
-    }
-
     .s-hero{
         width: 100%;
         height: 460px;
@@ -3966,7 +3853,6 @@
     }
 
     .s-footer{
-        height: 630px;
         background: #15548D;
         padding: 40px 0;
         color: #fff;
@@ -4051,8 +3937,32 @@
             }
         }
 
+        &-trasnlate{
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            img{
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+        &-copyright{
+            margin-top: 24px;
+            a{
+                color: #FFFFFF;
+                font-family: "Outfit", sans-serif;
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+
     }
 }
+
+
 
 
 

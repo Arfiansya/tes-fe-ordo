@@ -26,14 +26,13 @@
     
 </head>
 <body>
-
-    <!-- <nav class="nav">
+    <nav class="nav">
         <div class="container">
             <div class="nav-head">
                 <div class="nav-logo">
                     <img src="{{ asset('assets/logo/logo-gwk.png') }}" alt="">
                 </div>
-                <div class="nav-menu">
+                <div class="nav-menu" id="nav-menu">
                     <ul>
                         <li><a href="{{ route('homepage') }}">Homepage</a></li>
                         <li><a href="{{ route('tentang') }}">Tentang</a></li>
@@ -43,13 +42,16 @@
                 </div>
                 <div class="nav-button">
                     <img src="{{ asset('assets/logo/indonesia-nav.png') }}" alt="">
-                    <select>
-                        <option>Indonesia (ID)</option>
-                     </select>
                 </div>
+                <button class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
         </div>
-    </nav> -->
+    </nav>
+
 
     <section id="hero" class="s-hero">
 
@@ -528,14 +530,14 @@
                         </ul>
                 </div>
 
-                <div class="s-footer-bottom-language-selector">
+                <div class="s-footer-trasnlate">
                     <img src="{{ asset('assets/icon/translate.png') }}" alt="">
-                    
+
                 </div>
 
             </div>
 
-            <div class="s-footer-copy">
+            <div class="s-footer-copyright">
                 <a href="#">© 2023 Graha Wisata Kita | PT Graha Wisata Kita Tbk. </a>
             </div>
             
@@ -548,7 +550,6 @@
 
 
     <script>
-
     // Project Swiper
     var projectSwiper = new Swiper('.project-swiper', {
         cssMode: true,
