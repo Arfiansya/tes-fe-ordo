@@ -13,104 +13,100 @@
 //     align-items: center;
   
 //     &.scrolled {
-//       background-color: #29679F;
+//         background-color: #29679F;
 //     }
   
-//     .nav-head {
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//       width: 100%;
-  
-//       .nav-logo {
-//         width: 248px;
-//         height: 50px;
-//         margin-right: 60px;
-
-//         img {
-//           width: 100%;
-//           height: auto;
-//           align-items: center;
-//         }
-//       }
-  
-//       .nav-menu {
+//     &-head {
 //         display: flex;
+//         justify-content: space-between;
 //         align-items: center;
 //         width: 100%;
   
-//         ul {
-//           list-style: none;
-//           padding: 0;
-//           margin: 0;
-//           display: flex;
-  
-//           li {
-//             margin-right: 40px;
-  
-//             a {
-//               font-family: "Outfit", sans-serif;
-//               font-size: 18px;
-//               font-weight: 500;
-//               line-height: 22.68px;
-//               text-decoration: none;
-//               color: #ffffff;
-//               transition: color 0.3s;
-  
-//               &:hover {
-//                 color: #1e1e1e;
-//               }
+//         &-logo {
+//             width: 248px;
+//             height: 50px;
+//             margin-right: 60px;
+
+//             img {
+//                 width: 100%;
+//                 height: auto;
+//                 align-items: center;
 //             }
-//           }
 //         }
-//       }
-//     }
   
-//     .nav-button {
-//         display: flex;
-//         align-items: center;
-//         background-color: #15548D;
-//         width: 330px;
-//         height: 52px;
-//         border-radius: 10px;
-//         padding: 0 12px;
-//         position: relative; /* Ensure the parent is positioned relatively */
-      
-//         img {
-//           margin: 0 10px;
+//         &-menu {
+//             display: flex;
+//             align-items: center;
+//             width: 100%;
+  
+//             ul {
+//                 list-style: none;
+//                 padding: 0;
+//                 margin: 0;
+//                 display: flex;
+  
+//                 li {
+//                     margin-right: 40px;
+  
+//                     a {
+//                         font-family: "Outfit", sans-serif;
+//                         font-size: 18px;
+//                         font-weight: 500;
+//                         line-height: 22.68px;
+//                         text-decoration: none;
+//                         color: #ffffff;
+//                         transition: color 0.3s;
+  
+//                         &:hover {
+//                             color: #1e1e1e;
+//                         }
+//                     }
+//                 }
+//             }
 //         }
-      
-//         select {
-//           width: fit-content;
-//           background-color: #15548D;
-//           border: none;
-//           color: #FFF;
-//           font-family: "Outfit", sans-serif;
-//           font-size: 17px;
-//           font-weight: 400;
-//           cursor: pointer;
-//           appearance: none;
-//           outline: none;
-//           padding-right: 30px; /* Ensure space for the arrow */
-          
-//           &::-ms-expand {
-//             display: none; 
-//           }
+
+//         &-dropdown {
+//             display: flex;
+//             align-items: center;
+//             background-color: #15548D;
+//             border-radius: 10px;
+//             padding: 0 12px;
+//             color: white;
+//             border: none;
+//             cursor: pointer;
+
+//             button {
+//                 background-color: #15548D;
+//                 display: flex;
+//                 align-items: center;
+//                 img {
+//                     margin-right: 8px;
+//                     width: 30px;
+//                     height: 30px;
+//                 }
+//             }
+  
+//             &-menu {
+//                 background-color: #15548D;
+//                 color: white;
+//                 border-radius: 10px;
+//                 padding: 0 12px;
+
+//                 .dropdown-item {
+//                     display: flex;
+//                     align-items: center;
+//                     padding: 8px 12px;
+//                     color: white;
+
+//                     img {
+//                         margin-right: 8px;
+//                     }
+//                 }
+//             }
 //         }
-      
-//         &::before {
-//           content: ''; /* Add content property */
-//           background: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20id%3D%22vuesax%2Flinear%2Farrow-down%22%3E%3Cg%20id%3D%22arrow-down%22%3E%3Cpath%20id%3D%22Vector%22%20d%3D%22M17.2727%206.36353L11.2856%2013.0445C10.5785%2013.8335%209.42151%2013.8335%208.71444%2013.0445L2.72729%206.36353%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center;
-//           width: 20px;
-//           height: 20px;
-//           position: absolute;
-//           right: 10px;
-//           top: 50%;
-//           pointer-events: none;
-//           transform: translateY(-50%);
-//         }
-//       }      
-//   }
+//     }
+// }
+
 
 .s-hero{
     width: 100%;
@@ -145,7 +141,6 @@
             }
     
             h2{
-                width: 257px;
                 color: #FFF;
                 font-family: "Outfit", sans-serif;
                 font-size: 16px;
@@ -161,15 +156,10 @@
         .s-hero-content-tittle{
             margin-top: 31px;
             color: #FFFFFF;
-            width: 675px;
-            height: 118px;
             
     
             h1{
                 margin-bottom: 0;
-                width: 100%;
-                height: 118px;
-    
                 font-size: 38px;
                 font-style: normal;
                 font-weight: 600;
@@ -183,12 +173,8 @@
         .s-hero-content-teks{
             margin-top: 31px;
             color: #FFFFFF;
-            width: 675px;
-            height: 70px;
             p{ 
-                margin-bottom: 0;
-                width: 645px;
-                height: 70px;     
+                margin-bottom: 0;    
                 font-size: 22px;
                 font-style: normal;
                 font-weight: 300;
@@ -199,29 +185,32 @@
         }
     
         .s-hero-button{
+            position: relative;
+            z-index: 10;
             width: 404.7px;
             height: 74px;
             margin-top: 36px;
+            border: #FAC568 ;
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 1000px;
+            background-color: #FAC568;
+
+            color: #000;
+            font-family: "Outfit", sans-serif;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 39px;
     
             .s-hero-button-primary{
     
                 border: #FAC568 ;
-                display: flex;
-                width: 404.7px;
-                height: 74px;
-                padding: 10px;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                border-radius: 1000px;
+
                 background-color: #FAC568;
-    
-                color: #000;
-                font-family: "Outfit", sans-serif;
-                font-size: 26px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 39px;
     
     
             }
@@ -245,8 +234,6 @@
     
         h4 {
 
-            width: 54px;
-            height: 37px;
             transform: rotate(90deg);
             font-family: "Outfit", sans-serif;
             font-weight: 300;
@@ -279,17 +266,20 @@
     }
 
     &::after {
-        content: ''; 
-        position: absolute; 
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 720px;
-        background: url('data:image/svg+xml,%3Csvg%20width%3D%22865%22%20height%3D%22787%22%20viewBox%3D%220%200%20865%20787%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M813.5%201C802.902%2056.6169%20638.067%20209.954%20454%20143C269.933%2076.0459%2075.597%20181.655%20-1%20143%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20289.686C0%20289.686%20116.015%20394.801%20339%20281.686C490.769%20204.698%20647.351%20421.613%20811.5%20377.186%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20492C168.986%20336.609%20337.275%20532.8%20501.109%20316.246C664.944%2099.6923%20864%20316.246%20864%20316.246%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-1.5%20697C-1.5%20697%2041.4996%20787.664%20261.5%20609C481.5%20430.336%20741%20712%20809.5%20546.5%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-2%20423.851C164.173%20388.065%20200.787%20699.399%20572%20786%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3C/svg%3E') no-repeat center; // Ganti dengan URL gambar Anda
-        background-size: cover;
 
+        content: ''; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        width: 966px;
+        height: 785px;
+        background: url('data:image/svg+xml,%3Csvg%20width%3D%22865%22%20height%3D%22787%22%20viewBox%3D%220%200%20865%20787%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M813.5%201C802.902%2056.6169%20638.067%20209.954%20454%20143C269.933%2076.0459%2075.597%20181.655%20-1%20143%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20289.686C0%20289.686%20116.015%20394.801%20339%20281.686C490.769%20204.698%20647.351%20421.613%20811.5%20377.186%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M0%20492C168.986%20336.609%20337.275%20532.8%20501.109%20316.246C664.944%2099.6923%20864%20316.246%20864%20316.246%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-1.5%20697C-1.5%20697%2041.4996%20787.664%20261.5%20609C481.5%20430.336%20741%20712%20809.5%20546.5%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3Cpath%20d%3D%22M-2%20423.851C164.173%20388.065%20200.787%20699.399%20572%20786%22%20stroke%3D%22white%22%20stroke-opacity%3D%220.3%22/%3E%3C/svg%3E') no-repeat; /* Ganti dengan URL gambar Anda */
         z-index: 1;
     }
+    
     
 }
 
@@ -303,9 +293,6 @@
     .s-workflow-head {
         position: relative;
         margin-top: 98px;
-        width: 589px;
-        height: 143px;
-
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
@@ -338,273 +325,342 @@
         }
     }
 
+
+
     .s-workflow-card {
         position: relative;
         display: flex;
         z-index: 20;
         height: 380px;
         margin-bottom: 100px;
-        .s-workflow-line{
-            width: 100%;
-            position: absolute;
-            top: -170px;
-            z-index: 1;
-        }
-        .s-workflow-item-1 {
-            top: 148px;
-            left: 10vw;
-            position: absolute; /* Tambahkan position */
-            z-index: 20; /* Tambahkan z-index lebih tinggi */
-            .s-workflow-item-img-1 {
+
+
+        .s-workflow-card-item{
+            align-items: center;
+            gap: 18px;
+
+
+            &-img {
+                display: flex;
                 width: 150px;
                 height: 150px;
-                background-color: #FFF;
-                border-radius: 868.17px;
-                box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
-                display: flex;
-                align-items: center;
+                flex-direction: column;
                 justify-content: center;
-    
+                align-items: center;
+
+                border-radius: 868.167px;
+                background: #FFF;
+                box-shadow: 0px 4.823px 38.585px 0px #FFF0DE;
+
                 img {
-                    width: 96.46px;
-                    height: 96.46px;
+                    width: 98px;
+                    height: 98px;
                 }
             }
-    
-            .s-workflow-item-content-1 {
-                color: #333333;
-                font-family: "Outfit", sans-serif;
-                width: 261.41px;
-                height: 119.34px;
-    
-                .s-workflow-item-content-tittle-1 {
-                    margin-top: 21.53px;
-                    width: 210.289px;
-                    height: 33px;
-    
+            &-content {
+                &-tittle {
+                    margin-top: 21px;
                     h2 {
-                        margin-bottom: 0;
-                        font-weight: 600;
+                        color: #333;
+                        font-family: "Outfit", sans-serif;
+                        margin: 0;
+
                         font-size: 22px;
-                        line-height: 33px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%; /* 33px */
                     }
                 }
-    
-                .s-workflow-item-content-deskripsi-1 {
+
+                &-deskripsi {
                     margin-top: 8.34px;
-                    width: 261.415px;
-                    height: 78px;
-                    font-weight: 300;
-                    font-size: 17px;
-                    line-height: 33px;
                     p {
                         color: #333;
                         font-family: "Outfit", sans-serif;
-                        font-size: 17px;
+
                         font-style: normal;
                         font-weight: 300;
-                        line-height: 150%; /* 25.5px */
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
-    
-        .s-workflow-item-2 {
-            top: 77px;
-            left: 30vw;
-            position: absolute; /* Tambahkan position */
-            z-index: 20; /* Tambahkan z-index lebih tinggi */
-            .s-workflow-item-img-2 {
-                width: 150px;
-                height: 150px;
-                background-color: #FFF;
-                border-radius: 868.17px;
-                box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
-    
-                display: flex;
-                align-items: center;
-                justify-content: center;
-    
-                img {
-                    width: 96.46px;
-                    height: 96.46px;
-                }
-            }
-    
-            .s-workflow-item-content-2 {
-                color: #333333;
-                font-family: "Outfit", sans-serif;
-                width: 261.41px;
-                height: 119.34px;
-    
-                .s-workflow-item-content-tittle-2 {
-                    margin-top: 21.53px;
-                    width: 210.289px;
-                    height: 33px;
-    
-                    h2 {
-                        margin-bottom: 0;
-                        font-weight: 600;
-                        font-size: 22px;
-                        line-height: 33px;
-                    }
-                }
-    
-                .s-workflow-item-content-deskripsi-2 {
-                    margin-top: 8.34px;
-                    width: 285.531px;
-                    height: 78px;
-                    font-weight: 300;
-                    font-size: 17px;
-                    line-height: 33px;
-                    p {
-                        color: #333;
-                        font-family: "Outfit", sans-serif;
+                        line-height: 150%; /* 16.5px */
+                        margin: 0;
                         font-size: 17px;
                         font-style: normal;
-                        font-weight: 300;
-                        line-height: 150%; /* 25.5px */
-                        margin-bottom: 0;
+
+
                     }
                 }
             }
+
+            &-1{
+                position: relative;
+                margin-top: 138px;
+                
+            }
+
+            &-2{
+                position: relative;
+                margin-top: 57px;
+                
+            }
+            
+            &-3{
+                position: relative;
+                margin-top: 95px;
+                left: 55px;
+                
+            }
+
+            &-4{
+                position: relative;
+                margin-top: -50px;
+                
+            }
+
         }
+
+        // .s-workflow-item-1 {
+        //     top: 148px;
+        //     left: 10vw;
+        //     position: absolute; /* Tambahkan position */
+        //     z-index: 20; /* Tambahkan z-index lebih tinggi */
+        //     .s-workflow-item-img-1 {
+        //         width: 150px;
+        //         height: 150px;
+        //         background-color: #FFF;
+        //         border-radius: 868.17px;
+        //         box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
     
-        .s-workflow-item-3 {
-            top: 95px;
-            left: 53vw;
-            position: absolute; /* Tambahkan position */
-            z-index: 20; /* Tambahkan z-index lebih tinggi */
-            .s-workflow-item-img-3 {
-                width: 150px;
-                height: 150px;
-                background-color: #FFF;
-                border-radius: 868.17px;
-                box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
+        //         img {
+        //             width: 96.46px;
+        //             height: 96.46px;
+        //         }
+        //     }
     
-                display: flex;
-                align-items: center;
-                justify-content: center;
+        //     .s-workflow-item-content-1 {
+        //         color: #333333;
+        //         font-family: "Outfit", sans-serif;
+        //         width: 261.41px;
+        //         height: 119.34px;
     
-                img {
-                    width: 96.46px;
-                    height: 96.46px;
-                }
-            }
+        //         .s-workflow-item-content-tittle-1 {
+        //             margin-top: 21.53px;
+        //             width: 210.289px;
+        //             height: 33px;
     
-            .s-workflow-item-content-3 {
-                color: #333333;
-                font-family: "Outfit", sans-serif;
-                width: 261.41px;
-                height: 119.34px;
+        //             h2 {
+        //                 margin-bottom: 0;
+        //                 font-weight: 600;
+        //                 font-size: 22px;
+        //                 line-height: 33px;
+        //             }
+        //         }
     
-                .s-workflow-item-content-tittle-3 {
-                    margin-top: 21.53px;
-                    width: 210.289px;
-                    height: 33px;
+        //         .s-workflow-item-content-deskripsi-1 {
+        //             margin-top: 8.34px;
+        //             width: 261.415px;
+        //             height: 78px;
+        //             font-weight: 300;
+        //             font-size: 17px;
+        //             line-height: 33px;
+        //             p {
+        //                 color: #333;
+        //                 font-family: "Outfit", sans-serif;
+        //                 font-size: 17px;
+        //                 font-style: normal;
+        //                 font-weight: 300;
+        //                 line-height: 150%; /* 25.5px */
+        //                 margin-bottom: 0;
+        //             }
+        //         }
+        //     }
+        // }
     
-                    h2 {
-                        margin-bottom: 0;
-                        font-weight: 600;
-                        font-size: 22px;
-                        line-height: 33px;
-                    }
-                }
+        // .s-workflow-item-2 {
+        //     top: 77px;
+        //     left: 30vw;
+        //     position: absolute; /* Tambahkan position */
+        //     z-index: 20; /* Tambahkan z-index lebih tinggi */
+        //     .s-workflow-item-img-2 {
+        //         width: 150px;
+        //         height: 150px;
+        //         background-color: #FFF;
+        //         border-radius: 868.17px;
+        //         box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
     
-                .s-workflow-item-content-deskripsi-3 {
-                    margin-top: 8.34px;
-                    width: 321px;
-                    height: 78px;
-                    font-weight: 300;
-                    font-size: 17px;
-                    line-height: 33px;
-                    p {
-                        color: #333;
-                        font-family: "Outfit", sans-serif;
-                        font-size: 17px;
-                        font-style: normal;
-                        font-weight: 300;
-                        line-height: 150%; /* 25.5px */
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
     
-        .s-workflow-item-4 {
-            left: 72vw;
-            top: -50px;
-            position: absolute; /* Tambahkan position */
-            z-index: 20; /* Tambahkan z-index lebih tinggi */
-            .s-workflow-item-img-4 {
-                width: 150px;
-                height: 150px;
-                background-color: #FFF;
-                border-radius: 868.17px;
-                box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
+        //         img {
+        //             width: 96.46px;
+        //             height: 96.46px;
+        //         }
+        //     }
     
-                display: flex;
-                align-items: center;
-                justify-content: center;
+        //     .s-workflow-item-content-2 {
+        //         color: #333333;
+        //         font-family: "Outfit", sans-serif;
+        //         width: 261.41px;
+        //         height: 119.34px;
     
-                img {
-                    width: 96.46px;
-                    height: 96.46px;
-                }
-            }
+        //         .s-workflow-item-content-tittle-2 {
+        //             margin-top: 21.53px;
+        //             width: 210.289px;
+        //             height: 33px;
     
-            .s-workflow-item-content-4 {
-                color: #333333;
-                font-family: "Outfit", sans-serif;
-                width: 261.41px;
-                height: 119.34px;
+        //             h2 {
+        //                 margin-bottom: 0;
+        //                 font-weight: 600;
+        //                 font-size: 22px;
+        //                 line-height: 33px;
+        //             }
+        //         }
     
-                .s-workflow-item-content-tittle-4 {
-                    margin-top: 21.53px;
-                    width: 210.289px;
-                    height: 33px;
+        //         .s-workflow-item-content-deskripsi-2 {
+        //             margin-top: 8.34px;
+        //             width: 285.531px;
+        //             height: 78px;
+        //             font-weight: 300;
+        //             font-size: 17px;
+        //             line-height: 33px;
+        //             p {
+        //                 color: #333;
+        //                 font-family: "Outfit", sans-serif;
+        //                 font-size: 17px;
+        //                 font-style: normal;
+        //                 font-weight: 300;
+        //                 line-height: 150%; /* 25.5px */
+        //                 margin-bottom: 0;
+        //             }
+        //         }
+        //     }
+        // }
     
-                    h2 {
-                        margin-bottom: 0;
-                        font-weight: 600;
-                        font-size: 22px;
-                        line-height: 33px;
-                    }
-                }
+        // .s-workflow-item-3 {
+        //     top: 95px;
+        //     left: 53vw;
+        //     position: absolute; /* Tambahkan position */
+        //     z-index: 20; /* Tambahkan z-index lebih tinggi */
+        //     .s-workflow-item-img-3 {
+        //         width: 150px;
+        //         height: 150px;
+        //         background-color: #FFF;
+        //         border-radius: 868.17px;
+        //         box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
     
-                .s-workflow-item-content-deskripsi-4 {
-                    margin-top: 8.34px;
-                    width: 293.226px;
-                    height: 78px;
-                    font-weight: 300;
-                    font-size: 17px;
-                    line-height: 33px;
-                    p {
-                        color: #333;
-                        font-family: "Outfit", sans-serif;
-                        font-size: 17px;
-                        font-style: normal;
-                        font-weight: 300;
-                        line-height: 150%; /* 25.5px */
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
+    
+        //         img {
+        //             width: 96.46px;
+        //             height: 96.46px;
+        //         }
+        //     }
+    
+        //     .s-workflow-item-content-3 {
+        //         color: #333333;
+        //         font-family: "Outfit", sans-serif;
+        //         width: 261.41px;
+        //         height: 119.34px;
+    
+        //         .s-workflow-item-content-tittle-3 {
+        //             margin-top: 21.53px;
+        //             width: 210.289px;
+        //             height: 33px;
+    
+        //             h2 {
+        //                 margin-bottom: 0;
+        //                 font-weight: 600;
+        //                 font-size: 22px;
+        //                 line-height: 33px;
+        //             }
+        //         }
+    
+        //         .s-workflow-item-content-deskripsi-3 {
+        //             margin-top: 8.34px;
+        //             width: 321px;
+        //             height: 78px;
+        //             font-weight: 300;
+        //             font-size: 17px;
+        //             line-height: 33px;
+        //             p {
+        //                 color: #333;
+        //                 font-family: "Outfit", sans-serif;
+        //                 font-size: 17px;
+        //                 font-style: normal;
+        //                 font-weight: 300;
+        //                 line-height: 150%; /* 25.5px */
+        //                 margin-bottom: 0;
+        //             }
+        //         }
+        //     }
+        // }
+    
+        // .s-workflow-item-4 {
+        //     left: 72vw;
+        //     top: -50px;
+        //     position: absolute; /* Tambahkan position */
+        //     z-index: 20; /* Tambahkan z-index lebih tinggi */
+        //     .s-workflow-item-img-4 {
+        //         width: 150px;
+        //         height: 150px;
+        //         background-color: #FFF;
+        //         border-radius: 868.17px;
+        //         box-shadow: 0px 4.82px 38.59px 0px #FFF0DE;
+    
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
+    
+        //         img {
+        //             width: 96.46px;
+        //             height: 96.46px;
+        //         }
+        //     }
+    
+        //     .s-workflow-item-content-4 {
+        //         color: #333333;
+        //         font-family: "Outfit", sans-serif;
+        //         width: 261.41px;
+        //         height: 119.34px;
+    
+        //         .s-workflow-item-content-tittle-4 {
+        //             margin-top: 21.53px;
+        //             width: 210.289px;
+        //             height: 33px;
+    
+        //             h2 {
+        //                 margin-bottom: 0;
+        //                 font-weight: 600;
+        //                 font-size: 22px;
+        //                 line-height: 33px;
+        //             }
+        //         }
+    
+        //         .s-workflow-item-content-deskripsi-4 {
+        //             margin-top: 8.34px;
+        //             width: 293.226px;
+        //             height: 78px;
+        //             font-weight: 300;
+        //             font-size: 17px;
+        //             line-height: 33px;
+        //             p {
+        //                 color: #333;
+        //                 font-family: "Outfit", sans-serif;
+        //                 font-size: 17px;
+        //                 font-style: normal;
+        //                 font-weight: 300;
+        //                 line-height: 150%; /* 25.5px */
+        //                 margin-bottom: 0;
+        //             }
+        //         }
+        //     }
+        // }
     }
 
-    // &::before {
-    //     content: ''; // Harus diisi agar pseudo-elemen muncul
-    //     position: absolute; // Posisikan secara absolut
-    //     top: 790px;
-    //     left: auto;
-    //     width: 1379px;
-    //     height: 406.573px;
-    //     background: url('../assets/icon/workflow-bg.png') no-repeat center center;
-    //     background-size: cover; // Untuk meng-cover seluruh area
-    //     z-index: 5; // Turunkan z-index untuk memastikan pseudo-elemen berada di belakang konten utama
-    // }
 }
 
 
@@ -845,8 +901,6 @@
             font-family: "Outfit", sans-serif;
             text-align: left;
             h6 {
-                width: 618.55px;
-                height: 28.76px;
                 font-weight: 500;
                 font-size: 22px;
                 line-height: 22px;
@@ -856,7 +910,6 @@
             }
             h1 {
                 color: #333333;
-                width: 618.55px;
                 font-family: "Outfit", sans-serif;
                 font-size: 53px;
                 font-style: normal;
@@ -867,8 +920,6 @@
 
             p {
                 color: #404040;
-                height: 32px;
-                width: 482.98px;
                 font-weight: 300;
                 font-size: 32px;
                 line-height: 32px;
@@ -904,8 +955,6 @@
             }
 
             h5 {
-                width: 148px;
-                height: 29px;
                 text-align: left;
 
                 color: #333;
@@ -981,199 +1030,199 @@
         height: 48px !important; /* Set height of the SVG */
     }
 
-.s-testimonial{
-    background-color: #F7F8FD;
-    width: 100%;
-    height: 690px;
+// .s-testimonial{
+//     background-color: #F7F8FD;
+//     width: 100%;
+//     height: 690px;
 
 
-    .s-testimonial-head{
-        width: 100%;
-        height: 97.19px;
-        position: relative;
-        margin-top: 92px;
+//     .s-testimonial-head{
+//         width: 100%;
+//         height: 97.19px;
+//         position: relative;
+//         margin-top: 92px;
 
-        display: inline-flex;
-        flex-direction: column;
-        align-items: flex-start;
-        .s-testimonial-head-path{
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            color: #333333;
-            h2{
+//         display: inline-flex;
+//         flex-direction: column;
+//         align-items: flex-start;
+//         .s-testimonial-head-path{
+//             display: flex;
+//             align-items: center;
+//             gap: 14px;
+//             color: #333333;
+//             h2{
 
-                margin-bottom: 0;
-                color: #000;
-                font-family: "Montserrat", sans-serif;
-                font-size: 17px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 17px; 
-                text-transform: uppercase;
-            }
-        }
+//                 margin-bottom: 0;
+//                 color: #000;
+//                 font-family: "Montserrat", sans-serif;
+//                 font-size: 17px;
+//                 font-style: normal;
+//                 font-weight: 600;
+//                 line-height: 17px; 
+//                 text-transform: uppercase;
+//             }
+//         }
 
-        .s-testimonial-head-tittle{
-            margin-top: 28px;
-            color: #333333;
-            h1{
+//         .s-testimonial-head-tittle{
+//             margin-top: 28px;
+//             color: #333333;
+//             h1{
 
-                font-family: "Outfit", sans-serif;
-                font-size: 37px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 150%; /* 55.5px */
-            }
-        }
-    }
-
-
+//                 font-family: "Outfit", sans-serif;
+//                 font-size: 37px;
+//                 font-style: normal;
+//                 font-weight: 600;
+//                 line-height: 150%; /* 55.5px */
+//             }
+//         }
+//     }
 
 
-    .s-testimonial-quote{
-        position: relative;
-        width: 526.38px;
-        height: 193px;
-        margin-top: 38px;
-        margin-left: 29.12px;
-        display: flex; /* Menjadikan elemen ini sebagai flex container */
-        justify-content: space-between; /* Menyebarkan elemen anak di sepanjang container dengan ruang di antara mereka */
-
-        img{
-            width: 44.64px;
-            height: 44px;
-
-        }
-
-        p{
-            color: #000000;
-            font-family: "Outfit", sans-serif;
-            width: 458px;
-            height: 193px;
-            font-size: 26px;
-            font-weight: 300;
-            line-height: 37.7px;
-            text-align: left;
-            margin-bottom: 0;
 
 
-        }
+//     .s-testimonial-quote{
+//         position: relative;
+//         width: 526.38px;
+//         height: 193px;
+//         margin-top: 38px;
+//         margin-left: 29.12px;
+//         display: flex; /* Menjadikan elemen ini sebagai flex container */
+//         justify-content: space-between; /* Menyebarkan elemen anak di sepanjang container dengan ruang di antara mereka */
 
-    }
+//         img{
+//             width: 44.64px;
+//             height: 44px;
 
-    .s-testimonial-name{
-        position: relative;
-        width: 256.52px;
-        height: 81px;        
-        margin-top: 60px;
-        display: flex; /* Menjadikan elemen ini sebagai flex container */
-        justify-content: space-between; /* Menyebarkan elemen anak di sepanjang container dengan ruang di antara mereka */
-        img{
-            width: 97.86px;
-            height: 95px;
+//         }
 
-            margin-right: 26px;
-        }
-
-        .s-testimonial-name-idendtity{
-            width: 256.52px;
-            height: 81px;
-            color: #000000;
-
-            h4{
-                width: 256.52px;
-                height: 39px;
-
-                font-family: "Outfit", sans-serif;
-                font-size: 27px;
-                font-weight: 600;
-                line-height: 39.15px;
-                text-align: left;
-
-            }
-
-            h5{
-                width: 256.52px;
-                height: 39px;
-                font-family: "Outfit", sans-serif;
-                font-size: 27px;
-                font-weight: 300;
-                line-height: 39.15px;
-                text-align: left;
+//         p{
+//             color: #000000;
+//             font-family: "Outfit", sans-serif;
+//             width: 458px;
+//             height: 193px;
+//             font-size: 26px;
+//             font-weight: 300;
+//             line-height: 37.7px;
+//             text-align: left;
+//             margin-bottom: 0;
 
 
-            }
-        }
+//         }
 
-    }
+//     }
+
+//     .s-testimonial-name{
+//         position: relative;
+//         width: 256.52px;
+//         height: 81px;        
+//         margin-top: 60px;
+//         display: flex; /* Menjadikan elemen ini sebagai flex container */
+//         justify-content: space-between; /* Menyebarkan elemen anak di sepanjang container dengan ruang di antara mereka */
+//         img{
+//             width: 97.86px;
+//             height: 95px;
+
+//             margin-right: 26px;
+//         }
+
+//         .s-testimonial-name-idendtity{
+//             width: 256.52px;
+//             height: 81px;
+//             color: #000000;
+
+//             h4{
+//                 width: 256.52px;
+//                 height: 39px;
+
+//                 font-family: "Outfit", sans-serif;
+//                 font-size: 27px;
+//                 font-weight: 600;
+//                 line-height: 39.15px;
+//                 text-align: left;
+
+//             }
+
+//             h5{
+//                 width: 256.52px;
+//                 height: 39px;
+//                 font-family: "Outfit", sans-serif;
+//                 font-size: 27px;
+//                 font-weight: 300;
+//                 line-height: 39.15px;
+//                 text-align: left;
+
+
+//             }
+//         }
+
+//     }
     
     
-}
-    .testimonial-swiper {
-        top: 3070px !important;
-        border-radius: 60px 0 0 60px !important;
-        position: absolute !important;
-        margin-left: 0 !important; 
-        margin-right: 0 !important;
-        width: 580.41px !important;
-        height: 571.71px !important;
-        right: 0 !important;
-    }
+// }
+//     .testimonial-swiper {
+//         top: 3070px !important;
+//         border-radius: 60px 0 0 60px !important;
+//         position: absolute !important;
+//         margin-left: 0 !important; 
+//         margin-right: 0 !important;
+//         width: 580.41px !important;
+//         height: 571.71px !important;
+//         right: 0 !important;
+//     }
 
 
-    .testimonial-slide {
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+//     .testimonial-slide {
+//         background: #fff;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
 
-    .testimonial-slide img {
-        width: 100%;
-        height: 100%;
-    }
+//     .testimonial-slide img {
+//         width: 100%;
+//         height: 100%;
+//     }
 
-    .s-testimonial-swiper-button{
-        z-index: 100;
-        position: absolute;
-        top: 3070px+87px !important;
-        right: 500px;
-        display: flex;
-        width: 160.114px;
-        height: 78px;
-        padding: 8.889px 0px;
-        justify-content: center;
-        align-items: center;
-        gap: 13.824px;
-        flex-shrink: 0;
-        border-radius: 88.889px;
-        background-color: #29679F;
+//     .s-testimonial-swiper-button{
+//         z-index: 100;
+//         position: absolute;
+//         top: 3070px+87px !important;
+//         right: 500px;
+//         display: flex;
+//         width: 160.114px;
+//         height: 78px;
+//         padding: 8.889px 0px;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 13.824px;
+//         flex-shrink: 0;
+//         border-radius: 88.889px;
+//         background-color: #29679F;
 
-    }
+//     }
   
-    .testimonial-button-next, .testimonial-button-prev {
+//     .testimonial-button-next, .testimonial-button-prev {
 
-        left: 0;
-        right: 0;
-        display: flex;
-        width: 48.889px !important;
-        height: 48.889px !important;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-        color: #FFF;
+//         left: 0;
+//         right: 0;
+//         display: flex;
+//         width: 48.889px !important;
+//         height: 48.889px !important;
+//         justify-content: center;
+//         align-items: center;
+//         flex-shrink: 0;
+//         color: #FFF;
 
-    }
+//     }
 
-    .testimonial-button-next::after, .testimonial-button-prev::after {
-        display: none;
-    }
+//     .testimonial-button-next::after, .testimonial-button-prev::after {
+//         display: none;
+//     }
 
 
-    .testimonial-button-prev svg {
-        transform: rotate(180deg);
-    }
+//     .testimonial-button-prev svg {
+//         transform: rotate(180deg);
+//     }
 
 
 .s-kontak {
@@ -1252,6 +1301,7 @@
         background-color: #F8F8F8;
         width: 518px;
         height: 500px;
+        right: 0;
         border-radius: 20px;
         padding: 40px 40px 29px 40px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -3248,6 +3298,9 @@
         .s-hero-scroll {
            display: none;
         }
+        &::after {
+            display: none;
+        }
         
     }
 
@@ -3363,8 +3416,7 @@
                 &-1{
                     position: relative;
                     margin-top: 42px;
-                    width: 296px;
-                    height: 90px;
+
                     .s-workflow-card-item-content-1{
                         width: 188px;
                     }
@@ -3374,8 +3426,7 @@
                 &-2{
                     position: relative; 
                     margin-top: 37px;
-                    width: 296px;
-                    height: 90px;
+
                     flex-direction: row-reverse; /* Tambahkan ini untuk memindahkan gambar ke kanan */
                     .s-workflow-card-item-content-2{
                         width: 188px;
@@ -3387,8 +3438,8 @@
                 &-3{
                     position: relative; 
                     margin-top: 37px;
-                    width: 316px;
-                    height: 90px;
+                    left: 0;
+
                     .s-workflow-card-item-content-3{
                         width: 208px;
                     }
@@ -3398,8 +3449,7 @@
                 &-4{
                     position: relative; 
                     margin-top: 37px;
-                    width: 296px;
-                    height: 90px;
+ 
                     flex-direction: row-reverse; /* Tambahkan ini untuk memindahkan gambar ke kanan */
                     .s-workflow-card-item-content-4{
                         width: 188px;
@@ -3554,7 +3604,6 @@
     }
 
     .s-project{
-        margin-bottom: 50px;
         margin-top: 50px;
         height: 590px;
         .s-project-head{
@@ -3690,54 +3739,138 @@
         }
     }
 
-    .s-testimonial{
-        padding-top: 60px;
-        .s-testimonial-head{
-            position: relative;
-            margin-top: 0px;
-            width: 100%;
-            height: auto;
-            display: inline-flex;
-            flex-direction: column;
-            align-items: flex-start;
-            z-index: 20;
+   .s-testimonial{
+    padding-top: 60px;
+    background: #F7F8FD;
+    &-head{
+        position: relative;
+        margin-top: 0px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 20;
 
-            .s-testimonial-head-path {
-                display: flex;
-                align-items: center;
-                gap: 14px;
-                color: #333333;
-        
-                h2 {
-                    margin-bottom: 0;
-                    color: #000;
-                    font-family: "Montserrat", sans-serif;
-                    font-size: 12px;
-                    font-style: normal;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                }
+        &-path{
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: #333333;
+            h2 {
+                margin-bottom: 0;
+                color: #000;
+                font-family: "Montserrat", sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                text-transform: uppercase;
             }
-        
-            .s-testimonial-head-tittle {
-                margin-top: 20px;
-        
-                h1 {
-                    font-family: "Outfit", sans-serif;
-                    color: #333;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: 150%; /* 30px */
+        }
+
+        &-tittle{
+            margin-top: 24px;
+            h1{
+                color: #333333;
+                font-family: "Outfit", sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%;
+                font-size: 20px;
+                margin-bottom: 0;
+                }
+        }
+    }
+
+    &-swiperimage{
+        margin-top: 60px;
+        width:300px;
+        height: 300px;
+        &-wrapper{
+            &-slide {
+                &-image{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
         }
 
     }
 
+    &-swiperteks{
+        margin-top: 30px;
+        &-wrapper{
+            &-slide{
+                &-quotes{
+                    display: flex;
+                    gap: 20px;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+                &-name{
+                    margin-top: 20px;
+                    display: flex;
+                    gap: 20px;
+                    img{
+                        height: 30px;
+                        width: 30px;
+                    }
+                    h4{
+                        font-size: 20px;
+                    }
+                    h5{
+                        font-size: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    &-swiperbutton{
+        width: 100px;
+        height: 40px;
+        background-color: #15548D;
+        border-radius: 50px;
+        position: relative;
+        left: 120px;
+        z-index: 30;
+        top: -220px;
+        display: flex;
+
+
+        justify-content: center;
+        align-items: center;
+        gap: 5.824px;
+        padding-top: 5px;
+        &-buttonnext,&-buttonprev{
+            display: flex;
+            width: 28.889px !important;
+            height: 28.889px !important;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            &::after{
+                display: none;
+            }
+        }
+        &-buttonprev{
+            transform: rotate(180deg);
+        }
+    }
+
+    
+
+   }
+
     .s-kontak{
         background-color: #f7f8fd;
-        margin-top: 30px;
         padding: 50px 0;
         position: relative;
         height: 751px;

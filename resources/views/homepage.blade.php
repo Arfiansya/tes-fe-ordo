@@ -29,10 +29,10 @@
     <nav class="nav">
         <div class="container">
             <div class="nav-head">
-                <div class="nav-logo">
+                <div class="nav-head-logo">
                     <img src="{{ asset('assets/logo/logo-gwk.png') }}" alt="">
                 </div>
-                <div class="nav-menu" id="nav-menu">
+                <div class="nav-head-menu" id="nav-menu">
                     <ul>
                         <li><a href="{{ route('homepage') }}">Homepage</a></li>
                         <li><a href="{{ route('tentang') }}">Tentang</a></li>
@@ -40,18 +40,20 @@
                         <li><a href="#">Bantuan</a></li>
                     </ul>
                 </div>
-                <div class="nav-button">
-                    <img src="{{ asset('assets/logo/indonesia-nav.png') }}" alt="">
+
+                <div class="dropdown nav-head-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle nav-head-dropdown-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/logo/indonesia-nav.png" alt="Flag of Indonesia" width="20" height="20">
+                        Indonesia (ID)
+                    </button>
+                    <ul class="dropdown-menu nav-head-dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#"><img src="assets/logo/indonesia-nav.png" alt="Indonesia" width="20" height="20"> Indonesia</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/logo/uk-nav.png" alt="English" width="20" height="20"> English</a></li>
+                    </ul>
                 </div>
-                <button class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
             </div>
         </div>
     </nav>
-
 
     <section id="hero" class="s-hero">
 
@@ -109,16 +111,13 @@
                 <div class="s-workflow-head-tittle">
                     <h1>Proses Kerja Kami dalam <br>Meningkatkan Kualitas Properti</h1>
                 </div>
-
             </div>
-
         </div>
+        
+
         
         <div class="container">
             <div class="s-workflow-card">
-                    <div class="s-workflow-line">
-                        <img src="{{ asset('assets/icon/garis-workflow.png') }}" alt="">
-                    </div>
                     
                     <div class="s-workflow-card-item s-workflow-card-item-1">
                         <div class="s-workflow-card-item-img">
@@ -259,7 +258,6 @@
 
     </section>
 
-
     <section id="project" class="s-project">
 
         <div class="container">
@@ -346,79 +344,76 @@
                 </div> 
             </div>
         </div>
-
-
-        
+ 
     </section>
 
-
-    <!-- <section id="testimonial" class="s-testimonial">
+    <section id="testimonial" class="s-testimonial">
         <div class="container">
             <div class="s-testimonial-head">
                 <div class="s-testimonial-head-path">
                     <img src="{{ asset('assets/icon/logo-op.png') }}" alt="">
                     <h2>Our Testimonial</h2>
                 </div>
-                <div class="s-testimonial-head-title">
+                <div class="s-testimonial-head-tittle">
                     <h1>Yang Klien Kami Katakan</h1>
                 </div>
             </div>
 
-            <div class="swiper mySwiper swiperTestimonialText" id="swiperTestimoniText">
-                <div class="swiper-wrapper testimonial-teks-wrapper">
-                    <div class="swiper-slide testimonial-teks-slide">
-                        <div class="s-testimonial-quote">
+            <div class="swiper mySwiper s-testimonial-swiperimage" id="swiperTestimoniImage">
+                <div class="swiper-wrapper s-testimonial-swiperimage-wrapper">
+                    <div class="swiper-slide s-testimonial-swiperimage-wrapper-slide">
+                        <div class="swiper-slide s-testimonial-swiperimage-wrapper-slide-image">
+                            <img src="{{ asset('assets/img/testimoni-img.png') }}" alt="klien">
+                        </div>
+                    </div>
+                    <div class="swiper-slide s-testimonial-swiperimage-wrapper-slide">
+                        <div class="swiper-slide s-testimonial-swiperimage-wrapper-slide-image">
+                            <img src="{{ asset('assets/img/testimoni-img.png') }}" alt="klien">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper s-testimonial-swiperteks" id="swiperTestimoniText">
+                <div class="swiper-wrapper s-testimonial-swiperteks-wrapper">
+                    <div class="swiper-slide s-testimonial-swiperteks-wrapper-slide">
+                        <div class="s-testimonial-swiperteks-wrapper-slide-quotes">
                             <img src="{{ asset('assets/icon/testimoni-quote.png') }}" alt="">
                             <p>GWA Group membantu hotel <br> saya untuk menjangkau lebih banyak client dan memberikan saran monetisasi yang tidak pernah saya bayangkan sebelumnya</p>
                         </div>
-                        <div class="s-testimonial-name">
+                        <div class="s-testimonial-swiperteks-wrapper-slide-name">
                             <img src="{{ asset('assets/icon/ceo.png') }}" alt="">
-                            <div class="s-testimonial-name-identity">
+                            <div class="s-testimonial-swipertekswrapper-slide-name-owner">
                                 <h4>CHAIM DESMOND</h4>
                                 <h5>CEO of RED Hotel</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide testimonial-teks-slide">
-                        <div class="s-testimonial-quote">
+                    <div class="swiper-slide s-testimonial-swipertekswrapper-slide">
+                        <div class="s-testimonial-swiperteks-wrapper-slide-quotes">
                             <img src="{{ asset('assets/icon/testimoni-quote.png') }}" alt="">
                             <p>GWA Group membantu hotel <br> saya untuk menjangkau lebih banyak client dan memberikan saran monetisasi yang tidak pernah saya bayangkan sebelumnya</p>
                         </div>
-                        <div class="s-testimonial-name">
+                        <div class="s-testimonial-swiperteks-wrapper-slide-name">
                             <img src="{{ asset('assets/icon/ceo.png') }}" alt="">
-                            <div class="s-testimonial-name-identity">
-                                <h4>CHAIM DIMONT</h4>
-                                <h5>CEO of Yellow Hotel</h5>
+                            <div class="s-testimonial-swipertekswrapper-slide-name-owner">
+                                <h4>CHAIM BILL</h4>
+                                <h5>CEO of yellow Hotel</h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="swiper mySwiper swiperTestimonialImage content-swiper" id="swiperTestimoniImage">
-                <div class="swiper-wrapper testimonial-image-wrapper">
-                    <div class="swiper-slide testimonial-image-slide">
-                        <div class="s-testimonial-img">
-                            <img src="{{ asset('assets/img/testimoni-img.png') }}" alt="klien">
-                        </div>
-                    </div>
-                    <div class="swiper-slide testimonial-slide">
-                        <div class="s-testimonial-img">
-                            <img src="{{ asset('assets/img/testimoni-img.png') }}" alt="klien">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="s-testimonial-swiper-button">
-                <div class="swiper-button-next testimonial-button-next">
+            <div class="s-testimonial-swiperbutton">
+                <div class="swiper-button-next s-testimonial-swiperbutton-buttonnext">
                     <svg width="49" height="50" viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="vuesax/linear/arrow-right">
                             <path id="Vector" d="M18.329 41.1333L31.6105 27.8518C33.179 26.2833 33.179 23.7166 31.6105 22.1481L18.329 8.86664" stroke="white" stroke-width="3.55556" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         </g>
                     </svg>
                 </div>
-                <div class="swiper-button-prev testimonial-button-prev">
+                <div class="swiper-button-prev s-testimonial-swiperbutton-buttonprev">
                     <svg width="49" height="50" viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="vuesax/linear/arrow-left">
                             <path id="Vector" d="M18.329 41.1333L31.6105 27.8518C33.179 26.2833 33.179 23.7166 31.6105 22.1481L18.329 8.86664" stroke="white" stroke-width="3.55556" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -427,9 +422,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
-
-
+    </section>
 
     <section id="kontak" class="s-kontak">
 
@@ -550,60 +543,57 @@
 
 
     <script>
-    // Project Swiper
-    var projectSwiper = new Swiper('.project-swiper', {
-        cssMode: true,
-        navigation: {
-            nextEl: '.project-button-next',
-            prevEl: '.project-button-prev',
-        },
-        pagination: {
-            el: '.project-pagination',
-        },
-        mousewheel: true,
-        keyboard: true,
-    });
-
     document.addEventListener('DOMContentLoaded', function () {
-    const swiperTestimoniImage = new Swiper('#swiperTestimoniImage', {
-        navigation: {
-            nextEl: '.testimonial-button-next',
-            prevEl: '.testimonial-button-prev',
-        },
-        effect: 'slide',
-        loop: true,
-        breakpoints: {
-            0: {},
-            768: {
-                navigation: {
-                    nextEl: '.testimonial-button-next',
-                    prevEl: '.testimonial-button-prev',
+        var projectSwiper = new Swiper('.project-swiper', {
+            cssMode: true,
+            navigation: {
+                nextEl: '.project-button-next',
+                prevEl: '.project-button-prev',
+            },
+            pagination: {
+                el: '.project-pagination',
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+
+        const swiperTestimoniImage = new Swiper('#swiperTestimoniImage', {
+            navigation: {
+                nextEl: '.s-testimonial-buttonnext',
+                prevEl: '.s-testimonial-buttonprev',
+            },
+            effect: 'slide',
+            loop: true,
+            breakpoints: {
+                0: {},
+                768: {
+                    navigation: {
+                        nextEl: '.s-testimonial-buttonnext',
+                        prevEl: '.s-testimonial-buttonprev',
+                    },
                 },
             },
-        },
+        });
+
+        const swiperTestimoniText = new Swiper('#swiperTestimoniText', {
+            allowTouchMove: false,
+            loop: true,
+            effect: 'fade',
+        });
+
+        swiperTestimoniImage.controller.control = swiperTestimoniText;
+        swiperTestimoniText.controller.control = swiperTestimoniImage;
     });
 
-    const swiperTestimoniText = new Swiper('#swiperTestimoniText', {
-        allowTouchMove: false,
-        loop: true,
-        effect: 'fade',
-    });
-
-    swiperTestimoniImage.controller.control = swiperTestimoniText;
-    swiperTestimoniText.controller.control = swiperTestimoniImage;
-
-    });
-    
     document.addEventListener('DOMContentLoaded', function() {
-      var navbar = document.querySelector('.nav');
-
-      window.addEventListener('scroll', function() {
-        if (window.scrollY > 0) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      });
+        var navbar = document.querySelector('.nav');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
     });
   </script>
 
