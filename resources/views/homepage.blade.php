@@ -32,6 +32,11 @@
                 <div class="nav-head-logo">
                     <img src="{{ asset('assets/logo/logo-gwk.png') }}" alt="">
                 </div>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
                 <div class="nav-head-menu" id="nav-menu">
                     <ul>
                         <li><a href="{{ route('homepage') }}">Homepage</a></li>
@@ -40,7 +45,6 @@
                         <li><a href="#">Bantuan</a></li>
                     </ul>
                 </div>
-
                 <div class="dropdown nav-head-dropdown">
                     <button class="btn btn-secondary dropdown-toggle nav-head-dropdown-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="assets/logo/indonesia-nav.png" alt="Flag of Indonesia" width="20" height="20">
@@ -594,6 +598,11 @@
                 navbar.classList.remove('scrolled');
             }
         });
+    });
+
+
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-head').classList.toggle('active');
     });
   </script>
 
